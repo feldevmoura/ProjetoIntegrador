@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/stylo.css">
+    <link rel="stylesheet" href="public/style.css">
     <link rel="icon" href="public/img/Log.png">
     <title>UaiPhone</title>
 </head>
@@ -12,31 +12,71 @@
     <div class= "container">
         <header>
             <div class="home">
-                <div class="logo"><img src="public/img/Log.png" href="public/img/Log.png"></div>
+                <div class="logo">
+                    <img src="public/img/Logo.png" href="public/img/Log.png">
+                </div>
                 <h1>Uaiphone</h1>
-                <input class="pesquisa"  type="text">
+                <input class="pesquisa" type="text">
                 <div class="usuario"><img src="public/img/usuario.png"></div>
-                <input class= "Cadastro"  type="button" value="Cadastro"> </input>
+                <button class= "Cadastro"  type="button">
+                    <p>Olá, faça seu <b>login</b>, ou <b>cadastre-se</b></p>
+                </button>
                 <div class="compra"><img src="public/img/carrinho.png"></div>
             </div>
         </header>
         <main>
-            <div class="imagem">
-                <img src="public/img/azul.png" href="public/img/azul.png">
+            <div class="slide">
+                <div class="slides">
+
+                    <div id="previous" class="btn">
+                         <img class="left" src="public/img/arrows/arrowLeft/arrowLeft1.png">
+                    </div>
+                    <div id="next" class="btn">
+                        <img class="right" src="public/img/arrows/arrowRight/arrowRight1.png">
+                    </div>
+
+                    <div class="phones">
+                        <div id="first" class="image">
+                            <img src="public/img/phones/S20ULTRA.png">
+                        </div>
+                        <div class="image">
+                            <img src="public/img/phones/S22PLUS.png">
+                        </div>
+                        <div class="image">
+                            <img src="public/img/phones/S22.png">
+                        </div>
+                        <div class="image">
+                            <img src="public/img/phones/A52.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="balls">
+                    <!-- <div class="imgAtual" id="0"></div>
+                    <div id="1"></div>
+                    <div id="2"></div>
+                    <div id="3"></div> -->
+                </div>
+                
             </div>
         </main>
         <footer>
             <div class="rodape">
-               <div class="icon"><img src="public/img/Log.png" href="public/img/Log.png"></div>
-               <div class= "fim"><p>&Delta; UaiPhone</p></div> 
+               <div class="icon"><img src="public/img/Logo.png" href="public/img/Log.png"></div>
+                    <div class= "fim">
+                        <p>Mais informações</p>
+                    </div> 
                <div class="redesocial">
-                   <img class="facebook" src="public/img/facebook.png" href="public/img/facebook.png">
-                   <img class="instagram" src="public/img/instagram.png" href="public/img/instagram.png">
-                   <img class="whatsapp" src="public/img/whatsapp.png" href="public/img/whatsapp.png">
-                   <img class="youtube" src="public/img/youtube.png" href="public/img/youtube.png">
+                   <img class="facebook" src="public/img/redeSocial/facebook.png" href="public/img/facebook.png">
+                   <img class="instagram" src="public/img/redeSocial/instagram.png" href="public/img/instagram.png">
+                   <img class="whatsapp" src="public/img/redeSocial/whatsapp.png" href="public/img/whatsapp.png">
+                   <img class="youtube" src="public/img/redeSocial/youtube.png" href="public/img/youtube.png">
                </div>
             </div>
         </footer>
     </div> 
 </body>
+
+<script src="index.js">
+    
+</script>
 </html>
