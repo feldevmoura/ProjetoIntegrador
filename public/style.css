@@ -102,10 +102,6 @@ main {
 	background-color: var(--color1);
 }
 
-input {
-	
-}
-
 .slides {
 	display: flex;
 	width: 400%;
