@@ -18,53 +18,47 @@
                 <h1>Uaiphone</h1>
                 <input class="pesquisa" type="text">
                 <div class="usuario"><img src="public/img/usuario.png"></div>
-                <button class= "Cadastro"  type="button">
-                    <p>Olá, faça seu <b>login</b>, ou <b>cadastre-se</b></p>
+                <button class= "cadastro"  type="button">
+                    <p class="login">Olá, faça seu <b>login</b>, ou <b>cadastre-se</b></p>
                 </button>
                 <div class="compra"><img src="public/img/carrinho.png"></div>
             </div>
         </header>
         <main>
-            <div class="slide">
-                <div class="slides">
 
-                    <div id="previous" class="btn">
-                         <img class="left" src="public/img/arrows/arrowLeft/arrowLeft1.png">
-                    </div>
-                    <div id="next" class="btn">
-                        <img class="right" src="public/img/arrows/arrowRight/arrowRight1.png">
-                    </div>
+					<div class="content">
+						<div class="slides">
+								<input type="radio" name="radio" id="slide1" checked>
+								<input type="radio" name="radio" id="slide2">
+								<input type="radio" name="radio" id="slide3">
+								<input type="radio" name="radio" id="slide4">
+		
+		
+								<div class="slide s1">
+										<img src="public/img/phones/S20ULTRA.png" alt="S20 ULTRA Samsung">
+								</div>
+								<div class="slide">
+										<img src="public/img/phones/S22PLUS.png" alt="S20 PLUS Samsung">
+								</div>
+								<div class="slide">
+										<img src="public/img/phones/S22.png" alt="S22 Samsung">
+								</div>
+								<div class="slide">
+										<img src="public/img/phones/A52t1.png" alt="A52s Samsung">
+								</div>
+						</div>
+						<div class="navigation">
+								<label class="bar" for="slide1"></label>
+								<label class="bar" for="slide2"></label>
+								<label class="bar" for="slide3"></label>
+								<label class="bar" for="slide4"></label>
+						</div>
+				</div>
 
-                    <div class="phones">
-                        <div id="first" class="image">
-                            <img src="public/img/phones/S20ULTRA.png">
-                        </div>
-                        <div class="image">
-                            <img src="public/img/phones/S22PLUS.png">
-                        </div>
-                        <div class="image">
-                            <img src="public/img/phones/S22.png">
-                        </div>
-                        <div class="image">
-                            <img src="public/img/phones/A52.png">
-                        </div>
-                        <div class="image">
-                            <img src="public/img/phones/A52.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="balls">
-                    <!-- <div class="imgAtual" id="0"></div>
-                    <div id="1"></div>
-                    <div id="2"></div>
-                    <div id="3"></div> -->
-                </div>
-                
-            </div>
         </main>
         <footer>
             <div class="rodape">
-               <div class="icon"><img src="public/img/Logo.png" href="public/img/Log.png"></div>
+               <div class="icon"><img src="public/img/Logo.png" href="public/img/Logo.png"></div>
                     <div class= "fim">
                         <p>Mais informações</p>
                     </div> 
@@ -79,7 +73,6 @@
     </div> 
 </body>
 
-<script src="index.js">
     
 </script>
 </html>
