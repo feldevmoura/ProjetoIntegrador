@@ -2,27 +2,27 @@
     padding: 0%;
     margin: 0%;
 }
+
 :root {
     --color1: #4a69bd;
     --color2: #aaa69d;
     --color3: #d1ccc0;
+    --color4: #f1f1f1;
+    --color5: #000;
 }
 
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--color4);
+}
 .home{
     display: flex;
     background-color: var(--color3);
     justify-content: space-around;
 }
-
-h1{
-    color: var(--color1);
-    margin-top: 2vh;
-}
-
-.logo img{
-    width: 05vw;
-}
-
 .pesquisa{
     margin: 10px;
     width: 50%;
@@ -32,134 +32,137 @@ h1{
     margin-top: 4vh;
     position: relative;
 }
-
 .usuario img{
     width: 03vw;
     margin-top: 2vh;
 }
+.compra img{
+    width: 03vw;
+    margin-top: 2.5vh;
+}
 
-.cadastro{
+main {
+    display: flex;
+    justify-content:center;
+}
+
+.slide {
+    width: 55vw;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 4vh;
+    transition: all 0.4s;
+    background-color: var(--color1) ;
+}
+
+.slides {
+    width: 200vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 5vh;
+}
+
+.right {
+    width: 5vh;
+}
+
+.phones {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vh;
+}
+
+.image img {
+    width: 34vw;
+    height: 75vh;
+    margin-right: 20vw;
+}
+
+#first {
+    transition: all 2s;
+}
+
+.btn {
+    position: absolute;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+}
+
+#previous {
+    top: 60%;
+    left: 15%;
+}
+
+#next {
+    top: 60.4%;
+    right: 15%;
+}
+
+.balls {
+    position: absolute;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 21.5vw;
+}
+
+.balls div {
+    transition: all 0.5s;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.balls div:hover {
+    background-color: white;
+}
+
+.imgAtual {
+    transition: all 0.5s;
+    background-color: white;
+}
+
+.Cadastro{
     margin: 10px;
     width: 10%;
     height: 9vh;
     border: 0.2px solid var(--color2);
     border-radius: 10px;
     font-size: 2.5vh;
-} 
-
-.login{
-    color: var(--color1);
 }
-
-.compra img{
-    width: 03vw;
-    margin-top: 2.5vh;
+.logo img{
+    width: 05vw;
 }
-
-
-
-main {
-    height: 100vh;
-    justify-self: center;
-    background-color: var(--color2);
-    display: flex;
-    justify-content:center;
+h1{
+    color: aliceblue;
+    margin-top: 2vh;
 }
-
-.content {
-    background-color: var(--color3);
-    margin-top: 5vh;
-	height: 70vh;
-	width: 40vw;
-	border-radius: 2vw;
-	overflow: hidden;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.icon img {
+    width: 05vw;
 }
-
-.navigation {
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translate(-50%);
-	display: flex;
-}
-
-.bar {
-	width:2vw;
-	height: 4.5vh;
-	border: 2px solid var(--color2);
-	margin: 1vh;
-	border-radius: 9vw;
-	cursor: pointer;
-	transition: 1s;
-	margin-bottom: -1em;
-}
-
-.bar:hover {
-	background-color: var(--color1);
-}
-
-.slides {
-	display: flex;
-	width: 400%;
-	height: 100%;
-}
-
-.slide {
-	width: 55%;
-	transition: 1s;
-}
-
-.slide img {
-	width: 30vw;
-}
-
-#slide1 {
-    display: none;
-}
-
-#slide2 {
-    display: none;
-}
-
-#slide3 {
-    display: none;
-}
-
-#slide4 {
-    display: none;
-}
-
-#slide1:checked ~ .s1{
-	margin-left: 2%;
-}
-
-#slide2:checked ~ .s1{
-	margin-left: -29%;
-}
-
-#slide3:checked ~ .s1{
-	margin-left: -95%;
-}
-
-#slide4:checked ~ .s1 {
-	margin-left: -163%;
-}
-
-
-
 
 .rodape{
     display: flex;
     background-color: var(--color3);
     justify-content: space-around;
-}
-
-.icon img {
-    width: 05vw;
 }
 
 .fim {
