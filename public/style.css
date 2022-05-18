@@ -164,14 +164,15 @@ main {
 
 .fim {
     border: 2px solid var(--color2);
-    width: 20vw;
+    margin: 03vw;
     display: flex;
-    margin-top: 2vh;
+    background-color: #4a69bd;
 }
 
 .fim p {
-    margin-left: 7vh;
-    font-size: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3vh;
+    color: #aaa69d;
 }
 
 .redesocial{ 
