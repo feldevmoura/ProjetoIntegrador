@@ -165,7 +165,7 @@ h1{
     justify-content: space-around;
 }
 
-.fim {
+.info {
     border: 2px solid var(--color2);
     width: 20vw;
     display: flex;
