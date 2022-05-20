@@ -25,28 +25,30 @@ main{
 }
 
 .pesquise{
-    width: 15vw;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pesquisa{
-    margin: 10px;
-    width: 50%;
+    width: 95%;
     height: 20px;
     border: 1.5px solid var(--color2);
     border-radius: 10px;
-    margin-top: 4vh;
     position: relative;
-
 }
 
 .pesquisa:focus{
     color: black;
     outline: none;
-    border: 5px solid red;
+    border: 2px solid var(--color2);
 }
 
 .lupa{
+    position: absolute;
     width: 1.5vw;
+    margin-left: 15.5vw;
 }
 
 .usuario img{
@@ -95,7 +97,6 @@ main {
 
 .image img {
     width: 34vw;
-    height: 75vh;
     margin-right: 20vw;
 }
 
@@ -141,7 +142,7 @@ main {
 
 .balls div {
     transition: all 0.5s;
-    border: 2px solid white;
+    border: 0.3vh solid var(--color4);
     padding: 6px;
     border-radius: 50%;
     margin-right: 15px;
@@ -177,8 +178,13 @@ h1{
     margin-top: 2vh;
 }
 
+.icon{
+    display: flex;
+    align-items: center;
+}
+
 .icon img {
-    width: 05vw;
+    width: 06vw;
 }
 
 .rodape{
@@ -191,7 +197,10 @@ h1{
     width: 35vw;
     display: flex;
     justify-content: space-around;
-    margin-left: 15vw;
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+
 }
 
 .info {
@@ -201,7 +210,6 @@ h1{
     width: 20vw;
     height: 9vh;
     font-size: 5vh;
-    margin-top: 2vh;
     border-radius: 2vh;
     display: flex;
     align-items: center;
@@ -211,11 +219,10 @@ h1{
 .contato{
     background-color: var(--color1);
     color: var(--color4);
-    border: 4px solid var(--color2);
+    border: 2px solid var(--color2);
     width: 6vw ;
     height: 7vh;
     font-size: 3.5vh;
-    margin-top: 3vh;
     border-radius: 2vh;
     display: flex;
     align-items: center;
