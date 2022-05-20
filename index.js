@@ -58,4 +58,4 @@ var balls = document.querySelector('.balls');
         else{
             rolar = true
         }
-    },4000)
+    },8000)

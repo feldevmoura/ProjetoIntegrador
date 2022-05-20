@@ -4,11 +4,11 @@
 }
 
 :root {
-    --color1: #4a69bd;
-    --color2: #aaa69d;
-    --color3: #d1ccc0;
-    --color4: #f1f1f1;
-    --color5: #000;
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
 }
 
 main{
@@ -23,6 +23,11 @@ main{
     background-color: var(--color3);
     justify-content: space-around;
 }
+
+.pesquise{
+    width: 15vw;
+}
+
 .pesquisa{
     margin: 10px;
     width: 50%;
@@ -31,11 +36,24 @@ main{
     border-radius: 10px;
     margin-top: 4vh;
     position: relative;
+
 }
+
+.pesquisa:focus{
+    color: black;
+    outline: none;
+    border: 5px solid red;
+}
+
+.lupa{
+    width: 1.5vw;
+}
+
 .usuario img{
     width: 03vw;
     margin-top: 2vh;
 }
+
 .compra img{
     width: 03vw;
     margin-top: 2.5vh;
@@ -140,21 +158,25 @@ main {
     background-color: white;
 }
 
-.Cadastro{
+.cadastro{
+    background-color: var(--color3);
     margin: 10px;
-    width: 10%;
+    width: 13%;
     height: 9vh;
-    border: 0.2px solid var(--color2);
+    border: 0px solid var(--color2);
     border-radius: 10px;
     font-size: 2.5vh;
 }
+
 .logo img{
     width: 05vw;
 }
+
 h1{
     color: aliceblue;
     margin-top: 2vh;
 }
+
 .icon img {
     width: 05vw;
 }
@@ -165,16 +187,39 @@ h1{
     justify-content: space-around;
 }
 
-.info {
-    border: 2px solid var(--color2);
-    width: 20vw;
+.footerGrid {
+    width: 35vw;
     display: flex;
-    margin-top: 2vh;
+    justify-content: space-around;
+    margin-left: 15vw;
 }
 
-.fim p {
-    margin-left: 7vh;
-    font-size: 4vh;
+.info {
+    background-color: var(--color1); 
+    color: var(--color4);
+    border: 2px solid var(--color2);
+    width: 20vw;
+    height: 9vh;
+    font-size: 5vh;
+    margin-top: 2vh;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    background-color: var(--color1);
+    color: var(--color4);
+    border: 4px solid var(--color2);
+    width: 6vw ;
+    height: 7vh;
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .redesocial{ 
@@ -185,6 +230,11 @@ h1{
     height: 10vh;
     margin-right: 4%;
 }
+
+.redesocial img{
+    margin-top: 1vw;
+}
+
 .facebook{
     width: 05vh;
     height: 05vh;
