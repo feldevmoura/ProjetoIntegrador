@@ -1,0 +1,114 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--color4);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-self: center;
+}
+
+.slide {
+    width: 55vw;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 4vh;
+    transition: all 0.4s;
+    background-color: var(--color1) ;
+}
+
+.slides {
+    width: 200vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#previous {
+    top: 60%;
+    left: 15%;
+}
+
+#next {
+    top: 60.4%;
+    right: 15%;
+}
+
+.btn {
+    position: absolute;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -1vw;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+}
+
+.left {
+    width: 5vh;
+}
+
+.right {
+    width: 5vh;
+}
+
+.phones {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vh;
+}
+
+#first {
+    transition: all 2s;
+}
+
+.image img {
+    width: 34vw;
+    margin-right: 20vw;
+}
+
+.balls {
+    position: absolute;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 21.5vw;
+}
+
+.balls div {
+    transition: all 0.5s;
+    border: 0.3vh solid var(--color4);
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.balls div:hover {
+    background-color: white;
+}
+
+.imgAtual {
+    transition: all 0.5s;
+    background-color: white;
+}
