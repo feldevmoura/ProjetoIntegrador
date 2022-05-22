@@ -1,0 +1,83 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
+}
+
+.headerContainer{
+    display: flex;
+    background-color: var(--color3);
+    justify-content: space-around;
+}
+
+.logo img{
+    width: 05vw;
+}
+
+h1{
+    color: aliceblue;
+    margin-top: 2vh;
+}
+
+.pesquise{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pesquisa{
+    width: 95%;
+    height: 20px;
+    border: 1.5px solid var(--color2);
+    border-radius: 10px;
+    position: relative;
+}
+
+.pesquisa:focus{
+    color: black;
+    outline: none;
+    border: 2px solid var(--color2);
+}
+
+.lupa{
+    position: absolute;
+    width: 1.5vw;
+    margin-left: 15.5vw;
+}
+
+.usuario img{
+    width: 03vw;
+    margin-top: 2vh;
+}
+
+.cadastro{
+    background-color: var(--color3);
+    margin: 10px;
+    width: 13%;
+    height: 9vh;
+    border: 0px solid var(--color2);
+    border-radius: 10px;
+    font-size: 2.5vh;
+}
+
+.compra img{
+    width: 03vw;
+    margin-top: 2.5vh;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--color4);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-self: center;
+}
