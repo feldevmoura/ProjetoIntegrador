@@ -1,4 +1,19 @@
+<<<<<<< HEAD
 
+=======
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
+}
+>>>>>>> c3d667ea2498fddb195ee8a035367345b325a317
 
 .rodape{
     display: flex;
