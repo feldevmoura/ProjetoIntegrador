@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 *{
     padding: 0%;
     margin: 0%;
@@ -13,7 +11,7 @@
     --color4: #FFFFFF;
     --color5: #000000;
 }
->>>>>>> c3d667ea2498fddb195ee8a035367345b325a317
+
 
 .rodape{
     display: flex;
