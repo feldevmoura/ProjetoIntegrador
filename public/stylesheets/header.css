@@ -19,11 +19,15 @@
 
 .logo img{
     width: 05vw;
+    cursor: pointer;
 }
 
 h1{
     color: aliceblue;
-    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    user-select: none;
 }
 
 .pesquise{
@@ -35,9 +39,9 @@ h1{
 
 .pesquisa{
     width: 95%;
-    height: 20px;
+    height: 1.5vw;
     border: 1.5px solid var(--color2);
-    border-radius: 10px;
+    border-radius: 1.7vh;
     position: relative;
 }
 
@@ -56,6 +60,7 @@ h1{
 .usuario img{
     width: 03vw;
     margin-top: 2vh;
+    cursor: pointer;
 }
 
 .cadastro{
@@ -71,11 +76,10 @@ h1{
 .compra img{
     width: 03vw;
     margin-top: 2.5vh;
+    cursor: pointer;
 }
 
 main {
-    height: 100vh;
-    background-color: var(--color4);
     display: flex;
     justify-content:center;
     align-items: center;
