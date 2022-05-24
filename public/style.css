@@ -151,6 +151,7 @@ main {
 .logo img{
     width: 05vw;
 }
+
 h1{
     color: aliceblue;
     margin-top: 2vh;
@@ -206,4 +207,33 @@ h1{
     cursor: pointer;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
 
+.navbar{
+    position: relative;
+    display: inline-block;
+}
+
+.navlist{
+    display: none;
+    position: absolute;
+    background-color:#4a69bd;
+    min-width: 150px;
+    min-height: 47.5vmax;
+    
+    z-index: 1;
+}
+
+.navlist a{
+    color:#f1f1f1;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.logo:hover .navlist{
+    display: block;
+}
