@@ -18,7 +18,7 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 135.5vw;
+	height: 135vw;
 }
 
 main div{
@@ -26,23 +26,35 @@ main div{
 }
 
 .produtos-1{
+	margin-top: 1vh;
 	background-color: #CEE741;
 	width: 98vw;
 	height: 70vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 0;
 }
 
 .produto-2{
 	background-color: #12CDD4;
 	width: 70vw;
-	margin-top: 4vh;
+	margin-top: 2vh;
 	height: 32vw;
 	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .produto-3{
+	background-color: #2D9BF0;
+	width: 23vw;
+	height: 31vw;
+	margin-top: 1vh;
+	margin-right: 1vh;
+
 }
 
 .produtoImagem-4{
@@ -55,6 +67,10 @@ main div{
 }
 
 .produtoApresentacao-3{
+	background-color: #2D9BF0;
+	width: 45vw;
+	height: 31vw;
+	margin-top: 1vh;
 }
 
 .descricaoProduto-4{
@@ -84,18 +100,76 @@ main div{
 .comprar-2{
 	background-color: #12CDD4;
 	width: 26.5vw;
-	margin-top: 4vh;
+	margin-top: 2vh;
 	height: 32vw;
 	margin-right: 1vh;
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	align-items: center;
 }
 
 .preco-3{
+	margin-top: 1vh;
+	background-color: #2D9BF0;
+	width: 25vw;
+	height: 8vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.preco-4{
+	margin-top: 1vh;
+	background-color: #2541B2;
+	width: 24vw;
+	height: 3.5vw;
+}
+
+.parcelas-4{
+	background-color: #2541B2;
+	width: 24vw;
+	height: 3.5vw;
 }
 
 .frete-3{
+	background-color: #2D9BF0;
+	width: 25vw;
+	height: 10vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.paragrafoFrete-4{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2541B2;
+	width: 24vw;
+	height: 3.5vw;
+	margin-top: 1vh;
+}
+
+.digiteCep-4{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: #2541B2;
+	width: 24vw;
+	height: 5vw;
 }
 
 .comprar-3{
+	background-color: #2D9BF0;
+	width: 25vw;
+	height: 11vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .alertaCompra-4{
@@ -112,11 +186,15 @@ main div{
 	width: 10vw;
 	height: 3vw;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 1vh;
 	text-align: center;
 	justify-content: center;
 	display: flex;
 	align-items: center;
+	border-radius: 1vh;
+	user-select: none;
+	cursor: pointer;
+	font-weight: 900;
 }
 
 .acessoriosGrade-2{
@@ -142,13 +220,18 @@ main div{
 }
 
 .acessorio1Foto-4{
-	background-color: #2541B2;
+	background-color: var(--color4);
 	margin-top: 1vh;
 	width: 16vw;
 	height: 19vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.acessorio1Foto-4 img {
+	width: 10vw;
+	margin-bottom: 2vh;
 }
 
 .acessorio1Descricao-5{
@@ -160,6 +243,8 @@ main div{
 	justify-content: center;
 	width: 15vw;
 	height: 5vw;
+	user-select: none;
+	cursor: pointer;
 }
 
 .acessorio1Carrinho-4{
@@ -169,6 +254,16 @@ main div{
 	margin-right: 1vh;
 	width: 13vw;
 	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12vw;
+	user-select: none;
+	cursor: pointer;
+}
+
+.acessorio1BtnAdicionar-5{
+	
 }
 
 .acessorio2-3{
@@ -183,10 +278,29 @@ main div{
 }
 
 .acessorio2Foto-4{
-	background-color: #2541B2;
+	background-color: var(--color4);
 	margin-top: 1vh;
 	width: 16vw;
 	height: 19vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.acessorio2Foto-4 img {
+	width: 7vw;
+	margin-bottom: 1vh;
+}
+
+.acessorio2Descricao-5{
+	margin-top: 1vh;
+	background-color: #03256C;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 15vw;
+	height: 5vw;
 }
 
 .acessorio2Carrinho-4{
@@ -196,6 +310,12 @@ main div{
 	margin-right: 1vh;
 	width: 13vw;
 	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12vw;
+	user-select: none;
+	cursor: pointer;
 }
 
 .acessorio3-3{
@@ -210,10 +330,28 @@ main div{
 }
 
 .acessorio3Foto-4{
-	background-color: #2541B2;
+	background-color: var(--color4);
 	margin-top: 1vh;
 	width: 16vw;
 	height: 19vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.acessorio3Foto-4 img{
+	width: 13.5vw;
+	margin-bottom: 1vh;
+}
+
+.acessorio3Descricao-5{
+	margin-top: 1vh;
+	background-color: #03256C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15vw;
+	height: 5vw;
 }
 
 .acessorio3Carrinho-4{
@@ -223,6 +361,12 @@ main div{
 	margin-right: 1vh;
 	width: 13vw;
 	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12vw;
+	user-select: none;
+	cursor: pointer;
 }
 
 .acessorio4-3{
@@ -236,10 +380,28 @@ main div{
 }
 
 .acessorio4Foto-4{
-	background-color: #2541B2;
+	background-color: var(--color4);
 	margin-top: 1vh;
 	width: 16vw;
 	height: 19vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.acessorio4Foto-4 img{
+	width: 12vw;
+	margin-bottom: 1vh;
+}
+
+.acessorio4Descricao-5{
+	margin-top: 1vh;
+	background-color: #03256C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15vw;
+	height: 5vw;
 }
 
 .acessorio4Carrinho-4{
@@ -249,6 +411,12 @@ main div{
 	margin-right: 1vh;
 	width: 13vw;
 	height: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12vw;
+	user-select: none;
+	cursor: pointer;
 }
 
 .propaganda-1{
@@ -275,7 +443,7 @@ main div{
 	height: 40vw;
 	width: 98vw;
 	background-color: #CEE741 ;
-	margin-bottom: 0;
+	margin-bottom: 1vh;
 }
 
 .comentarios-2{

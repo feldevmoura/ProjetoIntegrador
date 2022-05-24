@@ -13,6 +13,7 @@
 
 .headerContainer{
     display: flex;
+    align-items: center;
     background-color: var(--color3);
     justify-content: space-around;
 }
