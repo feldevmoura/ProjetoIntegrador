@@ -47,8 +47,6 @@ var balls = document.querySelector('.balls');
         document.getElementById(first).classList.add('imgAtual')
     }
 
-    
-
     slide()
     setInterval(()=> {
         if(rolar){

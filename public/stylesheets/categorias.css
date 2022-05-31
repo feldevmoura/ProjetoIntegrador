@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+main {
+    display: flex;
+    align-items: start;
+}
+
+:root {
+    --color0: rgb(223, 219, 219);
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
+  }
+
+.container1-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vw;
+    width: 15vw;
+    background-color: var(--color0);
+}
+
+.categorias1-2{
+    margin-top: 8vw;
+    font-weight: 600;
+    font-size: 2vw;
+
+}
+
+.categorias2-2{
+    margin-top: 1vw;
+}
+
+.categorias2-2 div{
+    margin-bottom: 2vw;
+}
+
+.container2-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vw;
+    width: 85vw;
+    background-color: var(--color4);
+}
+
+.imagesPhones-2{
+    margin-top: 2vw;
+    height: 40vw;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagesPhones-2 div{
+}
+
+.produto1-2{
+    width: 15vw;
+    height: 17vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    margin-right: 1vw;
+    background-color: var(--color1);
+    border-radius: 1vw;
+}
+
+.imagem1-3{
+    width: 13vw;
+    height: 13vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem1-3 img{
+    width: 9vw;
+}
+
