@@ -1,10 +1,11 @@
 *{
   padding: 0%;
   margin: 0%;
-   
+  /* border: 1px solid red; */
 }
 
 :root {
+  --color0: rgb(223, 219, 219);
   --color1: #919090;
   --color2: #253031;
   --color3: #315659;
@@ -36,149 +37,408 @@ main div{
 	margin-bottom: 0;
 }
 
-.produto-2{
-	background-color: #12CDD4;
-	width: 70vw;
-	margin-top: 2vh;
-	height: 32vw;
-	border: 1px solid red;
+.produtosGrid-2{
 	display: flex;
-	flex-wrap: wrap;
+	align-items: center;
+	justify-self: center;
+	flex-direction: row;
+	background-color: var(--color0);
+	height: 33vw;
+}
+
+.produto-3{
+	margin-right: 0.3vw;
+	background-color: var(--color0);
+	width: 69vw;
+	margin-top: 0;
+	height: 32vw;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.produto-3{
+.produto-4{
 	background-color: #2D9BF0;
 	width: 23vw;
 	height: 31vw;
 	margin-top: 1vh;
 	margin-right: 1vh;
-
-}
-
-.produtoImagem-4{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	z-index: 6;
 }
 
 .produtoImagem-5{
+	margin-top: 1vh;
+	background-color: var(--color4);
+	width: 22vw;
+	height: 22vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 4;
 }
 
-.produtoFotos-4{
+.produtoImagem-6{
+	width: 20vw;
+	margin-right: 1vh;
+	z-index: 5;
+	cursor: pointer;
+	overflow: hidden;
 }
 
-.produtoApresentacao-3{
+.produtoFotos-5{
+	background-color: var(--color1);
+	width: 22vw;
+	height: 6vw;
+	margin-bottom: 2vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.phonesGrid-6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+	height: 5.5vw;
+	background-color: var(--color0);
+}
+
+.imagem1-7{
+	margin-top: 1vh;
+	background-color: var(--color4);
+	width: 3vw;
+	height: 5vw;
+	margin-right: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.imagem1-7 img{
+	height: 5vw;
+}
+
+.imagem2-7{
+	margin-top: 1vh;
+	background-color: var(--color4);
+	width: 3vw;
+	height: 5vw;
+	margin-right: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.imagem2-7 img{
+	height: 5vw;
+}
+
+.imagem3-7{
+	margin-top: 1vh;
+	background-color: var(--color4);
+	width: 3vw;
+	height: 5vw;
+	margin-right: 2vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.imagem3-7 img{
+	height: 5vw;
+}
+
+.imagem4-7{
+	margin-top: 1vh;
+	background-color: var(--color4);
+	width: 3vw;
+	height: 5vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.imagem4-7 img{
+	height: 5vw;
+}
+
+.produtoApresentacao-4{
 	background-color: #2D9BF0;
 	width: 45vw;
 	height: 31vw;
 	margin-top: 1vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.descricaoProduto-4{
+.descricaoProduto-5{
+	margin-top: 2vw;
+	background-color: #2541B2;
+	width: 44vw;
+	height: 8vw;
+	font-size: 2vw;
+	font-weight: 900;
+	color: var(--color5);
 }
 
-.corProduto-4{
+.corProduto-5{
+	margin-top: 6vw;
+	background-color: var(--color4);
+	width: 23vw;
+	height: 6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
 }
 
-.corParagrafo-5{
+.corParagrafo-6{
+	background-color:  var(--color4);
+	width: 5vw;
+	height: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1vh;
+	margin-top: 1vh;
+	font-size: 1.5vw;
 }
 
-.coresProduto-5{
+.coresProduto-6{
+	background-color: var(--color1);
+	width: 13vw;
+	height: 4vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1vh;
 }
 
-.preto-6{
+.coresProduto-6 div{
+	margin-top: 1.5vh;
 }
 
-.branco-6{
+.preto-7{
+	margin-left: 0.5vh;
+	background-color: var(--color5) ;
+	width: 2vw;
+	height: 2vw;
+	margin-right: 1vw;
+	border-radius: 100%;
+	cursor: pointer;
 }
 
-.vinho-6{
+.branco-7{
+	background-color: var(--color4) ;
+	width: 2vw;
+	height: 2vw;
+	margin-right: 1vw;
+	border-radius: 100%;
+	cursor: pointer;
 }
 
-.verde-{
+.vinho-7{
+	background-color: palevioletred ;
+	width: 2vw;
+	height: 2vw;
+	margin-right: 1vw;
+	border-radius: 100%;
+	cursor: pointer;
 }
 
-.comprar-2{
-	background-color: #12CDD4;
+.verde-7{
+	background-color: var(--color3) ;
+	width: 2vw;
+	height: 2vw;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.linha-3{
+	margin-right: 0.3vw;
+	margin-top: 0;
+	width: 0.2vw;
+	height: 30vw;
+	background-color: var(--color1);
+}
+
+.comprar-3{
+	background-color: var(--color0);
 	width: 26.5vw;
-	margin-top: 2vh;
+	margin-top: 0;
 	height: 32vw;
 	margin-right: 1vh;
 	display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	flex-wrap: wrap;
+  	justify-content: center;
 	align-items: center;
 }
 
-.preco-3{
+.preco-4{
 	margin-top: 1vh;
-	background-color: #2D9BF0;
+	background-color: rgb(223, 219, 219);
+	width: 25vw;
+	height: 8vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.preco-5{
+	display: flex;
+	align-items: center;
+	margin-top: 1vh;
+	background-color: var(--color0);
+	width: 24vw;
+	height: 4vw;
+	font-size: 3vw;
+}
+
+.preco-4 p{
+	margin-top: 1vh;
+	margin-right: 2vh;
+}
+
+.parcelas-5{
+	background-color: var(--color0);
+	width: 24vw;
+	height: 2vw;
+	display: flex;
+	align-items: center;
+	font-size: 1.25vw;
+}
+
+.frete-4{
+	background-color: var(--color0);
 	width: 25vw;
 	height: 8vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	border-top: 0.2vw solid var(--color1);
+	border-bottom: 0.2vw solid var(--color1);
+	
 }
 
-.preco-4{
+.paragrafoFrete-5{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color0);
+	width: 24vw;
+	height: 3.5vw;
 	margin-top: 1vh;
-	background-color: #2541B2;
-	width: 24vw;
-	height: 3.5vw;
+	font-size: 1.5vw;
 }
 
-.parcelas-4{
-	background-color: #2541B2;
+.digiteCep-5{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	background-color: rgb(223, 219, 219);
 	width: 24vw;
-	height: 3.5vw;
+	height: 3vw;
+	font-size: 1.2vw;
 }
 
-.frete-3{
-	background-color: #2D9BF0;
+.digiteCep-5 p{
+	width: 2.5vw;
+	margin-right: 0.5vw;
+	color: black;
+}
+
+.digiteCep-5 label{
+	width: 15.5vw;
+	display: flex;
+	justify-content: center;
+	margin-right: 0.5vw;
+}
+
+.cep-6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cepInput-6{
+	color: var(--color5);
+	width: 12vw;
+	height: 2vw;
+	border-radius: 0.5vw;
+	border: 0.2vw solid var(--color3);
+}
+
+.cepInput-6:focus{
+	color: black;
+    outline: none;
+    border: 0.3vw solid var(--color3);
+}
+
+.OK-6{
+	cursor: pointer;
+	background-color:  var(--color1);
+	font-size: 1vw;
+	height: 2.3vw;
+	width: 2.3vw;
+	border-radius: 0.5vw;
+	border: 0.2vw solid var(--color3);
+}
+
+.OK-6:hover{
+	background-color: #9c9b9b;
+}
+
+.comprar-4{
+	background-color: var(--color0);
 	width: 25vw;
-	height: 10vw;
+	height: 11vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-.paragrafoFrete-4{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #2541B2;
-	width: 24vw;
-	height: 3.5vw;
+.alertaCompra-5{
 	margin-top: 1vh;
-}
-
-.digiteCep-4{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
-	background-color: #2541B2;
+	background-color: var(--color0);
 	width: 24vw;
-	height: 5vw;
+	height: 3vw;
 }
 
-.comprar-3{
-	background-color: #2D9BF0;
-	width: 25vw;
-	height: 11vw;
+.comprar-5{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--color0);
+	width: 24vw;
+	height: 3vw;
 }
 
-.alertaCompra-4{
-}
-
-.comprar-4{
-}
-
-.entregue-4{
+.entregue-5{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color0);
+	width: 24vw;
+	height: 3vw;
 }
 
 .acessorios-2{
@@ -195,6 +455,7 @@ main div{
 	user-select: none;
 	cursor: pointer;
 	font-weight: 900;
+	font-size: 1.3vw;
 }
 
 .acessoriosGrade-2{
@@ -420,6 +681,7 @@ main div{
 }
 
 .propaganda-1{
+	margin-top: 1vh;
 	height: 23vw;
 	width: 98vw;
 	background-color: #CEE741 ;
