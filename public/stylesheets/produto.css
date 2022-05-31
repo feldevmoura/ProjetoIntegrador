@@ -14,7 +14,7 @@
 }
 
 main{
-  	background-color: #FEF445;
+  	background-color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -28,7 +28,7 @@ main div{
 
 .produtos-1{
 	margin-top: 1vh;
-	background-color: #CEE741;
+	background-color: var(--color4);
 	width: 98vw;
 	height: 70vw;
 	display: flex;
@@ -44,6 +44,7 @@ main div{
 	flex-direction: row;
 	background-color: var(--color0);
 	height: 33vw;
+	margin-top: 0;
 }
 
 .produto-3{
@@ -58,7 +59,8 @@ main div{
 }
 
 .produto-4{
-	background-color: #2D9BF0;
+	margin-left: 0.5vw;
+	background-color: var(--color4);
 	width: 23vw;
 	height: 31vw;
 	margin-top: 1vh;
@@ -68,6 +70,7 @@ main div{
 	flex-direction: column;
 	align-items: center;
 	z-index: 6;
+	border: 0.1vw solid var(--color3)
 }
 
 .produtoImagem-5{
@@ -87,26 +90,48 @@ main div{
 	z-index: 5;
 	cursor: pointer;
 	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.produtoImagem-6:hover{
+	transform: scale(1.3);
 }
 
 .produtoFotos-5{
-	background-color: var(--color1);
+	background-color: var(--color4);
 	width: 22vw;
 	height: 6vw;
 	margin-bottom: 2vw;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.arrowLeft-6{
+	width: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s;
+}
+
+.arrowLeft-6:hover{
+	transform: scale(1.3)
+}
+
+.arrowLeft-6 img{
+	cursor: pointer;
+	width: 1.8vw;
 }
 
 .phonesGrid-6{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 20vw;
+	width: 16vw;
 	height: 5.5vw;
-	background-color: var(--color0);
+	background-color: var(--color4);
 }
 
 .imagem1-7{
@@ -123,6 +148,7 @@ main div{
 
 .imagem1-7 img{
 	height: 5vw;
+	border: 0;
 }
 
 .imagem2-7{
@@ -139,6 +165,7 @@ main div{
 
 .imagem2-7 img{
 	height: 5vw;
+	border: 0;
 }
 
 .imagem3-7{
@@ -155,6 +182,7 @@ main div{
 
 .imagem3-7 img{
 	height: 5vw;
+	border: 0;
 }
 
 .imagem4-7{
@@ -169,11 +197,29 @@ main div{
 }
 
 .imagem4-7 img{
+	border: 0;
 	height: 5vw;
 }
 
+.arrowRight-6{
+	width: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s;
+}
+
+.arrowRight-6:hover{
+	transform: scale(1.3)
+}
+
+.arrowRight-6 img{
+	cursor: pointer;
+	width: 1.8vw;
+}
+
 .produtoApresentacao-4{
-	background-color: #2D9BF0;
+	background-color: var(--color0);
 	width: 45vw;
 	height: 31vw;
 	margin-top: 1vh;
@@ -184,7 +230,7 @@ main div{
 
 .descricaoProduto-5{
 	margin-top: 2vw;
-	background-color: #2541B2;
+	background-color: var(--color0);
 	width: 44vw;
 	height: 8vw;
 	font-size: 2vw;
@@ -192,9 +238,16 @@ main div{
 	color: var(--color5);
 }
 
+.linha-5{
+	background-color: var(--color1);
+	width: 42vw;
+	height: 0.1vw;
+	margin-top: 4vw;
+}
+
 .corProduto-5{
 	margin-top: 6vw;
-	background-color: var(--color4);
+	background-color: var(--color0);
 	width: 23vw;
 	height: 6vw;
 	display: flex;
@@ -204,9 +257,9 @@ main div{
 }
 
 .corParagrafo-6{
-	background-color:  var(--color4);
-	width: 5vw;
-	height: 5vw;
+	background-color:  var(--color0);
+	width: 4.3vw;
+	height: 2vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,7 +269,7 @@ main div{
 }
 
 .coresProduto-6{
-	background-color: var(--color1);
+	background-color: var(--color0);
 	width: 13vw;
 	height: 4vw;
 	display: flex;
@@ -237,6 +290,11 @@ main div{
 	margin-right: 1vw;
 	border-radius: 100%;
 	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.preto-7:hover{
+	transform: scale(1.3);
 }
 
 .branco-7{
@@ -246,6 +304,11 @@ main div{
 	margin-right: 1vw;
 	border-radius: 100%;
 	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.branco-7:hover{
+	transform: scale(1.3);
 }
 
 .vinho-7{
@@ -255,6 +318,11 @@ main div{
 	margin-right: 1vw;
 	border-radius: 100%;
 	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.vinho-7:hover{
+	transform: scale(1.3);
 }
 
 .verde-7{
@@ -263,6 +331,11 @@ main div{
 	height: 2vw;
 	border-radius: 100%;
 	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.verde-7:hover{
+	transform: scale(1.3);
 }
 
 .linha-3{
@@ -381,6 +454,7 @@ main div{
 	height: 2vw;
 	border-radius: 0.5vw;
 	border: 0.2vw solid var(--color3);
+	font-size: 1.4vw;
 }
 
 .cepInput-6:focus{
@@ -416,11 +490,13 @@ main div{
 .alertaCompra-5{
 	margin-top: 1vh;
 	display: flex;
-	align-items: center;
+	align-items: row;
 	justify-content: center;
+	flex-direction: column;
 	background-color: var(--color0);
 	width: 24vw;
 	height: 3vw;
+	font-size: 1.4vw;
 }
 
 .comprar-5{
@@ -432,13 +508,31 @@ main div{
 	height: 3vw;
 }
 
+.comprarBtn-6{
+	background-color: var(--color3);
+	border: none;
+	width: 10vw;
+	height: 2.5vw;
+	color: var(--color4);
+	font-size: 1.5vw;
+	cursor: pointer;
+	border-radius: 0.3vw;
+	transition: all 0.4s;
+}
+
+.comprarBtn-6:hover{
+	background-color: #376063;
+	transform: scale(1.1);
+}
+
 .entregue-5{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: row;
 	background-color: var(--color0);
 	width: 24vw;
 	height: 3vw;
+	font-size: 1.3vw;
 }
 
 .acessorios-2{
