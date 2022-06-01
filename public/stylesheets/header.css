@@ -42,16 +42,17 @@ h1{
 .pesquisa{
     width: 95%;
     height: 1.5vw;
-    border: 1.5px solid var(--color2);
+    border: 0.2vw solid var(--color1);
     border-radius: 1vw;
     position: relative;
     font-size: 1vw;
+    transition: all 0.4s;
 }
 
 .pesquisa:focus{
     color: black;
     outline: none;
-    border: 2px solid var(--color2);
+    border: 0.2vw solid var(--color0);
 }
 
 .lupa{

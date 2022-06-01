@@ -19,7 +19,7 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 135vw;
+	height: auto;
 }
 
 main div{
@@ -27,10 +27,10 @@ main div{
 }
 
 .produtos-1{
-	margin-top: 1vh;
+	margin-top: 0;
 	background-color: var(--color4);
 	width: 98vw;
-	height: 70vw;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -43,7 +43,7 @@ main div{
 	justify-self: center;
 	flex-direction: row;
 	background-color: var(--color0);
-	height: 33vw;
+	height: auto;
 	margin-top: 0;
 }
 
@@ -52,7 +52,7 @@ main div{
 	background-color: var(--color0);
 	width: 69vw;
 	margin-top: 0;
-	height: 32vw;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,7 +81,6 @@ main div{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 4;
 }
 
 .produtoImagem-6{
@@ -221,7 +220,7 @@ main div{
 .produtoApresentacao-4{
 	background-color: var(--color0);
 	width: 45vw;
-	height: 31vw;
+	height: auto;
 	margin-top: 1vh;
 	display: flex;
 	align-items: center;
@@ -341,7 +340,7 @@ main div{
 .linha-3{
 	margin-right: 0.3vw;
 	margin-top: 0;
-	width: 0.2vw;
+	width: 0.1vw;
 	height: 30vw;
 	background-color: var(--color1);
 }
@@ -401,8 +400,8 @@ main div{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	border-top: 0.2vw solid var(--color1);
-	border-bottom: 0.2vw solid var(--color1);
+	border-top: 0.1vw solid var(--color1);
+	border-bottom: 0.1vw solid var(--color1);
 	
 }
 
@@ -536,7 +535,7 @@ main div{
 }
 
 .acessorios-2{
-	background-color: #12CDD4;
+	background-color: var(--color3);
 	width: 10vw;
 	height: 3vw;
 	margin-top: 0;
@@ -550,11 +549,24 @@ main div{
 	cursor: pointer;
 	font-weight: 900;
 	font-size: 1.3vw;
+	border: none;
+	color: var(--color4);
+	font-weight: 600;
+	transition: all 0.4s;
+}
+
+.acessorios-2:hover{
+	background-color: #376063;
+	font-size: 1.4vw;
+}
+
+.acessorios-2:hover{
+	
 }
 
 .acessoriosGrade-2{
 	margin-left: 1.3vh ;
-	background-color: #12CDD4;
+	background-color: var(--color0);
 	width: 90vw;
 	height: 30vw;
 	display: flex;
@@ -564,7 +576,7 @@ main div{
 }
 
 .acessorio1-3{
-	background-color: #2D9BF0;
+	background-color: var(--color4);
 	width: 17vw;
 	height: 25vw;
 	display: flex;
@@ -572,6 +584,7 @@ main div{
 	align-items: center;
 	justify-content: center;
 	margin-right: 4vw;
+	border: 0.1vw solid var(--color3);
 }
 
 .acessorio1Foto-4{
@@ -584,26 +597,35 @@ main div{
 	justify-content: center;
 }
 
-.acessorio1Foto-4 img {
+
+
+.acessorio1Foto-4 img{
 	width: 10vw;
 	margin-bottom: 2vh;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.acessorio1Foto-4 img:hover{
+	transform: scale(1.3)
 }
 
 .acessorio1Descricao-5{
 	margin-top: 1vh;
-	background-color: #03256C;
+	background-color: var(--color4);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 15vw;
-	height: 5vw;
+	width: 100%;
+	height: 6vw;
 	user-select: none;
-	cursor: pointer;
+	font-size: 1.2vw;
+
 }
 
 .acessorio1Carrinho-4{
-	background-color: #2541B2;
+	background-color: none;
 	margin-top: 1vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
@@ -612,17 +634,29 @@ main div{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 12vw;
-	user-select: none;
-	cursor: pointer;
+	color: var(--color4);
 }
 
-.acessorio1BtnAdicionar-5{
-	
+.acessorio1ParagrafoAdicionar-5{
+	font-size: 1.16vw;
+	background-color: var(--color3);
+	color: var(--color4);
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	border-radius: 12vw;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.acessorio1ParagrafoAdicionar-5:hover{
+	transform: scale(1.1);
+    background-color: #376063;
 }
 
 .acessorio2-3{
-	background-color: #2D9BF0;
+	background-color: var(--color4);
 	width: 17vw;
 	height: 25vw;
 	display: flex;
@@ -630,6 +664,7 @@ main div{
 	align-items: center;
 	justify-content: center;
 	margin-right: 4vw;
+	border: 0.1vw solid var(--color3);
 }
 
 .acessorio2Foto-4{
@@ -642,24 +677,30 @@ main div{
 	justify-content: center;
 }
 
-.acessorio2Foto-4 img {
+.acessorio2Foto-4 img{
 	width: 7vw;
-	margin-bottom: 1vh;
+	margin-bottom: 2vh;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.acessorio2Foto-4 img:hover{
+	transform: scale(1.3)
 }
 
 .acessorio2Descricao-5{
 	margin-top: 1vh;
-	background-color: #03256C;
+	background-color: var(--color4);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	width: 15vw;
 	height: 5vw;
+	font-size: 1.2vw;
 }
 
 .acessorio2Carrinho-4{
-	background-color: #2541B2;
 	margin-top: 1vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
@@ -671,10 +712,29 @@ main div{
 	border-radius: 12vw;
 	user-select: none;
 	cursor: pointer;
+	color: var(--color4);
+}
+
+.acessorio2ParagrafoAdicionar-5{
+	font-size: 1.16vw;
+	background-color: var(--color3);
+	color: var(--color4);
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	border-radius: 12vw;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.acessorio2ParagrafoAdicionar-5:hover{
+	transform: scale(1.1);
+    background-color: #376063;
 }
 
 .acessorio3-3{
-	background-color: #2D9BF0;
+	background-color: var(--color4);
 	width: 17vw;
 	height: 25vw;
 	display: flex;
@@ -682,6 +742,7 @@ main div{
 	align-items: center;
 	justify-content: center;
 	margin-right: 4vw;
+	border: 0.1vw solid var(--color3);
 }
 
 .acessorio3Foto-4{
@@ -696,21 +757,27 @@ main div{
 
 .acessorio3Foto-4 img{
 	width: 13.5vw;
-	margin-bottom: 1vh;
+	margin-bottom: 2vh;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.acessorio3Foto-4 img:hover{
+	transform: scale(1.3)
 }
 
 .acessorio3Descricao-5{
 	margin-top: 1vh;
-	background-color: #03256C;
+	background-color: var(--color4);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 15vw;
 	height: 5vw;
+	font-size: 1.2vw;
 }
 
 .acessorio3Carrinho-4{
-	background-color: #2541B2;
 	margin-top: 1vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
@@ -722,16 +789,37 @@ main div{
 	border-radius: 12vw;
 	user-select: none;
 	cursor: pointer;
+	color: var(--color4);
+	
+}
+
+.acessorio3ParagrafoAdicionar-5{
+	font-size: 1.16vw;
+	background-color: var(--color3);
+	color: var(--color4);
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	border-radius: 12vw;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.acessorio3ParagrafoAdicionar-5:hover{
+	transform: scale(1.1);
+    background-color: #376063;
 }
 
 .acessorio4-3{
-	background-color: #2D9BF0;
+	background-color: var(--color4);
 	width: 17vw;
 	height: 25vw;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	border: 0.1vw solid var(--color3);
 }
 
 .acessorio4Foto-4{
@@ -747,20 +835,25 @@ main div{
 .acessorio4Foto-4 img{
 	width: 12vw;
 	margin-bottom: 1vh;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.acessorio4Foto-4 img:hover{
+	transform: scale(1.3)
 }
 
 .acessorio4Descricao-5{
-	margin-top: 1vh;
-	background-color: #03256C;
+	background-color: var(--color4);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 15vw;
 	height: 5vw;
+	font-size: 1.2vw;
 }
 
 .acessorio4Carrinho-4{
-	background-color: #2541B2;
 	margin-top: 1vh;
 	margin-left: 1vh;
 	margin-right: 1vh;
@@ -772,17 +865,38 @@ main div{
 	border-radius: 12vw;
 	user-select: none;
 	cursor: pointer;
+	color: var(--color4);
+	
+}
+
+.acessorio4ParagrafoAdicionar-5{
+	font-size: 1.16vw;
+	background-color: var(--color3);
+	color: var(--color4);
+	font-weight: 600;
+	width: 100%;
+	height: 100%;
+	border-radius: 12vw;
+	border: none;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+.acessorio4ParagrafoAdicionar-5:hover{
+	transform: scale(1.1);
+	background-color: #376063;
 }
 
 .propaganda-1{
 	margin-top: 1vh;
 	height: 23vw;
-	width: 98vw;
-	background-color: #CEE741 ;
+	width: 100%;
+	background-color: var(--color0) ;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	font-size: 1.3vw;
 }
 
 .propaganda-1 h3{
@@ -796,22 +910,40 @@ main div{
 }
 
 .comentarios-1{
-	height: 40vw;
-	width: 98vw;
-	background-color: #CEE741 ;
+	height: auto;
+	width: 100%;
+	background-color: var(--color0) ;
 	margin-bottom: 1vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .comentarios-2{
+	background-color: #12CDD4;
+	width: 15vw;
+	height: 4vw;
+	margin-left: 4vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .paragrafoComentario-3{
+
 }
 
-.notaProduto-3{
+.notaProduto-2{
+	background-color: #12CDD4;
+	width: 15vw;
+	height: 4vw;
+	margin-left: 4vw;
 }
 
 .clienteComentarios-2{
+	background-color: #12CDD4;
+	width: 100%;
+	height: 15vw;
 }
 
 .comentario1-3{
