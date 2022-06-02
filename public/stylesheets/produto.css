@@ -575,7 +575,11 @@ main div{
 	justify-content: center;
 }
 
-.acessorio1-3{
+.acessorio1-3,
+.acessorio2-3,
+.acessorio3-3,
+.acessorio4-3
+{
 	background-color: var(--color4);
 	width: 17vw;
 	height: 25vw;
@@ -588,7 +592,10 @@ main div{
 	transition: all 0.4s;
 }
 
-.acessorio1-3:hover{
+.acessorio1-3:hover,
+.acessorio2-3:hover,
+.acessorio3-3:hover,
+.acessorio4-3:hover{
 	transform: scale(1.2);
 }
 
@@ -660,16 +667,15 @@ main div{
     background-color: #376063;
 }
 
-.acessorio2-3{
+
+.acessorio1Foto-4{
 	background-color: var(--color4);
-	width: 17vw;
-	height: 25vw;
+	margin-top: 1vh;
+	width: 16vw;
+	height: 19vw;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
-	margin-right: 4vw;
-	border: 0.1vw solid var(--color3);
 }
 
 .acessorio2Foto-4{
