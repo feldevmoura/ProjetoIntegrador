@@ -14,16 +14,12 @@
 }
 
 main{
-  	background-color: white;
+  	background-color: var(--color4);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: auto;
-}
-
-main div{
-	margin-bottom: 1.5vh;
 }
 
 .produtos-1{
@@ -45,6 +41,7 @@ main div{
 	background-color: var(--color0);
 	height: auto;
 	margin-top: 0;
+	margin-bottom: 0.5vw;
 }
 
 .produto-3{
@@ -64,6 +61,7 @@ main div{
 	width: 23vw;
 	height: 31vw;
 	margin-top: 1vh;
+	margin-bottom: 0.5vw;
 	margin-right: 1vh;
 	display: flex;
 	justify-content: center;
@@ -823,14 +821,7 @@ main div{
 }
 
 .acessorio4-3{
-	background-color: var(--color4);
-	width: 17vw;
-	height: 25vw;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-	border: 0.1vw solid var(--color3);
+	margin-right: 0;
 }
 
 .acessorio4Foto-4{
@@ -900,6 +891,7 @@ main div{
 
 .propaganda-1{
 	margin-top: 1vh;
+	margin-bottom: 1vw;
 	height: 23vw;
 	width: 100%;
 	background-color: var(--color0) ;
@@ -1002,11 +994,12 @@ main div{
 .comentario3-3
 {
 	display: flex;
-	justify-content: start;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: column;
 	background-color: var(--color4);
 	width: auto;
 	font-size: 1.3vw;
+	margin-bottom: 0.5vw;
 }
 
 .comentario1AvaliacaoGrade-4,
@@ -1015,7 +1008,8 @@ main div{
 {
 	display: flex;
 	align-items: center;
-	width: 89.5vw;
+	justify-content: space-between;
+	width: auto;
 }
 
 
@@ -1027,18 +1021,19 @@ main div{
 	width: auto;
 }
 
-.comentario1AvaliacaoData-5,
+/* .comentario1AvaliacaoData-5,
 .comentario2AvaliacaoData-5,
 .comentario3AvaliacaoData-5 
 {
 	margin-left: 3vw ;
-}
+} */
 
 .comentario1AvaliacaoEstrela-5 img,
 .comentario2AvaliacaoEstrela-5 img, 
 .comentario3AvaliacaoEstrela-5 img
 {
 	width: 1.5vw;
+	margin-right: 0;
 }
 
 .comentario1ComentarioAqui-4,
