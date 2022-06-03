@@ -44,7 +44,7 @@
     color: var(--color4);
     border: 1px solid var(--color2);
     width: 20vw;
-    height: 9vh;
+    height: 4.5vw;
     font-size: 5vh;
     border-radius: 2vh;
     display: flex;
@@ -63,7 +63,7 @@
     color: var(--color4);
     border: 1.5px solid var(--color2);
     width: 6vw ;
-    height: 7vh;
+    height: 3.5vw;
     font-size: 3.5vh;
     border-radius: 2vh;
     display: flex;
