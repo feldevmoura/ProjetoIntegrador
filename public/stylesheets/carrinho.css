@@ -1,0 +1,22 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+:root {
+    --color0: rgb(223, 219, 219);
+    --color1: #919090;
+    --color2: #253031;
+    --color3: #315659;
+    --color4: #FFFFFF;
+    --color5: #000000;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--color1);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-self: center;
+}
