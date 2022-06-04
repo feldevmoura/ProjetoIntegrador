@@ -25,7 +25,7 @@
     cursor: pointer;
 }
 
-h1{
+.nomeMarca{
     color: aliceblue;
     display: flex;
     align-items: center;
@@ -87,9 +87,3 @@ h1{
     cursor: pointer;
 }
 
-main {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    justify-self: center;
-}
