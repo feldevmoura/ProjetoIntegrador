@@ -4,7 +4,7 @@ const router = express.Router();
 const homeController = require('../controllers/homeController');
 const produtoController = require('../controllers/produtoController');
 const categoriasController = require('../controllers/categoriasController');
-const cadastroController = require('../controllers/cadastroController');
+const entrarController = require('../controllers/entrarController');
 const loginController = require('../controllers/loginController')
 
 
@@ -22,6 +22,6 @@ router.get('/produto', produtoController.produto);
 
 router.get('/categorias', categoriasController.categorias);
 
-router.get('/cadastro', cadastroController.cadastro);
+router.get('/entrar', entrarController.entrar);
 
 module.exports = router;
