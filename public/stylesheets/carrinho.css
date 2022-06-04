@@ -14,9 +14,9 @@
 
 main {
     height: 100vh;
-    background-color: var(--color1);
+    background-color: var(--color4);
     display: flex;
-    justify-content:center;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+    flex-direction: column;
 }
