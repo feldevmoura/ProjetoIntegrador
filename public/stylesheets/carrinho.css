@@ -24,7 +24,7 @@ main {
 .caixa-1{
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
-	background-color: #CEE741;
+	background-color: var(--color4);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,14 +38,19 @@ main {
   margin-bottom: 4vw;
 	width: auto;
 	height: auto;
-	background-color: #12CDD4;
+	background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2vw;
+  border-radius: 1vw;
+  user-select: none;
 }
 
 .produtos-2{
-	background-color: #12CDD4;
+  border-top: 0.1vw solid var(--color3);
+  border-bottom: 0.1vw solid var(--color3);
+	background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -58,7 +63,7 @@ main {
 .produtoInfo-3{
 	width: auto;
 	height: 78vh;
-	background-color: #2D9BF0;
+	background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -85,11 +90,12 @@ main {
 .produto1-4,
 .produto2-4
 {
+  border: 0.1vw solid var(--color3);
   margin: 0.5vw;
   margin-right: 1.3vw;
 	width: auto;
 	height: auto;
-	background-color: #2541B2;
+	background-color: var(--color4);
   display: flex;
   align-items: end;
   justify-content: center;
@@ -99,24 +105,23 @@ main {
 .produto1Info-5,
 .produto2Info-5
 {
-  margin: 0.5vw;
+  margin: 0;
   font-size: 1.2vw;
 	width: 50vw;
 	height: 2vw;
-	background-color: #03256C;
+	background-color: var(--color4);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
-	margin-bottom: 0.5vw;
 }
 
 .produto1PrecoTxt-6,
 .produto2PrecoTxt-6
 {
   margin-right: 2vw;
-  color: var(--color4);
-  background-color: #1A1A1A;
+  color: var(--color5);
+  background-color: var(--color4);
   width: 7vw;
   height: 1.5vw;
   display: flex;
@@ -128,8 +133,8 @@ main {
 .produto2QuantidadeTxt-6
 {
   margin-right: 2vw;
-  color: var(--color4);
-  background-color: #1A1A1A;
+  color: var(--color5);
+  background-color: var(--color4) ;
   width: 7vw;
   height: 1.5vw;
   display: flex;
@@ -140,8 +145,8 @@ main {
 .produto1SubtotalTxt-6,
 .produto2SubtotalTxt-6
 {
-  color: var(--color4);
-  background-color: #1A1A1A;
+  color: var(--color5);
+  background-color: var(--color4);
   width: 7vw;
   height: 1.5vw;
   display: flex;
@@ -154,18 +159,19 @@ main {
 {
 	width: 50vw;
 	height: auto;
-	background-color: var(--color0);
+	background-color: var(--color4);
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
   flex-direction: row;
-  margin-bottom: 0.5vw;
-  margin-right: 0.5vw;
+  margin-bottom: 0vw;
+  margin-right: 0;
 }
 
 .produto1Image-6,
 .produto2Image-6
 {
+  border: 0.1vw solid var(--color3);
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   background-color: var(--color4);
@@ -173,12 +179,15 @@ main {
   height: 8vw;
   margin-right: 0.25vw;
   margin-left: 0.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .produto1Image-6 img,
 .produto2Image-6 img
 {
-  width: 1.3vw;
+  width: 7.8vw;
 }
 
 .produto1Description-6,
@@ -206,15 +215,15 @@ main {
   height: 8vw;
   margin-right: 2vw;
   font-size: 1vw;
+  font-weight: 600;
 }
 
 .produto1QuantidadeChange-6,
 .produto2QuantidadeChange-6
 {
-  border: 1px solid red;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
-  background-color: var(--color0);
+  background-color: var(--color4);
   width: 7vw;
   height: 8vw;
   margin-right: 1.5vw;
@@ -226,34 +235,43 @@ main {
 .produto1QuantidadeChange-6 input,
 .produto2QuantidadeChange-6 input
 {
-  border: 0.2vw solid var(--color1);
+  outline: none;
+  border: 0.1vw solid var(--color3);
   background-color: var(--color0);
   width: 5vw ;
   height: 2vw;
   border-radius: 0.3vw;
   display: flex;
+  transition: all 0.4s;
+}
 
-
+.produto1QuantidadeChange-6 input::after,
+.produto2QuantidadeChange-6 input::after{
+  background-color: black;
 }
 
 .produto1Subtotal-6,
 .produto2Subtotal-6
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   background-color: var(--color4);
   width: 7vw;
   height: 8vw;
+  background-color: var(--color4);
+  color: var(--color5);
 }
 
 .produto1Delete-5,
 .produto2Delete-5
 {
-  background-color: #03256C;
+  background-color: none;
   width: 6vw;
-  height: 2vw;
-  margin: 0.5vw;
-  font-size: 1.2vw;
+  height: auto;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,34 +280,66 @@ main {
 .produto1Delete-6,
 .produto2Delete-6
 {
-  background-color: var(--color3);
-  border: none;
-  color: var(--color4);
+  background-color: var(--color4);
+  border: 0.1vw solid var(--color3);
+  color: var(--color5);
   width: 4.5vw;
   height: 2.5vw;
+  font-size: 1vw;
   font-weight: 600;
   border-radius: 0.5vw ;
   cursor: pointer;
   transition: all 0.4s;
+  margin-bottom: 0.5vw;
 }
 
 .produto1Delete-6:hover,
 .produto2Delete-6:hover{
-  background-color: #376063;
+  background-color: var(--color0);
 }
 
 .finalizar-3{
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
-	width: 28vw ; 
-	height: 78vh;
+	width: auto ; 
+	height: auto;
 	background-color: #2D9BF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.calculeFrete-4{
+  background-color: #2541B2;
+  margin: 0.5vw;
+  width: 28vw;
+  height: 8vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.adicionarCupom-4{
+  background-color: #2541B2;
+  margin: 0.5vw;
+  margin-top: 0;
+  width: 28vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.infosAndConcluir-4{
+  background-color: #2541B2;
+  margin: 0.5vw;
+  margin-top: 0;
+  width: 28vw;
+  height: 15.2vw;
+  display: flex;
+  align-items: center;
+}
 
 
 
