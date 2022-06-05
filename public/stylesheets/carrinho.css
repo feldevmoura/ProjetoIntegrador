@@ -263,6 +263,7 @@ main {
   height: 8vw;
   background-color: var(--color4);
   color: var(--color5);
+  font-size: 1.3vw;
 }
 
 .produto1Delete-5,
