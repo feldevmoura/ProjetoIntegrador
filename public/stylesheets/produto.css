@@ -415,15 +415,20 @@ main{
 }
 
 .digiteCep-5{
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
 	background-color: rgb(223, 219, 219);
 	width: 24vw;
-	height: 3vw;
+	height: 4vw;
 	font-size: 1.2vw;
+}
+
+.form-6{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .digiteCep-5 p{
@@ -439,13 +444,13 @@ main{
 	margin-right: 0.5vw;
 }
 
-.cep-6{
+.cep-7{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.cepInput-6{
+.cepInput-7{
 	color: var(--color5);
 	width: 12vw;
 	height: 2vw;
@@ -454,13 +459,13 @@ main{
 	font-size: 1.4vw;
 }
 
-.cepInput-6:focus{
+.cepInput-7:focus{
 	color: black;
     outline: none;
     border: 0.3vw solid var(--color3);
 }
 
-.OK-6{
+.OK-7{
 	cursor: pointer;
 	background-color:  var(--color1);
 	font-size: 1vw;
@@ -470,7 +475,7 @@ main{
 	border: 0.2vw solid var(--color3);
 }
 
-.OK-6:hover{
+.OK-7:hover{
 	background-color: #9c9b9b;
 }
 
