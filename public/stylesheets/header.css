@@ -74,11 +74,12 @@
     height: 9vh;
     border: 0px solid var(--color2);
     border-radius: 10px;
-    font-size: 1vw;
+    font-size: 1.3vw;
+    color: var(--color4);
 }
 
 .loginEntrar{
-    color: black;
+    color: var(--color4);
     text-decoration: none;
 }
 
