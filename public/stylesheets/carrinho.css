@@ -13,7 +13,7 @@
 }
 
 main {
-    height: 100vh;
+    height: auto;
     background-color: #FEF445;
     display: flex;
     align-items: center;
@@ -22,16 +22,20 @@ main {
 }
 
 .caixa-1{
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 	background-color: #CEE741;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 	width: 98vw;
-	height: 98vh;
+	height: auto;
 }
 
 .h1-2{
+  margin-top: 1vw;
+  margin-bottom: 4vw;
 	width: auto;
 	height: auto;
 	background-color: #12CDD4;
@@ -45,30 +49,49 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-direction: row;
+  flex-wrap: wrap;
 	width: 90vw;
-	height: 80vh;
+	height: auto;
+  margin-bottom: 2vw;
 }
 
 .produtoInfo-3{
-	width: 60.5vw;
+	width: auto;
 	height: 78vh;
 	background-color: #2D9BF0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   flex-direction: column;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  overflow-y: scroll;
+
 }
+
+.produtoInfo-3::-webkit-scrollbar{
+  width: 1vw;
+  border: none;
+}
+
+.produtoInfo-3::-webkit-scrollbar-thumb{
+  background-color: var(--color3);
+  border-bottom: 0.3vw solid var(--color4);
+  border-top: 0.3vw solid var(--color4);
+  border-radius: 1vw;
+}
+
 
 .produto1-4,
 .produto2-4
 {
-	margin-bottom: 0.5vw;
-	width: 48vw;
+  margin: 0.5vw;
+  margin-right: 1.3vw;
+	width: auto;
 	height: auto;
 	background-color: #2541B2;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   flex-direction: column;
 }
@@ -76,9 +99,9 @@ main {
 .produto1Info-5,
 .produto2Info-5
 {
-  margin-top: 0.5vw;
+  margin: 0.5vw;
   font-size: 1.2vw;
-	width: 47vw;
+	width: 50vw;
 	height: 2vw;
 	background-color: #03256C;
   display: flex;
@@ -94,7 +117,7 @@ main {
   margin-right: 2vw;
   color: var(--color4);
   background-color: #1A1A1A;
-  width: 6vw;
+  width: 7vw;
   height: 1.5vw;
   display: flex;
   justify-content: center;
@@ -107,7 +130,7 @@ main {
   margin-right: 2vw;
   color: var(--color4);
   background-color: #1A1A1A;
-  width: 6vw;
+  width: 7vw;
   height: 1.5vw;
   display: flex;
   justify-content: center;
@@ -119,7 +142,7 @@ main {
 {
   color: var(--color4);
   background-color: #1A1A1A;
-  width: 6vw;
+  width: 7vw;
   height: 1.5vw;
   display: flex;
   justify-content: center;
@@ -129,14 +152,15 @@ main {
 .produto1InfoAndConfig-5,
 .produto2InfoAndConfig-5
 {
-	width: 47vw;
+	width: 50vw;
 	height: auto;
-	background-color: #03256C;
+	background-color: var(--color0);
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: flex-start;
   flex-direction: row;
   margin-bottom: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .produto1Image-6,
@@ -145,41 +169,118 @@ main {
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   background-color: var(--color4);
-  width: 10vw;
+  width: 7vw;
   height: 8vw;
+  margin-right: 0.25vw;
+  margin-left: 0.25vw;
+}
+
+.produto1Image-6 img,
+.produto2Image-6 img
+{
+  width: 1.3vw;
 }
 
 .produto1Description-6,
 .produto2Description-6
 {
-
+  font-size: 1.1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  background-color: var(--color4);
+  width: 17vw;
+  height: 8vw;
+  margin-right: 0.6vw;
 }
 
 .produto1Preco-6,
 .produto2Preco-6
 {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  background-color: var(--color4);
+  width: 7vw;
+  height: 8vw;
+  margin-right: 2vw;
+  font-size: 1vw;
 }
 
 .produto1QuantidadeChange-6,
 .produto2QuantidadeChange-6
 {
+  border: 1px solid red;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  background-color: var(--color0);
+  width: 7vw;
+  height: 8vw;
+  margin-right: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produto1QuantidadeChange-6 input,
+.produto2QuantidadeChange-6 input
+{
+  border: 0.2vw solid var(--color1);
+  background-color: var(--color0);
+  width: 5vw ;
+  height: 2vw;
+  border-radius: 0.3vw;
+  display: flex;
+
 
 }
 
 .produto1Subtotal-6,
 .produto2Subtotal-6
 {
-
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  background-color: var(--color4);
+  width: 7vw;
+  height: 8vw;
 }
 
 .produto1Delete-5,
 .produto2Delete-5
 {
+  background-color: #03256C;
+  width: 6vw;
+  height: 2vw;
+  margin: 0.5vw;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.produto1Delete-6,
+.produto2Delete-6
+{
+  background-color: var(--color3);
+  border: none;
+  color: var(--color4);
+  width: 4.5vw;
+  height: 2.5vw;
+  font-weight: 600;
+  border-radius: 0.5vw ;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.produto1Delete-6:hover,
+.produto2Delete-6:hover{
+  background-color: #376063;
 }
 
 .finalizar-3{
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
 	width: 28vw ; 
 	height: 78vh;
 	background-color: #2D9BF0;
