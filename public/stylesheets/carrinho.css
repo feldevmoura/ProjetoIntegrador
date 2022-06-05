@@ -14,9 +14,161 @@
 
 main {
     height: 100vh;
-    background-color: var(--color4);
+    background-color: #FEF445;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+.caixa-1{
+	background-color: #CEE741;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+	width: 98vw;
+	height: 98vh;
+}
+
+.h1-2{
+	width: auto;
+	height: auto;
+	background-color: #12CDD4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produtos-2{
+	background-color: #12CDD4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+	width: 90vw;
+	height: 80vh;
+}
+
+.produtoInfo-3{
+	width: 50vw;
+	height: 78vh;
+	background-color: #2D9BF0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.produto1-4,
+.produto2-4
+{
+	margin-bottom: 0.5vw;
+	width: 45vw;
+	height: 25vh;
+	background-color: #2541B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.produto1Info-5,
+.produto2Info-5
+{
+	width: 44vw;
+	height: 2vw;
+	background-color: #03256C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+	margin-bottom: 0.5vw;
+}
+
+.produto1Preco-6,
+.produto12Preco-6
+{
+
+}
+
+.produto1Quantidade-6,
+.produto2Quantidade-6
+{
+
+}
+
+.produto1Subtotal-6,
+.produto2Subtotal-6
+{
+
+}
+
+.produto1InfoAndConfig-5,
+.produto2InfoAndConfig-5
+{
+	width: 44vw;
+	height: 8vw;
+	background-color: #03256C;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: row;
+}
+
+.produto1Image-6,
+.produto2Image-6
+{
+
+}
+
+.produto1Description-6,
+.produto2Description-6
+{
+
+}
+
+.produto1Preco-6,
+.produto2Preco-6
+{
+
+}
+
+.produto1QuantidadeChange-6,
+.produto2QuantidadeChange-6
+{
+
+}
+
+.produto1Subtotal-6,
+.produto2Subtotal-6
+{
+
+}
+
+.produto1Delete-5,
+.produto2Delete-5
+{
+
+}
+
+.finalizar-3{
+	width: 38vw ; 
+	height: 78vh;
+	background-color: #2D9BF0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
