@@ -51,7 +51,7 @@ main {
 }
 
 .produtoInfo-3{
-	width: 50vw;
+	width: 60.5vw;
 	height: 78vh;
 	background-color: #2D9BF0;
   display: flex;
@@ -64,8 +64,8 @@ main {
 .produto2-4
 {
 	margin-bottom: 0.5vw;
-	width: 45vw;
-	height: 25vh;
+	width: 48vw;
+	height: auto;
 	background-color: #2541B2;
   display: flex;
   align-items: center;
@@ -76,50 +76,77 @@ main {
 .produto1Info-5,
 .produto2Info-5
 {
-	width: 44vw;
+  margin-top: 0.5vw;
+  font-size: 1.2vw;
+	width: 47vw;
 	height: 2vw;
 	background-color: #03256C;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
 	margin-bottom: 0.5vw;
 }
 
-.produto1Preco-6,
-.produto12Preco-6
+.produto1PrecoTxt-6,
+.produto2PrecoTxt-6
 {
-
+  margin-right: 2vw;
+  color: var(--color4);
+  background-color: #1A1A1A;
+  width: 6vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.produto1Quantidade-6,
-.produto2Quantidade-6
+.produto1QuantidadeTxt-6,
+.produto2QuantidadeTxt-6
 {
-
+  margin-right: 2vw;
+  color: var(--color4);
+  background-color: #1A1A1A;
+  width: 6vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.produto1Subtotal-6,
-.produto2Subtotal-6
+.produto1SubtotalTxt-6,
+.produto2SubtotalTxt-6
 {
-
+  color: var(--color4);
+  background-color: #1A1A1A;
+  width: 6vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .produto1InfoAndConfig-5,
 .produto2InfoAndConfig-5
 {
-	width: 44vw;
-	height: 8vw;
+	width: 47vw;
+	height: auto;
 	background-color: #03256C;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
   flex-direction: row;
+  margin-bottom: 0.5vw;
 }
 
 .produto1Image-6,
 .produto2Image-6
 {
-
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  background-color: var(--color4);
+  width: 10vw;
+  height: 8vw;
 }
 
 .produto1Description-6,
@@ -153,7 +180,7 @@ main {
 }
 
 .finalizar-3{
-	width: 38vw ; 
+	width: 28vw ; 
 	height: 78vh;
 	background-color: #2D9BF0;
   display: flex;
