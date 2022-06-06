@@ -499,7 +499,7 @@ main {
   border-radius: 1vw;
   user-select: none;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 1.1s;
 }
 
 .comprar-5:hover{
