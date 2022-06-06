@@ -1,22 +1,48 @@
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 :root {
-    --color0: rgb(223, 219, 219);
-    --color1: #919090;
-    --color2: #253031;
-    --color3: #315659;
-    --color4: #FFFFFF;
-    --color5: #000000;
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #253031;
+  --color3: #315659;
+  --color4: #FFFFFF;
+  --color5: #000000;
 }
 
 main{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color5);
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FEF445;
 }
+
+.registro-1{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  height: 250vh;
+  background-color: #CEE741;
+  width: 85vw;
+}
+
+.caixa1Registro-2,
+.caixa2Registro-2
+{
+  margin: 0.5vw;
+  background-color: #12CDD4;
+  width: 84vw;
+  height: 120vh;
+}
+
+.caixa2Registro-2{
+  margin-top: 0;
+}
+
