@@ -28,7 +28,7 @@ main{
   flex-direction: column;
   margin-top: 4vw;
   margin-bottom: 4vw;
-  height: 250vh;
+  height: auto;
   background-color: #CEE741;
   width: 85vw;
 }
@@ -39,7 +39,7 @@ main{
   margin: 0.5vw;
   background-color: #12CDD4;
   width: 84vw;
-  height: 120vh;
+  height: 85vh;
 }
 
 .caixa2Registro-2{
