@@ -25,7 +25,7 @@ main {
     width: 55vw;
     height: 80vh;
     overflow: hidden;
-    border-radius: 4vh;
+    border-radius: 2vw;
     transition: all 0.4s;
     background-color: var(--color4) ;
 }
@@ -65,17 +65,17 @@ main {
 }
 
 .left {
-    width: 5vh;
+    width: 2.5vw;
 }
 
 .right {
-    width: 5vh;
+    width: 2.5vw;
 }
 
 .phones {
     display: flex;
     flex-direction: row;
-    margin-left: 20vh;
+    margin-left: 10vw;
 }
 
 #first {
@@ -97,10 +97,10 @@ main {
 
 .balls div {
     transition: all 0.5s;
-    border: 0.3vh solid var(--color2);
+    border: 0.15vw solid var(--color2);
     padding: 6px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 1vw;
     cursor: pointer;
     z-index: 1;
 }
