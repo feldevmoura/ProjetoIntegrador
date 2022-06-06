@@ -209,15 +209,56 @@
 					</div>
 
 					<div class="finalizar-3">
+
 						<div class="calculeFrete-4">
 							<div class="resumo-5" style="font-size: 2vw;  width: auto; background-color: white; font-weight: 600;">
 								<p>Resumo</p>
 							</div>
-							<p style="font-size: 1.4vw; width: auto; background-color: white">Calcule seu frete</p>
+							<form class="form-5" >
+
+                <label for="CEP" class="formLabel-6">Calcule seu frete</label>
+                <input class="cepInput-7" id="CEP" type="tel" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{2}" placeholder="00000-00" />
+
+            	</form>
+							<button class="calcular-5">Calcular</button>
+
 						</div>
-						<div class="adicionarCupom-4" style="flex-wrap: wrap;">						
+
+						<div class="cupomDesconto-4">
+							<form class="formCupom-5" >
+
+                <label for="Cupom" class="formCupomLabel-6">Adicione um cupom de desconto</label>
+                <input class="cepCupomInput-7" id="CEP" type="tel" name="CEP" id="Cupom" placeholder="Digite o cupom..." />
+
+            	</form>
+							<button class="adicionar-5">Adicionar</button>
+
 						</div>
-						<div class="infosAndConcluir-4"></div>
+
+						<div class="infosAndConcluir-4">
+							<div class="subtotal-5">
+								<p>Subtotal</p>
+								<b><p>R$0.000,00</p></b>
+							</div>
+
+							<div class="precoFrete-5">
+								<p>Frete</p>
+								<b><p>R$000,00</p></b>
+							</div>
+
+							<div class="total-5">
+								<p>Total</p>
+								<b><p>R$0.000,00</p></b>
+							</div>
+
+							<div class="comprar-5">
+								<b><p>Finalizar pedido</p></b>
+							</div>
+
+							<div class="voltarHome-5">
+								<a href="/"><p>Continuar comprando</p></a>
+							</div>
+						</div>
 					</div>
 
 				</div>

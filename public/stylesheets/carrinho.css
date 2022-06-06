@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -14,7 +15,7 @@
 
 main {
     height: auto;
-    background-color: #FEF445;
+    background-color: var(--color4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +23,6 @@ main {
 }
 
 .caixa-1{
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
 	background-color: var(--color4);
   display: flex;
   justify-content: space-around;
@@ -304,7 +303,7 @@ main {
   margin-bottom: 0.5vw;
 	width: auto ; 
 	height: auto;
-	background-color: #2D9BF0;
+	background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -312,34 +311,212 @@ main {
 }
 
 .calculeFrete-4{
-  background-color: #2541B2;
+  background-color: var(--color4);
   margin: 0.5vw;
-  width: 28vw;
-  height: 8vw;
+  width: 30vw;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.adicionarCupom-4{
-  background-color: #2541B2;
+.resumo-5{
   margin: 0.5vw;
-  margin-top: 0;
-  width: 28vw;
-  height: 10vw;
+  font-size: 2vw;  
+  width: auto; 
+  background-color: var(--color4); 
+  font-weight: 600;
+}
+
+.form-5{
+  margin-bottom: 2vw;
+  width: 22vw;
   display: flex;
   align-items: center;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8vw;
+}
+
+.formLabel-6{
+  margin-right: 1vw;
+  margin-bottom: 0.5vw;
+  width: 15vw;
+  font-size: 1.4vw;
+}
+
+.cepInput-7{
+  border: none;
+  font-weight: 500;
+  outline: none;
+  width: 16.5vw;
+  font-size: 1.6vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
+  background-color: var(--color0);
+}
+
+.calcular-5{
+  border-radius: 0.5vw;
+  border: none;
+  margin-top: 3.5vw;
+  margin-left: 15vw;
+  width: 6vw;
+  height: 2.5vw;
+  position: absolute;
+  font-size: 1.3vw;
+  cursor: pointer;
+  color: var(--color4);
+  background-color: var(--color3);
+  transition: all 1s;
+}
+
+.calcular-5:hover{
+  background-color: #376063;
+  color: var(--color0);
+}
+
+.cupomDesconto-4{
+  background-color: var(--color4);
+  margin: 0.5vw;
+  width: 30vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formCupom-5{
+  margin-bottom: 2vw;
+  width: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8vw;
+}
+
+.formCupomLabel-6{
+  margin-right: 1vw;
+  margin-bottom: 0.5vw;
+  width: 15vw;
+  font-size: 1.4vw;
+}
+
+.cepCupomInput-7{
+  border: none;
+  font-weight: 500;
+  outline: none;
+  width: 16.5vw;
+  font-size: 1.6vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
+  background-color: var(--color0);
+}
+
+.adicionar-5{
+  border-radius: 0.5vw;
+  border: none;
+  margin-top: 1.8vw;
+  margin-left: 15vw;
+  width: 6vw;
+  height: 2.5vw;
+  position: absolute;
+  font-size: 1.3vw;
+  cursor: pointer;
+  color: var(--color4);
+  background-color: var(--color3);
+  transition: all 1s;
+}
+
+.adicionar-5:hover{
+  background-color: #376063;
+  color: var(--color0);
 }
 
 .infosAndConcluir-4{
-  background-color: #2541B2;
+  background-color: var(--color4);
   margin: 0.5vw;
   margin-top: 0;
-  width: 28vw;
+  width: 30vw;
   height: 15.2vw;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.subtotal-5{
+  width: 24vw;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: var(--color5);
+  font-size: 1.5vw;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.precoFrete-5{
+  width: 24vw;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: var(--color5);
+  font-size: 1.5vw;
+  margin-bottom: 0.5VW;
+}
+
+.total-5{
+  width: 24vw;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: var(--color5);
+  font-size: 1.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.comprar-5{
+  padding: 0.5vw;
+  width: 24vw;
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: var(--color4);
+  font-size: 2.3vw;
+  border-radius: 1vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.comprar-5:hover{
+  background-color: #376063;
+}
+
+.voltarHome-5{
+  margin-top: 0.5vw;
+}
+
+.voltarHome-5 p{
+  color: var(--color1);
+  font-size: 1.5vw;
+}
+
+.voltarHome-5 a{
+  text-decoration: none;
 }
 
 
