@@ -39,10 +39,49 @@ main{
   margin: 0.5vw;
   background-color: #12CDD4;
   width: 84vw;
-  height: 85vh;
+  height: 43vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .caixa2Registro-2{
   margin-top: 0;
 }
 
+.h1-3{
+  margin: 0.5vw;
+  margin-bottom: 0;
+  background-color: #2D9BF0;
+  width: 83vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formCadastro-3{
+  background-color: #2D9BF0;
+  width: 83vw;
+  height: 34vw;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.email-4{
+  background-color: #2541B2;
+  width: 20vw;
+  height: 5vw;
+  margin-left: 10vw;
+}
+
+.nomeCompleto-4{
+  background-color: #2541B2;
+  width: 20vw;
+  height: 5vw;
+  margin-right: 10vw;
+}
