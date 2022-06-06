@@ -83,6 +83,11 @@
     text-decoration: none;
 }
 
+.cadastrar{
+    color: var(--color4);
+    text-decoration: none;
+}
+
 .compra img{
     width: 03vw;
     cursor: pointer;
