@@ -14,7 +14,7 @@
 
 main {
     height: 100vh;
-    background-color: var(--color1);
+    background-color: var(--color4);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -27,7 +27,8 @@ main {
     overflow: hidden;
     border-radius: 2vw;
     transition: all 0.4s;
-    background-color: var(--color4) ;
+    background-color: var(--color0);
+    border: 0.1vw solid var(--color3);
 }
 
 .slides {
