@@ -18,7 +18,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FEF445;
+  background-color: var(--color4);
 }
 
 .registro-1{
@@ -29,7 +29,7 @@ main{
   margin-top: 4vw;
   margin-bottom: 4vw;
   height: auto;
-  background-color: #CEE741;
+  background-color: var(--color3);
   width: 85vw;
 }
 
@@ -37,7 +37,7 @@ main{
 .caixa2Registro-2
 {
   margin: 0.5vw;
-  background-color: #12CDD4;
+  background-color: var(--color0);
   width: 84vw;
   height: 43vw;
   display: flex;
@@ -51,37 +51,97 @@ main{
 }
 
 .h1-3{
+  font-size: 2vw;
+  user-select: none;
   margin: 0.5vw;
   margin-bottom: 0;
-  background-color: #2D9BF0;
-  width: 83vw;
+  background-color: var(--color0);
+  width: auto;
   height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.h1-4{
+  height: auto;
 }
 
 .formCadastro-3{
-  background-color: #2D9BF0;
+  border: 1px solid red;
+  background-color: var(--color0);
   width: 83vw;
   height: 34vw;
   margin-bottom: 0.5vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+}
+.formCadastro-3 div{
+  margin-right: 10vw ;
+  margin-left: 10vw;
+  font-size: 1.3vw
+}
+
+.formCadastro-3 
+input, select{
+  outline: none;
+  width: 20vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  border: 0.2vw solid var(--color3);
 }
 
 .email-4{
-  background-color: #2541B2;
+  background-color: var(--color0);
   width: 20vw;
   height: 5vw;
-  margin-left: 10vw;
 }
 
-.nomeCompleto-4{
-  background-color: #2541B2;
+.nomeCadastro-4{
+  background-color: var(--color0);
   width: 20vw;
   height: 5vw;
-  margin-right: 10vw;
+
 }
+
+.generoCadastro-4{
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+}
+
+.cpfCadastro-4{
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+}
+
+.celularCadastro-4{
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+}
+
+.telefoneCadastro-4{
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+}
+
+.dataCadastro-4{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+}
+
+.endereco-4{
+  width: 3vw;
+}
+
+

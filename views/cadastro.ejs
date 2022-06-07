@@ -21,19 +21,63 @@
                   <h1>Dados Cadastrais</h1>
                 </div>
                 <form class="formCadastro-3">
+
                   <div class="email-4">
                     <label for="email">E-mail*</label>
                     <br>
-                    <input class="email-5" type="email" id="email" name="email">
+                    <input class="email-5" type="email" id="email" name="email" placeholder="Digite seu email aqui...">
                   </div>
-                  <div class="nomeCompleto-4">
+
+                  <div class="nomeCadastro-4">
                     <label for="name">Nome Completo*</label>
                     <br>
-                    <input class="nome-5" type="text" id="name" name="name">
+                    <input class="nome-5" type="text" id="name" name="name" placeholder="Digite seu nome completo aqui...">
                   </div>
+
+                  <div class="generoCadastro-4">
+                    <label for="genero">Gênero*</label>
+                    <br>
+                    <select class="generoSelect-5" name="genero" id="genero">
+                      <option selected disabled></option>
+                    </select>
+                  </div>
+
+                  <div class="cpfCadastro-4">
+                    <label class="cpfLabel-5" for="numeroCPF">CPF*</label>
+                    <br>
+                    <input type="number" id="numeroCPF" name="numeroCPF" required placeholder="000.000.000-00">
+                  </div>
+
+                  <div class="celularCadastro-4">
+                    <label for="numeroCel">Celular*</label>
+                    <br>
+                    <input type="number" id="numeroCel" name="numeroCel" required placeholder="(ddd) 0 0000-0000">
+                  </div>
+
+                  <div class="telefoneCadastro-4">
+                    <label for="numeroTelefone">Telefone*(Não necessário)</label>
+                    <br>
+                    <input type="number" id="numeroTelefone" name="numeroTelefone" placeholder="Digite seu telefone aqui...">
+                  </div>
+
+                  <div class="dataCadastro-4">
+                    <label for="dateCadastro">Nascimento*</label>
+                    <br>
+                    <input class="dateCadastro-5" type="date" id="dateCadastro" name="dateCadastro" required>
+                  </div>
+
                 </form>
               </div>
               <div class="caixa2Registro-2">
+
+                <div class="h1-3">
+                  <h1 class="h1-4">Endereço de entrega</h1>
+                  <img src="/images/endereco.png" alt="" class="endereco-4">
+                </div>
+
+                
+                
+                <form class="formCadastro-3"></form>
               </div>
             </div>
         </main>
