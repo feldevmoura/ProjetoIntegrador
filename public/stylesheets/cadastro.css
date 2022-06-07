@@ -35,9 +35,11 @@ main{
 }
 
 .formCadastro-2{
-  margin-top: 3vw;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
   background-color: var(--color0);
-  width: 83vw;
+  width: auto;
   height: auto;
   margin-bottom: 0.5vw;
   display: flex;
