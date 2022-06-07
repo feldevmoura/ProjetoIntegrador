@@ -81,11 +81,21 @@
 .login1Entrar{
     color: var(--color4);
     text-decoration: none;
+    transition: all 0.4s;
+}
+
+.login1Entrar:hover{
+    text-decoration: underline;
 }
 
 .cadastrar{
     color: var(--color4);
     text-decoration: none;
+    transition: all 0.4s;
+}
+
+.cadastrar:hover{
+    text-decoration: underline;
 }
 
 .compra img{
