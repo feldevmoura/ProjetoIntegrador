@@ -2,6 +2,7 @@
   margin: 0;
   border: 0;
   padding: 0;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -33,59 +34,30 @@ main{
   width: 85vw;
 }
 
-.caixa1Registro-2,
-.caixa2Registro-2
-{
-  margin: 0.5vw;
-  background-color: var(--color0);
-  width: 84vw;
-  height: 43vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.caixa2Registro-2{
-  margin-top: 0;
-}
-
-.h1-3{
-  font-size: 2vw;
-  user-select: none;
-  margin: 0.5vw;
-  margin-bottom: 0;
-  background-color: var(--color0);
-  width: auto;
-  height: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-.h1-4{
-  height: auto;
-}
-
-.formCadastro-3{
-  border: 1px solid red;
+.formCadastro-2{
+  margin-top: 3vw;
   background-color: var(--color0);
   width: 83vw;
-  height: 34vw;
+  height: auto;
   margin-bottom: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.formCadastro-3 div{
+
+.formCadastro-2 .cadastroForm{
+  margin-bottom: 4vw ;
   margin-right: 10vw ;
   margin-left: 10vw;
-  font-size: 1.3vw
+  font-size: 1.3vw;
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+
 }
 
-.formCadastro-3 
+.formCadastro-2 
 input, select{
   outline: none;
   width: 20vw;
@@ -94,54 +66,48 @@ input, select{
   border: 0.2vw solid var(--color3);
 }
 
-.email-4{
+.h1-3{
+  font-size: 2vw;
+  user-select: none;
+  margin: 0.5vw;
+  margin-bottom: 2vw;
   background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-}
-
-.nomeCadastro-4{
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-
-}
-
-.generoCadastro-4{
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-}
-
-.cpfCadastro-4{
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-}
-
-.celularCadastro-4{
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-}
-
-.telefoneCadastro-4{
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
-}
-
-.dataCadastro-4{
+  width: 100%;
+  height: 3vw;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  background-color: var(--color0);
-  width: 20vw;
-  height: 5vw;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
-.endereco-4{
+.h1-3 img{
   width: 3vw;
 }
+
+.h1-4{
+  height: auto;
+}
+
+.finalizarBtn-3{
+  margin-bottom: 2vw;
+  background-color: var(--color3);
+  color: var(--color4);
+  width: auto;
+  padding: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.finalizarBtn-3:hover{
+  transform: scale(1.1);
+  background-color: #376063;
+}
+
+
+
 
 
