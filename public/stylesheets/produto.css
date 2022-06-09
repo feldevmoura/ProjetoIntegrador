@@ -992,6 +992,10 @@ main{
 .clienteComentarios-2{
 	width: 100%;
 	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .comentario1-3,
@@ -1002,7 +1006,7 @@ main{
 	justify-content: space-between;
 	flex-direction: column;
 	background-color: var(--color4);
-	width: auto;
+	width: 95%;
 	font-size: 1.3vw;
 	margin-bottom: 0.5vw;
 }
