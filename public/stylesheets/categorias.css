@@ -12,7 +12,7 @@ main {
 :root {
     --color0: rgb(223, 219, 219);
     --color1: #919090;
-    --color2: #253031;
+    --color2: #2f578f;
     --color3: #315659;
     --color4: #FFFFFF;
     --color5: #000000;
@@ -51,7 +51,7 @@ main {
     background-color: var(--color4);
 }
 
-.imagesPhones-2{
+.container3-2{
     margin-top: 2vw;
     height: 40vw;
     width: 60vw;
@@ -59,32 +59,5 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.imagesPhones-2 div{
-}
-
-.produto1-2{
-    width: 15vw;
-    height: 17vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column ;
-    margin-right: 1vw;
-    background-color: var(--color1);
-    border-radius: 1vw;
-}
-
-.imagem1-3{
-    width: 13vw;
-    height: 13vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagem1-3 img{
-    width: 9vw;
 }
 
