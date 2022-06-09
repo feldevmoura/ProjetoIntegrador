@@ -57,15 +57,29 @@ main{
   text-decoration: underline;
 }
 
-
-
 .container2-1{
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 50vw;
+  height: auto;
   width: 85vw;
   background-color: var(--color4);
+}
+
+.logoSamsung-2{
+  border-radius: 2vw;
+  margin-top: 2vw;
+  margin-bottom: -4vw;
+  width: 15vw;
+  height: auto;
+  background-color: var(--color5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoSamsung-2 img{
+  width: 70%;
 }
 
 .imagesPhones-2{
@@ -76,9 +90,6 @@ main{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.imagesPhones-2 div{
 }
 
 .produto1-2{
