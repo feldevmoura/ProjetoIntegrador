@@ -25,6 +25,7 @@ main{
   height: 50vw;
   width: 15vw;
   background-color: var(--color0);
+  font-size: 1.5vw;
 }
 
 .categorias1-2{
