@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.info {
+.categorias {
     background-color: var(--color1); 
     color: var(--color4);
     border: 1px solid var(--color2);
@@ -52,8 +52,14 @@
     user-select: none;
 }
 
-.info p{
-    font-size: 2vw;
+.categorias a{
+    text-decoration: none;
+    color: var(--color4);
+    transition: all 0.5s;
+}
+
+.categorias a:hover{
+    text-decoration: underline;
 }
 
 .contato{
