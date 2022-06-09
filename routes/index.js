@@ -9,6 +9,7 @@ const loginController = require('../controllers/loginController');
 const carrinhoController = require('../controllers/carrinhoController');
 const cadastroController = require('../controllers/cadastroController');
 const samsungController = require('../controllers/samsungController');
+const appleController  = require('../Controllers/appleController');
 
 /* GET home page. */
 router.get('/index', function(req, res, next) {
@@ -24,6 +25,7 @@ router.get('/entrar', entrarController.entrar);
 router.get('/carrinho', carrinhoController.carrinho);
 router.get('/cadastro', cadastroController.cadastro);
 router.get('/categorias/samsung', samsungController.samsung);
+router.get('/categorias/apple', appleController.apple);
 
 //Rotas POST
 router.post('/login', loginController.login);

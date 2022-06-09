@@ -35,7 +35,7 @@ main{
 
 .categorias1-2 a{
   text-decoration: none;
-  color: var(--color5);
+  color: var(--color5)
 }
 
 .categorias2-2{
@@ -66,7 +66,7 @@ main{
   background-color: var(--color4);
 }
 
-.logoSamsung-2{
+.logoApple-2{
   border-radius: 2vw;
   margin-top: 2vw;
   margin-bottom: -4vw;
@@ -78,7 +78,7 @@ main{
   justify-content: center;
 }
 
-.logoSamsung-2 img{
+.logoApple-2 img{
   width: 70%;
 }
 
