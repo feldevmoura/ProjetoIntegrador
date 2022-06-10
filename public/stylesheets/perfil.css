@@ -23,7 +23,7 @@ main{
 
 .container1-2{
   height: 49vw;
-  background-color: var(--color1);
+  background-color: var(--color0);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,8 +47,8 @@ main{
 .container2-2{
   padding: 0.5vw;
   height: 49vw;
-  width: 86vw;
-  background-color: var(--color0);
+  width: 88vw;
+  background-color: var(--color4);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -121,7 +121,7 @@ main{
 .perfilCaixa2-3{
   width: 86vw;
   height: 20vw;
-  background-color: var(--color3);
+  background-color: var(--color4);
   display: flex;
   align-items: center;
   flex-direction: column;
