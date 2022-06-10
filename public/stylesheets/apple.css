@@ -7,6 +7,7 @@
 main{
   display: flex;
   align-items: start;
+  min-height: 100vh;
 }
 
 :root{
