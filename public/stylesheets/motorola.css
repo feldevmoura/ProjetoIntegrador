@@ -69,22 +69,25 @@ main{
   background-color: var(--color4);
 }
 
-.logoApple-2{
+.logoMotorola-2{
   border-radius: 2vw;
   margin-top: 2vw;
   margin-bottom: -4vw;
-  width: 10vw;
-  height: 10vw;
+  width: auto;
+  height: 8vw;
   background-color: var(--color5);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10vw;
+  padding: 0.5vw;
+  border-radius: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 
 
-.logoApple-2 img{
-  width: 6vw;
+.logoMotorola-2 img{
+  width: 7vw;
 }
 
 .imagesPhones-2{
@@ -118,6 +121,7 @@ main{
 }
 
 .imagem1-3 img{
-  width: 9vw;
+  cursor: pointer;
+  width: 5vw;
 }
 

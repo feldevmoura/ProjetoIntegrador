@@ -10,6 +10,7 @@ const carrinhoController = require('../controllers/carrinhoController');
 const cadastroController = require('../controllers/cadastroController');
 const samsungController = require('../controllers/samsungController');
 const appleController  = require('../Controllers/appleController');
+const motorolaController = require('../controllers/motorolaController');
 
 /* GET home page. */
 router.get('/index', function(req, res, next) {
@@ -26,6 +27,7 @@ router.get('/carrinho', carrinhoController.carrinho);
 router.get('/cadastro', cadastroController.cadastro);
 router.get('/categorias/samsung', samsungController.samsung);
 router.get('/categorias/apple', appleController.apple);
+router.get('/categorias/motorola', motorolaController.motorola);
 
 //Rotas POST
 router.post('/login', loginController.login);
