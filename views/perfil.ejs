@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/stylesheets/perfil.css">
+  <link rel="icon" href="/images/Logo.png">
+  <title>Meu perfil</title>
+</head>
+<body>
+  <div class="container">
+
+    <%- include('./partials/header') %>
+
+    <main>
+      <div class="container1-2">
+        <div class="meuCadastro-3">
+          <p>Meu cadastro</p>
+        </div>
+        <div class="meusPedidos-3">
+          <p>Meus pedidos</p>
+        </div>
+      </div>
+
+      <div class="container2-2">
+        <div class="perfilImagem-3">
+          <div class="perfilUsuario-4">
+            <img src="/images/usuario.png" alt="Foto do perfil">
+          </div>
+
+          <form class="perfilImagem-4">
+            
+            <div class="botaoEnviar-5">
+              <label for="enviarFoto">
+                <p>Altere sua foto de perfil</p>
+              </label>
+            </div>
+            <input class="enviarFoto-5" type="file" name="enviarFoto" id="enviarFoto"></input>
+
+
+          </form>
+        </div>
+
+        <div class="perfilCaixa2-3">
+          <p>Olá userName! À esquerda poderá</p>
+           <p>navegar e fazer <b>alterações de cadastro</b>, ou se preferir,<b> seus pedidos</b>.</p>
+        </div>
+        
+      </div>
+
+
+    </main>
+
+    <%- include('./partials/footer') %>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  /* border: 1px solid red; */
+}
+
+:root{
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #2f578f;
+  --color3: #315659;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main{
+  height: auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container1-2{
+  height: 49vw;
+  background-color: var(--color1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5vw;
+}
+
+.meuCadastro-3,
+.meusPedidos-3
+{
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  width: 8vw;
+  background-color: var(--color4);
+}
+
+.container2-2{
+  padding: 0.5vw;
+  height: 49vw;
+  width: 86vw;
+  background-color: var(--color0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.perfilImagem-3{
+  width: 86vw;
+  height: 20vw;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.perfilImagem-4{
+  width: 86vw;
+  height: auto;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.perfilUsuario-4{
+  background-color: var(--color0);
+  width: 15vw;
+  height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5vw;
+  border-radius: 15vw;
+}
+
+.perfilUsuario-4 img{
+  width: 10vw;
+}
+
+.botaoEnviar-5{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2vw;
+  user-select: none;
+  text-decoration: underline;
+}
+
+.botaoEnviar-5 p{
+  cursor: pointer;
+}
+
+.enviarFoto-5{
+  display: none;
+  border: none;
+  outline: none;
+  width: 8vw;
+  height: 4vw;
+  padding: 0.5vw;
+  font-size: 1.3vw;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  color: var(--color4);
+}
+
+
+.perfilCaixa2-3{
+  width: 86vw;
+  height: 20vw;
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5vw;
+}
+
