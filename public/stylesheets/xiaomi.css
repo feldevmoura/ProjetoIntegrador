@@ -5,9 +5,9 @@
 }
 
 main{
-  min-height: 100vh;
   display: flex;
   align-items: start;
+  min-height: 100vh;
 }
 
 :root{
@@ -27,6 +27,7 @@ main{
   height: 50vw;
   width: 15vw;
   background-color: var(--color0);
+  font-size: 1.5vw;
 }
 
 .categorias1-2{
@@ -37,7 +38,7 @@ main{
 
 .categorias1-2 a{
   text-decoration: none;
-  color: var(--color5);
+  color: var(--color5)
 }
 
 .categorias2-2{
@@ -68,20 +69,25 @@ main{
   background-color: var(--color4);
 }
 
-.logoSamsung-2{
+.logoXiaomi-2{
   border-radius: 2vw;
   margin-top: 2vw;
   margin-bottom: -4vw;
-  width: 15vw;
-  height: auto;
-  background-color: var(--color5);
+  width: 5vw;
+  height: 5vw;
+  background-color: rgb(150, 109, 56);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5vw;
+  border-radius: 2vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
 }
 
-.logoSamsung-2 img{
-  width: 70%;
+
+.logoXiaomi-2 img{
+  width: 10vw;
 }
 
 .imagesPhones-2{
@@ -115,6 +121,7 @@ main{
 }
 
 .imagem1-3 img{
-  width: 11vw;
+  cursor: pointer;
+  width: 5vw;
 }
 
