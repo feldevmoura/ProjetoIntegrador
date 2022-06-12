@@ -37,6 +37,7 @@ main {
 
 .categorias2-2{
     margin-top: 1vw;
+    transition: all 0.5s;
 }
 
 .categorias2-2 a{
@@ -46,6 +47,11 @@ main {
 
 .categorias2-2 div{
     margin-bottom: 2vw;
+}
+
+.marca1:hover,.marca2:hover,.marca3:hover,.marca4:hover
+{
+    text-decoration: underline;
 }
 
 .container2-1{
