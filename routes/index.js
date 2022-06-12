@@ -3,7 +3,6 @@ const router = express.Router();
 
 const homeController = require('../controllers/homeController');
 const produtoController = require('../controllers/produtoController');
-const perfilController = require('../controllers/perfilController');
 const entrarController = require('../controllers/entrarController');
 const loginController = require('../controllers/loginController');
 const carrinhoController = require('../controllers/carrinhoController');
@@ -16,6 +15,10 @@ const appleController  = require('../Controllers/appleController');
 const motorolaController = require('../controllers/motorolaController');
 const xiaomiController = require('../controllers/xiaomiController');
 const endPurchaseController = require('../controllers/endPurchaseController');
+
+//Importações perfil
+const perfilController = require('../controllers/perfilController');
+const meuCadastroController = require('../controllers/meuCadastroController');
 
 
 /* GET home page. */
@@ -30,15 +33,18 @@ router.get('/produto', produtoController.produto);
 router.get('/entrar', entrarController.entrar);
 router.get('/carrinho', carrinhoController.carrinho);
 router.get('/cadastro', cadastroController.cadastro);
-router.get('/perfil', perfilController.perfil);
 router.get('/comprafinalizada', endPurchaseController.purchase);
 
-//categorias GET
+//Categorias GET
 router.get('/categorias', categoriasController.categorias);
 router.get('/categorias/samsung', samsungController.samsung);
 router.get('/categorias/apple', appleController.apple);
 router.get('/categorias/motorola', motorolaController.motorola);
 router.get('/categorias/xiaomi', xiaomiController.xiaomi);
+
+//meuPerfil GET 
+router.get('/perfil', perfilController.perfil);
+router.get('/perfil/meuCadastro', meuCadastroController.meuCadastro);
 
 
 //Rotas POST
