@@ -40,7 +40,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color5);
+  background-color: var(--color0);
   width: 15vw;
   height: 20vw;
 }
