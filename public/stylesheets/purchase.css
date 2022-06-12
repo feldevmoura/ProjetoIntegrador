@@ -1,0 +1,106 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #2f578f;
+  --color3: #315659;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main{
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.compraMensagem-1{
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+}
+
+.agradecimentosContainer-1{
+  background-color: var(--color0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logoMarca-2{
+  margin: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color5);
+  width: 15vw;
+  height: 20vw;
+}
+
+.logoMarca-2 img{
+  width: 10vw;
+}
+
+.agradecimentosEBotes-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 16vw;
+}
+
+.mensagem1-3{
+  font-size: 1.3vw;
+  width: 24vw;
+  display: flex;
+  justify-content: center;
+}
+
+.mensagem2-3{
+  font-size: 1.5vw;
+  margin-right: 2vw;
+  display: flex;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  width: 15.5vw;
+}
+
+.botoesInicioPerfil-3{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 15vw;
+  padding: 1vw;
+}
+
+.btnInicio-4,
+.btnConta-4
+{
+  user-select: none;
+  cursor: pointer;
+  background-color: var(--color3);
+  border: 0;
+  font-size: 1.2vw;
+  color: var(--color4);
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.btnInicio-4:hover,
+.btnConta-4:hover{
+  background-color: #376063;
+  color: var(--color0);
+  transform: scale(1.1);
+}

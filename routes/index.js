@@ -15,6 +15,7 @@ const samsungController = require('../controllers/samsungController');
 const appleController  = require('../Controllers/appleController');
 const motorolaController = require('../controllers/motorolaController');
 const xiaomiController = require('../controllers/xiaomiController');
+const endPurchaseController = require('../controllers/endPurchaseController');
 
 
 /* GET home page. */
@@ -30,6 +31,7 @@ router.get('/entrar', entrarController.entrar);
 router.get('/carrinho', carrinhoController.carrinho);
 router.get('/cadastro', cadastroController.cadastro);
 router.get('/perfil', perfilController.perfil);
+router.get('/comprafinalizada', endPurchaseController.purchase);
 
 //categorias GET
 router.get('/categorias', categoriasController.categorias);
