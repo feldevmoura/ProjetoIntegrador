@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editar Perfil</title>
+
+  <link rel="icon" href="/images/Logo.png">
+  <link rel="stylesheet" href="/stylesheets/meuCadastro.css">
+  <title>UaiPhone</title>
 </head>
 <body>
-  
+  <div class="container">
+    <%- include('./partials/header') %>
+
+        <main>
+            <div class="registro-1">
+
+              <div class="container1-2">
+                <div class="meuCadastro-3">
+                  <b><p>Meu cadastro</p></b>
+                </div>
+                <div class="meusPedidos-3">
+                  <a class="meusPedidos-4" style="text-decoration:none;" href="/carrinho"><p>Meus pedidos</p></a>
+                </div>
+              </div>
+
+                <form class="formCadastro-2">
+
+                  <div class="h1-3">
+                    <h1>Dados Cadastrais</h1>
+                    <img src="/images/dados1.png" alt="imagem de uma carteira em desenho png">
+                  </div>
+
+                  <div class="cadastroForm emailCadastro-3">
+                    <label for="email">E-mail*</label>
+                    <br>
+                    <input class="email-5" type="email" id="email" name="email" placeholder="Digite seu email aqui..." required>
+                  </div>
+
+                  <div class="cadastroForm senhaCadastro-3">
+                    <label for="senhaCadastro">Senha</label>
+                    <br>
+                    <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Crie uma senha..." required>
+                  </div>
+
+                  <div class="cadastroForm nomeCadastro-3">
+                    <label for="name">Nome Completo*</label>
+                    <br>
+                    <input class="nome-5" type="text" id="name" name="name" placeholder="Digite seu nome completo aqui..." required>
+                  </div>
+
+                  <div class="cadastroForm generoCadastro-3">
+                    <label for="genero">Gênero*</label>
+                    <br>
+                    <select class="generoSelect-5" name="genero" id="genero">
+                      <option selected disabled>Selecione</option>
+                    </select>
+                  </div>
+
+                  <div class="cadastroForm cpfCadastro-3">
+                    <label class="cpfLabel-5" for="numeroCPF">CPF*</label>
+                    <br>
+                    <input type="number" id="numeroCPF" name="numeroCPF" required placeholder="000.000.000-00">
+                  </div>
+
+                  <div class="cadastroForm celularCadastro-3">
+                    <label for="numeroCel">Celular*</label>
+                    <br>
+                    <input type="number" id="numeroCel" name="numeroCel" required placeholder="(ddd) 0 0000-0000">
+                  </div>
+
+                  <div class="cadastroForm telefoneCadastro-3">
+                    <label for="numeroTelefone">Telefone*(Não necessário)</label>
+                    <br>
+                    <input type="number" id="numeroTelefone" name="numeroTelefone" placeholder="Digite seu telefone aqui...">
+                  </div>
+
+                  <div class="cadastroForm dataCadastro-3">
+                    <label for="dateCadastro">Nascimento*</label>
+                    <br>
+                    <input type="date" id="dateCadastro" name="dateCadastro" required>
+                  </div>
+
+                  <!-- Começo do antigo form -->
+                  <div class="h1-3">
+                    <h1 class="h1-4">Endereço de entrega</h1>
+                    <img src="/images/endereco.png" alt="" class="endereco-4">
+                  </div>
+
+                  <div class="cadastroForm cepCadastro-3">
+                    <label for="cepCadastro">CEP*</label>
+                    <br>
+                    <input type="number" id="cepCadastro" name="cepCadastro" placeholder="Digite seu CEP aqui..." required>
+                  </div>
+
+                  <div class="cadastroForm ruaCadastro-3">
+                    <label for="ruaCadastro">Rua*</label>
+                    <br>
+                    <input type="text" id="ruaCadastro" name="ruaCadastro" placeholder="Digite o nome de sua Rua aqui...">
+                  </div>
+
+                  <div class="cadastroForm numeroCasaCadastro-3">
+                    <label for="numeroCasaCadastro">Numero*</label>
+                    <br>
+                    <input type="number" id="numeroCasaCadastro" name="numeroCasaCadastro" placeholder="0000" required>
+                  </div>
+
+                  <div class="cadastroForm complementoCadastro-3">
+                    <label for="completamentoCadastro">Complemento*</label>
+                    <br>
+                    <input type="text" id="complementoCadastro" name="complementoCadastro" placeholder="Complemento">
+                  </div>
+
+                  <div class="cadastroForm referenciaCadastro-3">
+                    <label for="referenciaCadastro">Referência*</label>
+                    <br>
+                    <input type="text" id="referenciaCadastro" name="referenciaCadastro" placeholder="Referência">
+                  </div>
+
+                  <div class="cadastroForm bairroCadastro-3">
+                    <label for="bairroCadastro">Bairro*</label>
+                    <br>
+                    <input type="text" id="bairroCadastro" name="bairroCadastro" placeholder="Digite seu Bairro aqui...">
+                  </div>
+
+                  <div class="cadastroForm cidadeCadastro-3">
+                    <label for="cidadeCadastro">Cidade*</label>
+                    <br>
+                    <input type="text" id="cidadeCadastro" name="cidadeCadastro" placeholder="Cidade">
+                  </div>
+
+                  <div class="cadastroForm estadoCadastro-3">
+                    <label for="estadoCadastro">Estado</label>
+                    <br>
+                    <input type="text" id="estadoCadastro" name="estadoCadastro" placeholder="Estado">
+                  </div>
+
+                  <button class="finalizarBtn-3">Atualizar Registro</button>
+
+                </form>
+
+                
+
+              
+            </div>
+        </main>
+
+    <%- include('./partials/footer') %>
+  </div>
 </body>
-</html>

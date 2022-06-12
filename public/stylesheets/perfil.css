@@ -52,6 +52,11 @@ main{
   text-decoration: underline;
 }
 
+.linkMeuCadastro-4{
+  color: var(--color5);
+  text-decoration: none;
+}
+
 .meusPedidos-4{
   color: var(--color5);
 }

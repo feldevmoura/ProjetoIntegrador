@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #2f578f;
+  --color3: #315659;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main{
+  height: auto;
+  display: flex;
+  background-color: var(--color4);
+}
+
+.registro-1{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  height: auto;
+  background-color: var(--color4);
+  width: 100%;
+}
+
+.container1-2{
+  height: 89.5vw;
+  background-color: var(--color0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5vw;
+}
+
+.meuCadastro-3,
+.meusPedidos-3
+{
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  width: 8vw;
+  background-color: var(--color4);
+  transition: all 0.5s;
+  color: var(--color5);
+}
+
+.meuCadastro-3:hover,
+.meusPedidos-3:hover
+{
+  text-decoration: underline;
+}
+
+.meusPedidos-4{
+  color: var(--color5);
+}
+
+.formCadastro-2{
+  background-color: var(--color4);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formCadastro-2 .cadastroForm{
+  margin-bottom: 4vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  font-size: 1.3vw;
+  background-color: var(--color4);
+  width: 20vw;
+  height: 5vw;
+
+}
+
+.formCadastro-2 
+input, select{
+  outline: none;
+  width: 20vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  border: 0.2vw solid var(--color3);
+}
+
+.h1-3{
+  font-size: 2vw;
+  user-select: none;
+  margin: 0.5vw;
+  margin-bottom: 2vw;
+  background-color: var(--color4);
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.h1-3 img{
+  width: 3vw;
+}
+
+.h1-4{
+  height: auto;
+}
+
+.finalizarBtn-3{
+  margin-bottom: 2vw;
+  background-color: var(--color3);
+  color: var(--color4);
+  width: auto;
+  padding: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.finalizarBtn-3:hover{
+  transform: scale(1.1);
+  background-color: #376063;
+}
