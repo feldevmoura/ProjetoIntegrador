@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #2f578f;
+  --color3: #315659;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main{
+  height: 100vh;
+  background-color: var(--color0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.botaoProduto{
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 1.4vw;
+}
+
+.botaoProduto:hover{
+  font-size: 1.5vw;
+  font-weight: 600;
+}
