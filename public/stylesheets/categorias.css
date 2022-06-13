@@ -24,7 +24,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 50vw;
+    height: 100vh;
     width: 15vw;
     background-color: var(--color0);
 }
@@ -32,12 +32,16 @@ main {
 .categorias1-2{
     margin-top: 8vw;
     font-weight: 800;
-  font-size: 2.5vw;
+    font-size: 2.5vw;
 }
 
 .categorias2-2{
     margin-top: 1vw;
     transition: all 0.5s;
+}
+
+.categorias2-2 p{
+    font-size: 1.5vw;
 }
 
 .categorias2-2 a{
@@ -58,7 +62,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 50vw;
+    height: 100vh;
     width: 85vw;
     background-color: var(--color4);
 }
@@ -70,6 +74,37 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
+.container3-2 h1{
+    margin-bottom: 2vw;
+}
+
+.categorias-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: auto;
+    height: 20vw;
+    border-radius: 4vw;
+}
+
+.categorias-3 img{
+    width: 6vw;
+}
+
+.categorias-3 div{
+    margin-left: 4vw;
+}
+
+.categorias-3 .image4-3{
+    margin-right: 4vw;
+}
+
+.image1-3
+img{
+    width: 10vw;
+}
