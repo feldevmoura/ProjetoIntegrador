@@ -14,6 +14,7 @@
 }
 
 .headerContainer{
+    height: 7vw;
     display: flex;
     align-items: center;
     background-color: var(--color3);
@@ -41,7 +42,7 @@
 }
 
 .pesquisa{
-    width: 95%;
+    width: 35vw;
     height: 1.5vw;
     border: 0.2vw solid var(--color1);
     border-radius: 1vw;
@@ -69,11 +70,9 @@
 
 .cadastro{
     background-color: var(--color3);
-    margin: 10px;
     width: 13%;
-    height: 9vh;
+    height: 4.5vw;
     border: 0px solid var(--color3);
-    border-radius: 10px;
     font-size: 1.3vw;
     color: var(--color4);
 }
