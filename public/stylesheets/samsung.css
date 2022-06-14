@@ -24,7 +24,7 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 50vw;
+  height: 100vh;
   width: 15vw;
   background-color: var(--color0);
 }
@@ -42,6 +42,7 @@ main{
 
 .categorias2-2{
   margin-top: 1vw;
+  font-size: 1.5vw;
 }
 
 .categorias2-2 div{
@@ -63,7 +64,7 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: auto;
+  height: 100vh;
   width: 85vw;
   background-color: var(--color4);
 }
@@ -92,6 +93,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 1.3vw;
 }
 
 .produto1-2{
