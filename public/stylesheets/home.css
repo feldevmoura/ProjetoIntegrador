@@ -1,6 +1,7 @@
 *{
     padding: 0%;
     margin: 0%;
+    /* border: 1px solid red; */
 }
 
 :root {
@@ -23,7 +24,7 @@ main {
 
 .slide {
     width: 55vw;
-    height: 80vh;
+    height: 39vw;
     overflow: hidden;
     border-radius: 2vw;
     transition: all 0.4s;
@@ -34,31 +35,26 @@ main {
 .slides {
     width: 200vw;
     display: flex;
-    flex-direction: row;
 }
 
 #previous {
-    top: 60%;
+    top: 55%;
     left: 15%;
 }
 
 #next {
-    top: 60.4%;
+    top: 55%;
     right: 15%;
 }
 
 .btn {
     position: absolute;
-    color: black;
-    padding: 10px;
-    text-align: center;
+    padding: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.4s;
-    font-size: 1.7em;
-    margin-top: -1vw;
 }
 
 .btn:hover {
