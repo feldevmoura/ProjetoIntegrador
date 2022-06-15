@@ -4,19 +4,19 @@
   /* border: 1px solid red; */
 }
 
-main{
-  min-height: 100vh;
-  display: flex;
-  align-items: start;
-}
-
 :root{
   --color0: rgb(223, 219, 219);
   --color1: #919090;
   --color2: #2f578f;
-  --color3: #315659;
+  --color3: #2d6181;
   --color4: #FFFFFF;
   --color5: #000000;
+}
+
+main{
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
 }
 
 .container1-1{
