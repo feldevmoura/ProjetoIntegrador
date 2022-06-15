@@ -86,7 +86,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: var(--color5);
     width: auto;
     height: 20vw;
     border-radius: 4vw;
@@ -102,9 +102,14 @@ main {
 
 .categorias-3 .image4-3{
     margin-right: 4vw;
+    background-color: #ff6900;
+    border-radius: 2vw;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.image1-3
-img{
+.image1-3 img{
     width: 10vw;
 }
