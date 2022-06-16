@@ -69,18 +69,27 @@
 }
 
 .cadastro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color3);
-    width: 13%;
+    width: auto;
     height: 4.5vw;
-    border: 0px solid var(--color3);
     font-size: 1.3vw;
     color: var(--color4);
+}
+
+.cadastro-3{
+    width: auto;
+    display: flex;
 }
 
 .login1Entrar{
     color: var(--color4);
     text-decoration: none;
     transition: all 0.4s;
+    margin-right: 0.5vw;
 }
 
 .login1Entrar:hover{
@@ -91,6 +100,7 @@
     color: var(--color4);
     text-decoration: none;
     transition: all 0.4s;
+    margin-left: 0.5vw;
 }
 
 .cadastrar:hover{
