@@ -1,112 +1,113 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    font-family: sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 :root {
-    --color0: rgb(223, 219, 219);
-    --color1: #919090;
-    --color2: #2f578f;
-    --color3: #2d6181;
-    --color4: #FFFFFF;
-    --color5: #000000;
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #337095;
+  --color3: #2d6181;
+  --color4: #FFFFFF;
+  --color5: #000000;
 }
 
 main {
-    height: 100vh;
-    background-color: var(--color4);
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    justify-self: center;
+  height: 100vh;
+  background-color: var(--color4);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  justify-self: center;
 }
 
 .slide {
-    width: 55vw;
-    height: 39vw;
-    overflow: hidden;
-    border-radius: 2vw;
-    transition: all 0.4s;
-    background-color: var(--color0);
-    border: 0.1vw solid var(--color3);
+  width: 55vw;
+  height: 39vw;
+  overflow: hidden;
+  border-radius: 2vw;
+  transition: all 0.4s;
+  background-color: var(--color0);
+  border: 0.1vw solid var(--color3);
 }
 
 .slides {
-    width: 200vw;
-    display: flex;
+  width: 200vw;
+  display: flex;
 }
 
 #previous {
-    top: 55%;
-    left: 15%;
+  top: 55%;
+  left: 15%;
 }
 
 #next {
-    top: 55%;
-    right: 15%;
+  top: 55%;
+  right: 15%;
 }
 
 .btn {
-    position: absolute;
-    padding: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.4s;
+  position: absolute;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 .btn:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .left {
-    width: 2.5vw;
+  width: 2.5vw;
 }
 
 .right {
-    width: 2.5vw;
+  width: 2.5vw;
 }
 
 .phones {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
 }
 
 #first {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 .image img {
-    width: 34vw;
-    margin-right: 20vw;
+  width: 34vw;
+  margin-right: 20vw;
 }
 
 .balls {
-    position: absolute;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    margin-left: 21.5vw;
+  position: absolute;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  margin-left: 21.5vw;
 }
 
 .balls div {
-    transition: all 0.5s;
-    border: 0.1vw solid var(--color5);
-    padding: 6px;
-    border-radius: 50%;
-    margin-right: 1vw;
-    cursor: pointer;
-    z-index: 1;
+  transition: all 0.5s;
+  border: 0.1vw solid var(--color5);
+  padding: 6px;
+  border-radius: 50%;
+  margin-right: 1vw;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .balls div:hover {
-    background-color: var(--color3);
+  background-color: var(--color3);
 }
 
 .imgAtual {
-    transition: all 0.5s;
-    background-color: var(--color3);
+	transition: all 0.5s;
+	background-color: var(--color3);
 }

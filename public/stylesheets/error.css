@@ -1,5 +1,6 @@
 *{
   margin: 0;
+  border: 0;
   padding: 0;
   font-family: sans-serif;
 }
@@ -7,7 +8,7 @@
 :root {
   --color0: rgb(223, 219, 219);
   --color1: #919090;
-  --color2: #2f578f;
+  --color2: #337095;
   --color3: #2d6181;
   --color4: #FFFFFF;
   --color5: #000000;

@@ -1,118 +1,119 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    font-family: sans-serif;
+	margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 :root {
-    --color0: rgb(223, 219, 219);
-    --color1: #919090;
-    --color2: #2f578f;
-    --color3: #2d6181;
-    --color4: #FFFFFF;
-    --color5: #000000;
-  }
+  --color0: rgb(223, 219, 219);
+  --color1: #919090;
+  --color2: #337095;
+  --color3: #2d6181;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
 
 .rodape{
-    display: flex;
-    background-color: var(--color3);
-    justify-content: space-around;
+  display: flex;
+  background-color: var(--color3);
+  justify-content: space-around;
 }
 
 .icon{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon img {
-    width: 06vw;
-    cursor: pointer;
+  width: 06vw;
+  cursor: pointer;
 }
 
 .footerGrid {
-    width: 35vw;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20vw;
-    display: flex;
-    align-items: center;
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20vw;
+  display: flex;
+  align-items: center;
 }
 
 .categorias {
-    background-color: var(--color1); 
-    color: var(--color4);
-    border: none;
-    width: 20vw;
-    height: 4.5vw;
-    font-size: 2.5vw;
-    border-radius: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
+  background-color: var(--color1); 
+  color: var(--color4);
+  border: none;
+  width: 20vw;
+  height: 4.5vw;
+  font-size: 2.5vw;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 .categorias a{
-    text-decoration: none;
-    color: var(--color4);
-    transition: all 0.5s;
+  text-decoration: none;
+  color: var(--color4);
+  transition: all 0.5s;
 }
 
 .categorias a:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contato{
-    background-color: var(--color1);
-    color: var(--color4);
-    border: none;
-    width: 6vw ;
-    height: 3.5vw;
-    font-size: 1.25vw;
-    border-radius: 1vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
+  background-color: var(--color1);
+  color: var(--color4);
+  border: none;
+  width: 6vw ;
+  height: 3.5vw;
+  font-size: 1.25vw;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 .contato p{
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .redeSocial{ 
-    justify-content: space-around;
-    margin: 0.5vw;
-    display: flex; 
-    width: 15%;
-    height: 5vw;
-    margin-right: 4%;
-    margin-top: 2.5vw;   
+  justify-content: space-around;
+  margin: 0.5vw;
+  display: flex; 
+  width: 15%;
+  height: 5vw;
+  margin-right: 4%;
+  margin-top: 2.5vw;   
 }
 
 .redeSocial img{
-    width: 2.3vw;
+  width: 2.3vw;
 }
 
 .facebook{
-    width: 2.5vw;
-    height: 2.5vw;
-    cursor: pointer;
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
 }
 .instagram{
-    width: 2.5vw;
-    height: 2.5vw;
-    cursor: pointer;
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
 }
 .youtube{
-    width: 2.5vw;
-    height: 2.5vw;
-    cursor: pointer;
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
 }
 .whatsapp{
-    width: 2.5vw;
-    height: 2.5vw;
-    cursor: pointer;
+  width: 2.5vw;
+  height: 2.5vw;
+  cursor: pointer;
 }
