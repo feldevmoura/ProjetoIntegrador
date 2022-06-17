@@ -93,6 +93,7 @@ main{
 }
 
 .imagesPhones-2{
+  white-space: nowrap;
   margin-top: 2vw;
   height: 40vw;
   width: 60vw;

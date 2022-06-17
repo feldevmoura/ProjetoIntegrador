@@ -101,7 +101,7 @@ main{
 
 .btnInicio-4:hover,
 .btnConta-4:hover{
-  background-color: #376063;
+  background-color: var(--color2);
   color: var(--color0);
   transform: scale(1.1);
 }

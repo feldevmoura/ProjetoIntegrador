@@ -42,17 +42,25 @@ main{
 .meuCadastro-3,
 .meusPedidos-3
 {
-  cursor: pointer;
+  font-size: 1.3vw;
+  white-space: nowrap;
   user-select: none;
   margin-bottom: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   padding: 1vw;
   width: 8vw;
   background-color: var(--color4);
   transition: all 0.5s;
   color: var(--color5);
+}
+
+.meuCadastro-3 p,
+.meusPedidos-3 p
+{
+  cursor: pointer;
 }
 
 .meuCadastro-3:hover,

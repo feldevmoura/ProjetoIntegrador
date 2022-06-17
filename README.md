@@ -2,40 +2,48 @@
 <br><h2 align="center">Projeto PI</h2>
 <div align="center">
 
-  <img width="100%" alt="Header" src="https://user-images.githubusercontent.com/95445253/173728133-2878855e-d25d-4224-a0b3-719f87464651.png">
+  <img width="100%" alt="Header" src="https://user-images.githubusercontent.com/95445253/174193103-f6d592eb-f752-4729-9387-3081c6924c4d.png">
 
-   https://user-images.githubusercontent.com/95445253/173728011-b935b485-6a4d-48b7-97ca-d1f4f54e8979.mp4
 
-  <img width="100%" alt="Footer" src="https://user-images.githubusercontent.com/95445253/173728261-75006137-b305-4343-9177-75d1625a2c1d.png">
+   
+
+  https://user-images.githubusercontent.com/95445253/174200255-03388555-0e8f-40d2-a145-e56e3f101dd2.mp4
+
+
+
+  <img width="100%" alt="Footer" src="https://user-images.githubusercontent.com/95445253/174193142-2020868c-cf82-4d4b-85cb-d366531a1ec9.png">
+
   
 </div>
 
 <h2 align="center">Páginas restantes</h2>
 <div align="center">
 
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173728778-6a3732e2-07b4-479c-a71c-6aa06e27011c.png">
+  <img width="100%" alt="Cadastro" src="https://user-images.githubusercontent.com/95445253/174200408-655c7a1d-8326-4f8b-9ddd-51b4759a4973.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173728833-8a90aaf7-9f00-4ced-b762-50f902f32e72.png">
+  <img width="100%" alt="Carrinho" src="https://user-images.githubusercontent.com/95445253/174200435-8bea1478-d076-4a87-8e51-49965fc6813b.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173728874-6aaaa28b-bca7-4d6c-92eb-e4da64b7fb7a.png">
+  <img width="100%" alt="CategoriaApple" src="https://user-images.githubusercontent.com/95445253/174200462-7cd953a8-e58f-4cc4-8c33-a4960fd5670c.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173728916-58f858fd-546e-4156-bb11-458465289e53.png">
+  <img width="100%" alt="CategoriaMotorola" src="https://user-images.githubusercontent.com/95445253/174200482-460c2f6e-ff50-42b6-bae1-240f4a1e2e87.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173728979-5201bb13-c713-403b-92a6-7d9e17b04bba.png">
+  <img width="100%" alt="Categorias" src="https://user-images.githubusercontent.com/95445253/174200500-59c979fa-9e88-460b-a28a-c7bf9df1370c.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729129-a5f95e66-7015-4051-84ca-24e94283787b.png">
+  <img width="100%" alt="CategoriaSamsung" src="https://user-images.githubusercontent.com/95445253/174200516-50b168cd-d020-4bb8-8752-96b6c2412f8c.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729333-d2f9bc53-2dc8-4652-a88e-c385ddbd17db.png">
+  <img width="948" alt="CategoriasXiaomi" src="https://user-images.githubusercontent.com/95445253/174201312-e856e9f5-a0d4-4c33-b27a-6d42f44c8d62.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729462-ff2cd7e6-5c81-4bd9-8923-fec4c5a567c7.png">
+  <img width="100%" alt="editarCadastro" src="https://user-images.githubusercontent.com/95445253/174202866-af4dc42a-1d0f-455f-994e-f222db296148.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729570-c33dc336-9992-4373-b874-e138b8dc8c10.png">
+  <img width="100%" alt="Erro" src="https://user-images.githubusercontent.com/95445253/174200594-3accee82-16d6-416b-8984-ee7aecac7e40.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729511-a504a838-588f-400b-b5be-523f87523606.png">
+  <img width="100%" alt="Home" src="https://user-images.githubusercontent.com/95445253/174200640-72a0c727-e4d7-4004-a5af-5d98d617c048.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729611-4eda6ae4-5b26-4c08-9065-72770506b534.png">
+  <img width="100%" alt="Login" src="https://user-images.githubusercontent.com/95445253/174200895-bdcf8aa9-8920-481d-af57-8f62aff6cf00.png">
   <h2>o</h2>
-  <img width="100%"  src="https://user-images.githubusercontent.com/95445253/173729270-606c829d-a15f-4d7c-a3f1-5ad1593e4984.png">
+  <img width="100%" alt="Perfil" src="https://user-images.githubusercontent.com/95445253/174201326-08346250-f36d-4ffe-b980-f35e782d4964.png">
+  <h2>o</h2>
+  <img width="100%" alt="Produto" src="https://user-images.githubusercontent.com/95445253/174202322-643d5b8e-9076-4ff8-8a28-7a118baaf12b.png">
   
   
 </div>

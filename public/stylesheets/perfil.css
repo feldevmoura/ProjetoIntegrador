@@ -34,6 +34,8 @@ main{
 .meuCadastro-3,
 .meusPedidos-3
 {
+  font-size: 1.3vw;
+  white-space: nowrap;
   cursor: pointer;
   user-select: none;
   margin-bottom: 0.5vw;
