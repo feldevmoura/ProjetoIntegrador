@@ -1,15 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
-  margin: 0;
-  border: 0;
+	margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Raleway, Arial, sans-serif ;
 }
 
 :root {
   --color0: rgb(223, 219, 219);
-  --color1: #919090;
-  --color2: #337095;
-  --color3: #2d6181;
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
   --color4: #FFFFFF;
   --color5: #000000;
 }
@@ -358,7 +366,7 @@ main{
 
 .preco-4{
 	margin-top: 1vh;
-	background-color: rgb(223, 219, 219);
+	background-color: var(--color0);
 	width: 25vw;
 	height: 8vw;
 	display: flex;
@@ -375,6 +383,11 @@ main{
 	width: 24vw;
 	height: 4vw;
 	font-size: 3vw;
+	font-weight: 400;
+}
+
+.preco-5 p{
+	font-family: Arial;
 }
 
 .preco-4 p{
@@ -420,7 +433,7 @@ main{
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
-	background-color: rgb(223, 219, 219);
+	background-color: var(--color0);
 	width: 24vw;
 	height: 4vw;
 	font-size: 1.2vw;
@@ -430,6 +443,10 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.cepInput-7 {
+	font-family: Arial;
 }
 
 .digiteCep-5 p{

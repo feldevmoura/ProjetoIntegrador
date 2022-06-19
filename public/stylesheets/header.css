@@ -1,14 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
 	margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Raleway, Arial, sans-serif ;
 }
 
-:root{
+:root {
   --color0: rgb(223, 219, 219);
-  --color1: #919090;
-  --color2: #337095;
-  --color3: #2d6181;
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
   --color4: #FFFFFF;
   --color5: #000000;
 }
@@ -30,8 +39,9 @@
   color: aliceblue;
   display: flex;
   align-items: center;
-  font-size: 2.5vw;
+  font-size: 3vw;
   user-select: none;
+  font-family: 'Azonix';
 }
 
 .pesquise{
@@ -44,7 +54,7 @@
 .pesquisa{
   width: 35vw;
   height: 1.5vw;
-  border: 0.2vw solid var(--color1);
+  border: 0.2vw solid var(--color0);
   border-radius: 1vw;
   position: relative;
   font-size: 1vw;
@@ -73,12 +83,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--color3);
   width: auto;
   height: 4.5vw;
   font-size: 1.3vw;
   color: var(--color4);
 }
+
+.cadastro p{
+  font-family: Raleway;
+  font-weight: 300;
+}
+
 
 .cadastro-3{
   width: auto;
@@ -90,6 +105,8 @@
   text-decoration: none;
   transition: all 0.4s;
   margin-right: 0.5vw;
+  font-family: Raleway;
+  font-weight: 800;
 }
 
 .login1Entrar:hover{
@@ -101,6 +118,8 @@
   text-decoration: none;
   transition: all 0.4s;
   margin-left: 0.5vw;
+  font-family: Raleway;
+  font-weight: 800;
 }
 
 .cadastrar:hover{

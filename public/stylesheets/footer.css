@@ -1,20 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
 	margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Raleway, Arial, sans-serif ;
 }
 
 :root {
-  --color0: rgb(223, 219, 219);
-  --color1: #919090;
-  --color2: #337095;
-  --color3: #2d6181;
+  --color0: rgb(223, 223, 223);
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
   --color4: #FFFFFF;
   --color5: #000000;
 }
 
 .rodape{
+  
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color3);
   justify-content: space-around;
 }
@@ -29,6 +41,14 @@
   cursor: pointer;
 }
 
+.direitos{
+  white-space: nowrap;
+  position: absolute;
+  margin-right: 55vw;
+  color: var(--color4);
+  font-size: 1.3vw;
+}
+
 .footerGrid {
   width: 35vw;
   display: flex;
@@ -36,11 +56,12 @@
   margin-left: 20vw;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 
 .categorias {
-  background-color: var(--color1); 
-  color: var(--color4);
+  background-color: var(--color4); 
+  color: var(--color3);
   border: none;
   width: 20vw;
   height: 4.5vw;
@@ -55,7 +76,7 @@
 
 .categorias a{
   text-decoration: none;
-  color: var(--color4);
+  color: var(--color3);
   transition: all 0.5s;
 }
 
@@ -63,12 +84,17 @@
   text-decoration: underline;
 }
 
+.categorias-1{
+  font-weight: 600;
+}
+
 .contato{
-  background-color: var(--color1);
-  color: var(--color4);
+  padding: 0.5vw;
+  background-color: var(--color4);
+  color: var(--color3);
   border: none;
   width: 6vw ;
-  height: 3.5vw;
+  height: auto;
   font-size: 1.25vw;
   border-radius: 1vw;
   display: flex;
@@ -76,6 +102,8 @@
   justify-content: center;
   cursor: pointer;
   user-select: none;
+  font-family: Raleway;
+  font-weight: 600;
 }
 
 .contato p{

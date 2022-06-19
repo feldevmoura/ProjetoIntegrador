@@ -1,15 +1,23 @@
-*{
-  margin: 0;
-  border: 0;
-  padding: 0;
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-:root{
+*{
+	margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif ;
+}
+
+:root {
   --color0: rgb(223, 219, 219);
-  --color1: #919090;
-  --color2: #337095;
-  --color3: #2d6181;
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
   --color4: #FFFFFF;
   --color5: #000000;
 }
