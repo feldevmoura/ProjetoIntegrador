@@ -31,7 +31,7 @@ main{
 }
 
 .container1-2{
-  height: 96vh;
+  height: 98vh;
   background-color: var(--color0);
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ main{
 
 .container2-2{
   padding: 0.5vw;
-  height: 96vh;
+  height: 98vh;
   width: 88vw;
   background-color: var(--color4);
   display: flex;

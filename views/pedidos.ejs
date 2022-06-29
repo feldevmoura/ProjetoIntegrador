@@ -10,6 +10,65 @@
   <title>Meus pedidos</title>
 </head>
 <body>
-  
+  <%- include('./partials/header') %>
+
+  <main>
+
+    <div class="container1-2">
+      <div class="meuCadastro-3">
+        <a class="linkMeuCadastro-4" href="/perfil/meuCadastro"><p style="font-size: 1.3vw;">Meu cadastro</p></a>
+      </div>
+      <div class="meusPedidos-3">
+        <a class="meusPedidos-4" style="text-decoration:none;" href="/carrinho"><b>Meus pedidos</b></a>
+      </div>
+    </div>
+
+    <div class="container2-2">
+      <div class="topPedidos-3">
+        <div class="fotoPerfil-4">
+          <img src="/images/usuario.png" alt="">
+        </div>
+        <p>Minha conta > meus pedidos</p>
+      </div>
+      <div class="pedidosInfo-3">
+        <div class="pedidoDetalhes-4">
+          <div class="numeroPedido-5">
+            <p class="nomeInfo-6">Número Pedido</p>
+            <p>#0000000</p>
+          </div>
+          <div class="statusPedido-5">
+            <p class="nomeInfo-6">Status</p>
+            <p>Concluído</p>
+          </div>
+          <div class="dataPedido-5">
+            <p class="nomeInfo-6">Data</p>
+            <p>00/00/0000</p>
+          </div>
+          <div class="detalhesPedido-5">
+            <button class="botaoDetalhes-6">Detalhes do pedido</button>
+          </div>
+        </div>
+        <div class="maisInfos-4">
+          <div class="produtoImagem-5">
+            <small class="textoImagem-6">Produto</small>
+            <img src="/images/phones/samsung/S22ULTRA.png" alt="">
+          </div>
+          <div class="produtoDescricao-5">
+            <small class="textoDescricao-6">Descrição</small>
+            <small class="produtoDescricao-6">Smartphone Samsung Galaxy S22 Ultra 256GB Vinho 5G - 12GB RAM 6,8 Câm. Quádrupla + Selfie 40MP</small>
+          </div>
+          <div class="produtoTotal-5">
+            <small class="produtoTotal-6">Total</small>
+            <small class="produtoTotal-6">R$ 8.550,00</small>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+    
+  </main>
+
+  <%- include('./partials/footer') %>
 </body>
 </html>

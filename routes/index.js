@@ -28,7 +28,7 @@ router.get('/carrinho', carrinhoController.carrinho);
 
 //página pedidos
 const pedidosController = require('../controllers/pedidosController');
-router.get('/pedidos', pedidosController.pedidos);
+router.get('/perfil/pedidos', pedidosController.pedidos);
 
 //página compra finalizada
 const endPurchaseController = require('../controllers/endPurchaseController');
