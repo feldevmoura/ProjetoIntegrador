@@ -55,6 +55,10 @@ main {
   user-select: none;
 }
 
+.h1-2 h1{
+  font-size: 2.5vw;
+}
+
 .produtos-2{
   border-top: 0.1vw solid var(--color3);
   border-bottom: 0.1vw solid var(--color3);
