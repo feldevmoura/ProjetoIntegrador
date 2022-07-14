@@ -1,4 +1,5 @@
-var balls = document.querySelector('.balls');
+window.addEventListener('load', () => {
+  var balls = document.querySelector('.balls');
   var quant = document.querySelectorAll('.phones div');
   var first = 0;
   var imagem = document.getElementById('first');
@@ -6,7 +7,7 @@ var balls = document.querySelector('.balls');
   var previous = document.getElementById('previous');
   var rolar = true
 
-  for(let i = 0; i < quant.length; i++){
+  for (let i = 0; i < quant.length; i++) {
     var div = document.createElement('div');
     div.id = i
     balls.appendChild(div)
@@ -15,11 +16,11 @@ var balls = document.querySelector('.balls');
 
   var pos = document.querySelectorAll('.balls div')
 
-  for(let i=0; i < pos.length; i++){
-    pos[i].addEventListener('click', ()=>{
-        first = pos[i].id
-        rolar = false
-        slide()
+  for (let i = 0; i < pos.length; i++) {
+    pos[i].addEventListener('click', () => {
+      first = pos[i].id
+      rolar = false
+      slide()
     })
   }
 
@@ -35,26 +36,28 @@ var balls = document.querySelector('.balls');
     slide()
   })
 
-  function slide () {
-    if(first >= quant.length){
+  function slide() {
+    if (first >= quant.length) {
       first = 0
     }
-    else if(first < 0){
-      first = quant.length-1
+    else if (first < 0) {
+      first = quant.length - 1
     }
     document.querySelector('.imgAtual').classList.remove('imgAtual')
-    imagem.style.marginLeft = -54*first+'vw'
+    imagem.style.marginLeft = -54 * first + 'vw'
     document.getElementById(first).classList.add('imgAtual')
   }
 
   slide()
-  setInterval(()=> {
-  	if(rolar){
-     	first++
+  setInterval(() => {
+    if (rolar) {
+      first++
       slide()
     }
-    else{
+    else {
       rolar = true
     }
-  	},8000
-	)
+  }, 8000
+  )
+
+})
