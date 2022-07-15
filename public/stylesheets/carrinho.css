@@ -7,10 +7,11 @@
   font-style: normal;
 }
 
-*{
-	margin: 0;
+* {
+  margin: 0;
   padding: 0;
-  font-family: Raleway, Arial, sans-serif ;
+  font-family: Raleway, Arial, sans-serif;
+  border: 0.1vw solid red;
 }
 
 :root {
@@ -31,22 +32,22 @@ main {
   flex-direction: column;
 }
 
-.caixa-1{
-	background-color: var(--color4);
+.caixa-1 {
+  background-color: var(--color4);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-	width: 98vw;
-	height: auto;
+  width: 98vw;
+  height: auto;
 }
 
-.h1-2{
+.h1-2 {
   margin-top: 1vw;
   margin-bottom: 4vw;
-	width: auto;
-	height: auto;
-	background-color: var(--color0);
+  width: auto;
+  height: auto;
+  background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,27 +56,27 @@ main {
   user-select: none;
 }
 
-.h1-2 h1{
+.h1-2 h1 {
   font-size: 2.5vw;
 }
 
-.produtos-2{
+.produtos-2 {
   border-top: 0.1vw solid var(--color3);
   border-bottom: 0.1vw solid var(--color3);
-	background-color: var(--color0);
+  background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-	width: 90vw;
-	height: auto;
+  width: 90vw;
+  height: auto;
   margin-bottom: 2vw;
 }
 
-.produtoInfo-3{
-	width: auto;
-	height: 78vh;
-	background-color: var(--color0);
+.produtoInfo-3 {
+  width: auto;
+  height: 78vh;
+  background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -83,52 +84,55 @@ main {
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   overflow-y: scroll;
-
 }
 
-.produtoInfo-3::-webkit-scrollbar{
+.produtoInfo-3::-webkit-scrollbar {
   width: 0.7vw;
   border: none;
 }
 
-.produtoInfo-3::-webkit-scrollbar-thumb{
+.produtoInfo-3::-webkit-scrollbar-thumb {
   background-color: var(--color3);
   border-radius: 1vw;
 }
 
-
-.produto1-4,
-.produto2-4
-{
+.produto1-4 {
   border: 0.1vw solid var(--color3);
   margin: 0.5vw;
   margin-right: 1.3vw;
-	width: auto;
-	height: auto;
-	background-color: var(--color4);
+  max-width: 51vw;
+  min-height: 33vh;
+  background-color: var(--color4);
   display: flex;
-  align-items: end;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: scroll
 }
 
-.produto1Info-5,
-.produto2Info-5
-{
+.produto1-4::-webkit-scrollbar {
+  width: 0.7vw;
+  border: none;
+}
+
+.produto1-4::-webkit-scrollbar-thumb {
+  background-color: var(--color3);
+  border-radius: 1vw;
+}
+
+.produto1Info-5 {
   margin: 0;
   font-size: 1.2vw;
-	width: 50vw;
-	height: 2vw;
-	background-color: var(--color4);
+  width: 50vw;
+  height: 2vw;
+  background-color: var(--color4);
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row;
 }
 
-.produto1PrecoTxt-6,
-.produto2PrecoTxt-6
-{
+.produto1PrecoTxt-6 {
   margin-right: 1.9vw;
   color: var(--color5);
   background-color: var(--color4);
@@ -139,22 +143,8 @@ main {
   align-items: center;
 }
 
-.produto1QuantidadeTxt-6,
-.produto2QuantidadeTxt-6
-{
+.produto1QuantidadeTxt-6 {
   margin-right: 1.4vw;
-  color: var(--color5);
-  background-color: var(--color4) ;
-  width: 7vw;
-  height: 1.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.produto1SubtotalTxt-6,
-.produto2SubtotalTxt-6
-{
   color: var(--color5);
   background-color: var(--color4);
   width: 7vw;
@@ -164,7 +154,17 @@ main {
   align-items: center;
 }
 
-.precoSubtotal-7{
+.produto1SubtotalTxt-6 {
+  color: var(--color5);
+  background-color: var(--color4);
+  width: 7vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.precoSubtotal-7 {
   font-family: Arial;
   display: flex;
   align-items: center;
@@ -173,23 +173,19 @@ main {
 }
 
 
-.produto1InfoAndConfig-5,
-.produto2InfoAndConfig-5
-{
-	width: 50vw;
-	height: auto;
-	background-color: var(--color4);
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
+.produto1InfoAndConfig-5 {
+  width: 50vw;
+  height: auto;
+  background-color: var(--color4);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: row;
   margin-bottom: 0vw;
   margin-right: 0;
 }
 
-.produto1Image-6,
-.produto2Image-6
-{
+.produto1Image-6 {
   border: 0.1vw solid var(--color3);
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
@@ -203,15 +199,11 @@ main {
   justify-content: center;
 }
 
-.produto1Image-6 img,
-.produto2Image-6 img
-{
+.produto1Image-6 img {
   width: 7.8vw;
 }
 
-.produto1Description-6,
-.produto2Description-6
-{
+.produto1Description-6 {
   font-size: 1.1vw;
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
@@ -222,13 +214,11 @@ main {
   font-family: Arial;
 }
 
-.produtoDesc-7{
+.produtoDesc-7 {
   font-family: Arial;
 }
 
-.produto1Preco-6,
-.produto2Preco-6
-{
+.produto1Preco-6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,13 +232,11 @@ main {
   font-weight: 600;
 }
 
-.preco-7{
+.preco-7 {
   font-family: Arial;
 }
 
-.produto1QuantidadeChange-6,
-.produto2QuantidadeChange-6
-{
+.produto1QuantidadeChange-6 {
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   background-color: var(--color4);
@@ -260,27 +248,22 @@ main {
   align-items: center;
 }
 
-.produto1QuantidadeChange-6 input,
-.produto2QuantidadeChange-6 input
-{
+.produto1QuantidadeChange-6 input {
   outline: none;
   border: 0.1vw solid var(--color3);
   background-color: var(--color0);
-  width: 5vw ;
+  width: 5vw;
   height: 2vw;
   border-radius: 0.3vw;
   display: flex;
   transition: all 0.4s;
 }
 
-.produto1QuantidadeChange-6 input::after,
-.produto2QuantidadeChange-6 input::after{
+.produto1QuantidadeChange-6 input::after {
   background-color: black;
 }
 
-.produto1Subtotal-6,
-.produto2Subtotal-6
-{
+.produto1Subtotal-6 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,9 +277,7 @@ main {
   font-size: 1.2vw;
 }
 
-.produto1Delete-5,
-.produto2Delete-5
-{
+.produto1Delete-5 {
   background-color: none;
   width: 6vw;
   height: auto;
@@ -306,9 +287,7 @@ main {
   justify-content: center;
 }
 
-.produto1Delete-6,
-.produto2Delete-6
-{
+.produto1Delete-6 {
   background-color: var(--color4);
   border: 0.1vw solid var(--color3);
   color: var(--color5);
@@ -316,30 +295,29 @@ main {
   height: 2.5vw;
   font-size: 1vw;
   font-weight: 600;
-  border-radius: 0.5vw ;
+  border-radius: 0.5vw;
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 0.5vw;
 }
 
-.produto1Delete-6:hover,
-.produto2Delete-6:hover{
+.produto1Delete-6:hover {
   background-color: var(--color0);
 }
 
-.finalizar-3{
+.finalizar-3 {
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
-	width: auto ; 
-	height: auto;
-	background-color: var(--color0);
+  width: auto;
+  height: auto;
+  background-color: var(--color0);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.calculeFrete-4{
+.calculeFrete-4 {
   background-color: var(--color4);
   margin: 0.5vw;
   width: 30vw;
@@ -350,15 +328,15 @@ main {
   flex-wrap: wrap;
 }
 
-.resumo-5{
+.resumo-5 {
   margin: 0.5vw;
-  font-size: 2vw;  
-  width: auto; 
-  background-color: var(--color4); 
+  font-size: 2vw;
+  width: auto;
+  background-color: var(--color4);
   font-weight: 600;
 }
 
-.form-5{
+.form-5 {
   margin-bottom: 2vw;
   width: 22vw;
   display: flex;
@@ -369,14 +347,14 @@ main {
   margin-right: 8vw;
 }
 
-.formLabel-6{
+.formLabel-6 {
   margin-right: 1vw;
   margin-bottom: 0.5vw;
   width: 15vw;
   font-size: 1.4vw;
 }
 
-.cepInput-7{
+.cepInput-7 {
   border: none;
   font-weight: 500;
   outline: none;
@@ -388,7 +366,7 @@ main {
   font-family: Arial;
 }
 
-.calcular-5{
+.calcular-5 {
   border-radius: 0.5vw;
   border: none;
   margin-top: 3.7vw;
@@ -403,12 +381,12 @@ main {
   transition: all 1s;
 }
 
-.calcular-5:hover{
+.calcular-5:hover {
   background-color: var(--color2);
   color: var(--color0);
 }
 
-.cupomDesconto-4{
+.cupomDesconto-4 {
   background-color: var(--color4);
   margin: 0.5vw;
   width: 30vw;
@@ -419,7 +397,7 @@ main {
   flex-wrap: wrap;
 }
 
-.formCupom-5{
+.formCupom-5 {
   margin-bottom: 2vw;
   width: 22vw;
   display: flex;
@@ -430,14 +408,14 @@ main {
   margin-right: 8vw;
 }
 
-.formCupomLabel-6{
+.formCupomLabel-6 {
   margin-right: 1vw;
   margin-bottom: 0.5vw;
   width: 15vw;
   font-size: 1.4vw;
 }
 
-.cepCupomInput-7{
+.cepCupomInput-7 {
   border: none;
   font-weight: 500;
   outline: none;
@@ -448,7 +426,7 @@ main {
   background-color: var(--color0);
 }
 
-.adicionar-5{
+.adicionar-5 {
   border-radius: 0.5vw;
   border: none;
   margin-top: 1.8vw;
@@ -463,12 +441,12 @@ main {
   transition: all 1s;
 }
 
-.adicionar-5:hover{
+.adicionar-5:hover {
   background-color: var(--color2);
   color: var(--color0);
 }
 
-.infosAndConcluir-4{
+.infosAndConcluir-4 {
   background-color: var(--color4);
   margin: 0.5vw;
   margin-top: 0;
@@ -479,7 +457,7 @@ main {
   flex-direction: column;
 }
 
-.subtotal-5{
+.subtotal-5 {
   width: 24vw;
   background-color: var(--color4);
   display: flex;
@@ -492,7 +470,7 @@ main {
   margin-bottom: 0.5vw;
 }
 
-.precoFrete-5{
+.precoFrete-5 {
   width: 24vw;
   background-color: var(--color4);
   display: flex;
@@ -504,7 +482,7 @@ main {
   margin-bottom: 0.5VW;
 }
 
-.total-5{
+.total-5 {
   width: 24vw;
   background-color: var(--color4);
   display: flex;
@@ -516,7 +494,7 @@ main {
   margin-bottom: 0.5vw;
 }
 
-.comprar-5{
+.comprar-5 {
   padding: 0.5vw;
   width: 24vw;
   background-color: var(--color3);
@@ -532,19 +510,19 @@ main {
   transition: all 1.1s;
 }
 
-.comprar-5:hover{
+.comprar-5:hover {
   background-color: var(--color2);
 }
 
-.voltarHome-5{
+.voltarHome-5 {
   margin-top: 0.5vw;
 }
 
-.voltarHome-5 p{
+.voltarHome-5 p {
   color: var(--color1);
   font-size: 1.5vw;
 }
 
-.voltarHome-5 a{
+.voltarHome-5 a {
   text-decoration: none;
 }
