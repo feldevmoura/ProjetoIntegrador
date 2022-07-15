@@ -41,6 +41,7 @@ const samsungController = require('../controllers/samsungController');
 router.get('/categorias/samsung', samsungController.samsung);
 const appleController  = require('../Controllers/appleController');
 router.get('/categorias/apple', appleController.apple);
+router.get('/produtoAppleCorPreto', appleController.produtoCorPreto);
 const motorolaController = require('../controllers/motorolaController');
 router.get('/categorias/motorola', motorolaController.motorola);
 const xiaomiController = require('../controllers/xiaomiController');
