@@ -586,10 +586,14 @@ main{
 	background-color: var(--color0);
 	width: 90vw;
 	height: 30vw;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+}
+
+.acessoriosNone{
+	display: flex;
 }
 
 .acessorio1-3,
