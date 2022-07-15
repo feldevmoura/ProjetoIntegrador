@@ -915,7 +915,7 @@ main{
 .propaganda-1{
 	margin-top: 1vh;
 	margin-bottom: 1vw;
-	height: 23vw;
+	height: auto;
 	width: 100%;
 	background-color: var(--color0) ;
 	display: flex;
