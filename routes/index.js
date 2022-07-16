@@ -8,7 +8,7 @@ router.get('/home', homeController.home);
 
 //página do produto
 const produtoController = require('../controllers/produtoController');
-router.get('/produto', produtoController.produto);
+
 
 //página do cadastro
 const cadastroController = require('../controllers/cadastroController');
@@ -39,9 +39,14 @@ const categoriasController = require('../controllers/categoriasController');
 router.get('/categorias', categoriasController.categorias);
 const samsungController = require('../controllers/samsungController');
 router.get('/categorias/samsung', samsungController.samsung);
+router.get('/s20UltraAzul', samsungController.s20UltraAzul);
+router.get('/s20UltraVinho', samsungController.s20UltraVinho);
 const appleController  = require('../Controllers/appleController');
 router.get('/categorias/apple', appleController.apple);
-router.get('/produtoAppleCorPreto', appleController.produtoCorPreto);
+router.get('/iphone13MiniAzul', appleController.iphone13MiniAzul);
+router.get('/iphone13MiniBranco', appleController.iphone13MiniBranco);
+router.get('/iphone13MiniPreto', appleController.iphone13MiniPreto);
+router.get('/iphone13MiniRosa', appleController.iphone13MiniRosa);
 const motorolaController = require('../controllers/motorolaController');
 router.get('/categorias/motorola', motorolaController.motorola);
 const xiaomiController = require('../controllers/xiaomiController');
