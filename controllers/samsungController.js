@@ -7,6 +7,12 @@ const samsungController = {
   },
   s20UltraAzul: (req, res) => {
     return res.render('s20UltraAzul')
+  },
+  s20UltraPreto: (req, res) => {
+    return res.render('s20UltraPreto')
+  },
+  s20UltraBranco: (req, res) => {
+    return res.render('s20UltraBranco')
   }
 }
 

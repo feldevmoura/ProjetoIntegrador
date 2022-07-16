@@ -40,6 +40,9 @@ router.get('/categorias', categoriasController.categorias);
 const samsungController = require('../controllers/samsungController');
 router.get('/categorias/samsung', samsungController.samsung);
 router.get('/s20UltraAzul', samsungController.s20UltraAzul);
+router.get('/s20UltraBranco', samsungController.s20UltraBranco);
+
+router.get('/s20UltraPreto', samsungController.s20UltraPreto);
 router.get('/s20UltraVinho', samsungController.s20UltraVinho);
 const appleController  = require('../Controllers/appleController');
 router.get('/categorias/apple', appleController.apple);
