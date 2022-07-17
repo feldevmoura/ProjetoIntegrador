@@ -2,6 +2,12 @@ const appleController = {
   apple: (req, res) => {
     res.render('apple')
   },
+  iphone13ProMaxPreto: (req, res) => {
+    res.render('iphone13ProMaxPreto')
+  },
+  iphone13ProPreto: (req,res) => {
+    res.render('iphone13ProPreto')
+  },
   iphone13MiniPreto: (req,res) => {
     res.render('iphone13MiniPreto')
   },

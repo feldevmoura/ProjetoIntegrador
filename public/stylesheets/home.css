@@ -24,7 +24,7 @@
 
 main {
   height: 100vh;
-  background-color: var(--color4);
+  background-color: var(--color0);
   display: flex;
   justify-content:center;
   align-items: center;
@@ -37,7 +37,7 @@ main {
   overflow: hidden;
   border-radius: 2vw;
   transition: all 0.4s;
-  background-color: var(--color0);
+  background-color: var(--color4);
   border: 0.1vw solid var(--color3);
 }
 

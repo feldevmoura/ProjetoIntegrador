@@ -35,7 +35,7 @@ main{
   flex-direction: column;
   height: 100vh;
   width: 15vw;
-  background-color: var(--color0);
+  background-color: var(--color4);
   font-size: 1.5vw;
 }
 
@@ -76,7 +76,7 @@ main{
   flex-direction: column;
   height: 100vh;
   width: 85vw;
-  background-color: var(--color4);
+  background-color: var(--color0);
 }
 
 .logoApple-2{
@@ -116,7 +116,7 @@ main{
   justify-content: center;
   flex-direction: column ;
   margin-right: 1vw;
-  background-color: var(--color0);
+  background-color: var(--color4);
   border-radius: 1vw;
 }
 
@@ -129,7 +129,7 @@ main{
 }
 
 .imagem1-3 img{
-  width: 9vw;
+  width: 13vw;
 }
 
 .imagem2-3 img{

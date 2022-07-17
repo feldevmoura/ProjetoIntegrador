@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: Raleway, Arial, sans-serif;
-  border: 0.1vw solid red;
+  /* border: 1px solid red; */
 }
 
 :root {
@@ -172,6 +172,10 @@ main {
   width: auto;
 }
 
+.acessoriosAdd-5 {
+  margin-left: 2vw;
+  border: 0.1vw solid red;
+}
 
 .produto1InfoAndConfig-5 {
   width: 50vw;
@@ -495,7 +499,7 @@ main {
 }
 
 .comprar-5 {
-  padding: 0.5vw;
+  /* padding: 0.5vw; */
   width: 24vw;
   background-color: var(--color3);
   display: flex;
@@ -512,17 +516,4 @@ main {
 
 .comprar-5:hover {
   background-color: var(--color2);
-}
-
-.voltarHome-5 {
-  margin-top: 0.5vw;
-}
-
-.voltarHome-5 p {
-  color: var(--color1);
-  font-size: 1.5vw;
-}
-
-.voltarHome-5 a {
-  text-decoration: none;
 }

@@ -113,3 +113,16 @@ main{
   color: var(--color0);
   transform: scale(1.1);
 }
+
+.voltarHome-5 {
+  margin-top: 0.5vw;
+}
+
+.voltarHome-5 p {
+  color: var(--color1);
+  font-size: 1.5vw;
+}
+
+.voltarHome-5 a {
+  text-decoration: none;
+}

@@ -39,21 +39,35 @@ const categoriasController = require('../controllers/categoriasController');
 router.get('/categorias', categoriasController.categorias);
 const samsungController = require('../controllers/samsungController');
 router.get('/categorias/samsung', samsungController.samsung);
-router.get('/s20UltraAzul', samsungController.s20UltraAzul);
-router.get('/s20UltraBranco', samsungController.s20UltraBranco);
+router.get('/s22UltraAzul', samsungController.s22UltraAzul);
+router.get('/s22UltraBranco', samsungController.s22UltraBranco);
+router.get('/s22UltraPreto', samsungController.s22UltraPreto);
+router.get('/s22UltraVinho', samsungController.s22UltraVinho);
+router.get('/s22PlusPreto', samsungController.s22PlusPreto);
+router.get('/s22Preto', samsungController.s22Preto);
 
-router.get('/s20UltraPreto', samsungController.s20UltraPreto);
-router.get('/s20UltraVinho', samsungController.s20UltraVinho);
+
 const appleController  = require('../Controllers/appleController');
 router.get('/categorias/apple', appleController.apple);
+router.get('/iphone13ProMaxPreto', appleController.iphone13ProMaxPreto);
+router.get('/iphone13ProPreto', appleController.iphone13ProPreto);
 router.get('/iphone13MiniAzul', appleController.iphone13MiniAzul);
 router.get('/iphone13MiniBranco', appleController.iphone13MiniBranco);
 router.get('/iphone13MiniPreto', appleController.iphone13MiniPreto);
 router.get('/iphone13MiniRosa', appleController.iphone13MiniRosa);
 const motorolaController = require('../controllers/motorolaController');
 router.get('/categorias/motorola', motorolaController.motorola);
+router.get('/motorolaEdge30ProAzul', motorolaController.motorolaEdge30ProAzul);
+router.get('/motorolaEdge30Azul', motorolaController.motorolaEdge30Azul);
+router.get('/motorolaEdge20ProAzul', motorolaController.motorolaEdge20ProAzul);
+
+
 const xiaomiController = require('../controllers/xiaomiController');
 router.get('/categorias/xiaomi', xiaomiController.xiaomi);
+router.get('/xiaomiMi11Cinza', xiaomiController.xiaomiMi11Cinza)
+router.get('/xiaomi12Cinza', xiaomiController.xiaomi12Cinza);
+router.get('/xiaomiRedmiNote11Cinza', xiaomiController.xiaomiRedmiNote11Cinza);
+
 
 //págin perfil
 const perfilController = require('../controllers/perfilController');

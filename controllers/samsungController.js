@@ -2,17 +2,23 @@ const samsungController = {
   samsung: (req, res) => {
     return res.render('samsung')
   },
-  s20UltraVinho: (req, res) => {
-    return res.render('s20UltraVinho')
+  s22UltraVinho: (req, res) => {
+    return res.render('s22UltraVinho')
   },
-  s20UltraAzul: (req, res) => {
-    return res.render('s20UltraAzul')
+  s22UltraAzul: (req, res) => {
+    return res.render('s22UltraAzul')
   },
-  s20UltraPreto: (req, res) => {
-    return res.render('s20UltraPreto')
+  s22UltraPreto: (req, res) => {
+    return res.render('s22UltraPreto')
   },
-  s20UltraBranco: (req, res) => {
-    return res.render('s20UltraBranco')
+  s22UltraBranco: (req, res) => {
+    return res.render('s22UltraBranco')
+  },
+  s22PlusPreto: (req, res) => {
+    res.render('s22PlusPreto')
+  },
+  s22Preto: (req,res) => {
+    res.render('s22Preto')
   }
 }
 
