@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,52 +10,63 @@
   <link rel="icon" href="/images/Logo.png">
   <title>Meu perfil</title>
 </head>
+
 <body>
   <div class="container">
 
     <%- include('./partials/header') %>
 
-    <main>
-      <div class="container1-2">
-        <div class="meuCadastro-3">
-          <a class="linkMeuCadastro-4" href="/perfil/meuCadastro"><p style="font-size: 1.3vw;">Meu cadastro</p></a>
+      <main>
+        <div class="container1-2">
+          <div class="meuPerfil-3">
+            <b>
+              <p>Meu perfil</p>
+            </b>
+          </div>
+          <div class="meuCadastro-3">
+            <a class="linkMeuCadastro-4" href="/perfil/meuCadastro">
+              <p style="font-size: 1.3vw;">Meu cadastro</p>
+            </a>
+          </div>
+          <div class="meusPedidos-3">
+            <a class="meusPedidos-4" style="text-decoration:none;" href="/perfil/pedidos">
+              <p>Meus pedidos</p>
+            </a>
+          </div>
         </div>
-        <div class="meusPedidos-3">
-          <a class="meusPedidos-4" style="text-decoration:none;" href="/perfil/pedidos"><p>Meus pedidos</p></a>
-        </div>
-      </div>
 
-      <div class="container2-2">
-        <div class="perfilImagem-3">
-          <div class="perfilUsuario-4">
-            <img src="/images/usuario.png" alt="Foto do perfil">
+        <div class="container2-2">
+          <div class="perfilImagem-3">
+            <div class="perfilUsuario-4">
+              <img src="/images/usuario.png" alt="Foto do perfil">
+            </div>
+
+            <form class="perfilImagem-4">
+
+              <div class="botaoEnviar-5">
+                <label for="enviarFoto">
+                  <p>Altere sua foto de perfil</p>
+                </label>
+              </div>
+              <input class="enviarFoto-5" type="file" name="enviarFoto" id="enviarFoto"></input>
+
+
+            </form>
           </div>
 
-          <form class="perfilImagem-4">
-            
-            <div class="botaoEnviar-5">
-              <label for="enviarFoto">
-                <p>Altere sua foto de perfil</p>
-              </label>
-            </div>
-            <input class="enviarFoto-5" type="file" name="enviarFoto" id="enviarFoto"></input>
+          <div class="perfilCaixa2-3">
+            <p>Olá userName! À esquerda poderá</p>
+            <p>navegar e fazer <b>alterações de cadastro</b>, ou se preferir,<b> seus pedidos</b>.</p>
+          </div>
 
-
-          </form>
         </div>
 
-        <div class="perfilCaixa2-3">
-          <p>Olá userName! À esquerda poderá</p>
-           <p>navegar e fazer <b>alterações de cadastro</b>, ou se preferir,<b> seus pedidos</b>.</p>
-        </div>
-        
-      </div>
 
+      </main>
 
-    </main>
-
-    <%- include('./partials/footer') %>
+      <%- include('./partials/footer') %>
 
   </div>
 </body>
+
 </html>

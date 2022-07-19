@@ -39,24 +39,37 @@ main{
   padding: 0.5vw;
 }
 
+.meuPerfil-3,
 .meuCadastro-3,
-.meusPedidos-3
-{
+.meusPedidos-3 {
   font-size: 1.3vw;
   white-space: nowrap;
-  cursor: pointer;
   user-select: none;
   margin-bottom: 0.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   padding: 1vw;
   width: 8vw;
   background-color: var(--color4);
   transition: all 0.5s;
+}
+
+.meuPerfil-3 p,
+.meuCadastro-3 p,
+.meusPedidos-3 p {
+  cursor: pointer;
+}
+
+.meuPerfil-3 a,
+.meuCadastro-3 a,
+.meusPedidos-3 a {
+  text-decoration: none;
   color: var(--color5);
 }
 
+.meuPerfil-3:hover,
 .meuCadastro-3:hover,
 .meusPedidos-3:hover
 {
