@@ -170,12 +170,16 @@ main{
 }
 
 .maisInfos-4{
-  display: flex;
+  display: none;
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   background-color: var(--color4);
   width: 55vw;
+}
+
+.maisInfos-4Flex{
+  display: flex;
 }
 
 .produtoImagem-5{
