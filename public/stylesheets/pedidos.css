@@ -11,6 +11,7 @@
 	margin: 0;
   padding: 0;
   font-family:  sans-serif;
+  border: 1px solid red;
 }
 
 :root {
@@ -213,6 +214,23 @@ main{
   font-family: sans-serif;
 }
 
+.produtoQuantidade-5 {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 14vw;
+}
+
+.produtoQuantidade-6{
+ margin-bottom: 2vw;
+}
+
+.quantidade-6{
+  font-size: 1.3vw;
+}
+
 .produtoTotal-5{
   background-color: #fff;
   display: flex;
@@ -224,7 +242,7 @@ main{
 
 .produtoTotal-6{
   font-family: sans-serif;
-  margin-bottom: 3vw;
+  margin-bottom: 2.5vw;
 }
 
 .botaoDetalhes-6:hover .maisInfos-4{
