@@ -154,6 +154,7 @@ select {
 .finalizarBtn-3 {
   border: none;
   margin-bottom: 2vw;
+  margin-left: 3.2vw;
   background-color: var(--color3);
   color: var(--color4);
   width: auto;
