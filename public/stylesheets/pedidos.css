@@ -108,6 +108,16 @@ main{
   width: 4vw;
 }
 
+.perfil-5 {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+
+.perfil-5:hover {
+  text-decoration: underline;
+}
+
 .pedidosInfo-3{
   overflow-y: scroll;
   background-color: var(--color0);
