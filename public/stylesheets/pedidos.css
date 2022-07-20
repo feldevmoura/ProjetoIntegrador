@@ -7,10 +7,10 @@
   font-style: normal;
 }
 
-*{
-	margin: 0;
+* {
+  margin: 0;
   padding: 0;
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 
 :root {
@@ -22,14 +22,14 @@
   --color5: #000000;
 }
 
-main{
+main {
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.container1-2{
+.container1-2 {
   left: 0;
   height: 98vh;
   background-color: var(--color0);
@@ -39,9 +39,9 @@ main{
   padding: 0.5vw;
 }
 
+.meuPerfil-3,
 .meuCadastro-3,
-.meusPedidos-3
-{
+.meusPedidos-3 {
   font-size: 1.3vw;
   white-space: nowrap;
   cursor: pointer;
@@ -54,25 +54,22 @@ main{
   width: 8vw;
   background-color: var(--color4);
   transition: all 0.5s;
-  color: var(--color5);
 }
 
+.meuPerfil-3:hover,
 .meuCadastro-3:hover,
-.meusPedidos-3:hover
-{
+.meusPedidos-3:hover {
   text-decoration: underline;
 }
 
-.linkMeuCadastro-4{
-  color: var(--color5);
+.meuPerfil-3 a,
+.meuCadastro-3 a,
+.meusPedidos-3 a {
   text-decoration: none;
-}
-
-.meusPedidos-4{
   color: var(--color5);
 }
 
-.container2-2{
+.container2-2 {
   height: 98vh;
   width: 86vw;
   padding: 0.5vw;
@@ -80,10 +77,9 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
-  
 }
 
-.topPedidos-3{
+.topPedidos-3 {
   font-size: 3vw;
   display: flex;
   align-items: center;
@@ -92,7 +88,7 @@ main{
   margin-bottom: 0.5vw;
 }
 
-.fotoPerfil-4{
+.fotoPerfil-4 {
   margin-top: 2vw;
   display: flex;
   align-items: center;
@@ -104,7 +100,7 @@ main{
   border-radius: 6vw;
 }
 
-.fotoPerfil-4 img{
+.fotoPerfil-4 img {
   width: 4vw;
 }
 
@@ -118,24 +114,24 @@ main{
   text-decoration: underline;
 }
 
-.pedidosInfo-3{
+.pedidosInfo-3 {
   overflow-y: scroll;
   background-color: var(--color0);
 }
 
-.pedidosInfo-3::-webkit-scrollbar{
+.pedidosInfo-3::-webkit-scrollbar {
   width: 1vw;
   border: none;
 }
 
-.pedidosInfo-3::-webkit-scrollbar-thumb{
+.pedidosInfo-3::-webkit-scrollbar-thumb {
   background-color: var(--color3);
   border-bottom: 0.3vw solid var(--color4);
   border-top: 0.3vw solid var(--color4);
   border-radius: 1vw;
 }
 
-.pedidoDetalhes-4{
+.pedidoDetalhes-4 {
   margin-top: 2vw;
   padding: 0.5vw;
   display: flex;
@@ -146,7 +142,7 @@ main{
   margin-bottom: 0.5vw;
 }
 
-.pedidoDetalhes-4 div{
+.pedidoDetalhes-4 div {
   background-color: var(--color0);
   margin-right: 2vw;
   display: flex;
@@ -156,16 +152,16 @@ main{
 }
 
 
-.pedidoDetalhes-4 .nomeInfo-6{
+.pedidoDetalhes-4 .nomeInfo-6 {
   margin-bottom: 1vw;
 }
 
-.detalhesPedido-5{
+.detalhesPedido-5 {
   margin-right: 2vw;
   margin-left: 2vw;
 }
 
-.botaoDetalhes-6{
+.botaoDetalhes-6 {
   background-color: var(--color0);
   border: none;
   cursor: pointer;
@@ -174,11 +170,13 @@ main{
   text-decoration: underline;
 }
 
-.numeroPedido-5 p, .dataPedido-5 p, .dataPedido-5 p {
+.numeroPedido-5 p,
+.dataPedido-5 p,
+.dataPedido-5 p {
   font-family: sans-serif;
 }
 
-.maisInfos-4{
+.maisInfos-4 {
   display: none;
   align-items: flex-start;
   justify-content: center;
@@ -187,11 +185,11 @@ main{
   width: 55vw;
 }
 
-.maisInfos-4Flex{
+.maisInfos-4Flex {
   display: flex;
 }
 
-.produtoImagem-5{
+.produtoImagem-5 {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -200,20 +198,20 @@ main{
   height: 14vw;
 }
 
-.textoImagem-6{
+.textoImagem-6 {
   margin-bottom: 1vw;
 }
 
-.produtoImagem-5 img{
+.produtoImagem-5 img {
   width: 11vw;
   display: block;
 }
 
-.textoDescricao-6{
+.textoDescricao-6 {
   margin-bottom: 2vw;
 }
 
-.produtoDescricao-5{
+.produtoDescricao-5 {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -223,7 +221,7 @@ main{
   height: 14vw;
 }
 
-.produtoDescricao-6{
+.produtoDescricao-6 {
   font-family: sans-serif;
 }
 
@@ -236,15 +234,15 @@ main{
   height: 14vw;
 }
 
-.produtoQuantidade-6{
- margin-bottom: 2vw;
+.produtoQuantidade-6 {
+  margin-bottom: 2vw;
 }
 
-.quantidade-6{
+.quantidade-6 {
   font-size: 1.3vw;
 }
 
-.produtoTotal-5{
+.produtoTotal-5 {
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -253,11 +251,11 @@ main{
   height: 14vw;
 }
 
-.produtoTotal-6{
+.produtoTotal-6 {
   font-family: sans-serif;
   margin-bottom: 2.5vw;
 }
 
-.botaoDetalhes-6:hover .maisInfos-4{
+.botaoDetalhes-6:hover .maisInfos-4 {
   display: flex;
 }
