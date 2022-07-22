@@ -68,12 +68,16 @@ main{
 }
 
 .formCadastro-2 
-input, select{
+input {
   outline: none;
   width: 20vw;
   height: 2.5vw;
   font-size: 1.3vw;
   border: 0.2vw solid var(--color3);
+}
+
+#numeroCPF, #numeroCel, #numeroCasaCadastro {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .h1-3{

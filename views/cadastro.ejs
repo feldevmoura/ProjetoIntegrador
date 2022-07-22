@@ -17,7 +17,7 @@
         <main>
             <div class="registro-1">
 
-                <form class="formCadastro-2">
+                <form class="formCadastro-2" method="POST">
 
                   <div class="h1-3">
                     <h1>Dados Cadastrais</h1>
@@ -31,7 +31,7 @@
                   </div>
 
                   <div class="cadastroForm senhaCadastro-3">
-                    <label for="senhaCadastro">Senha</label>
+                    <label for="senhaCadastro">Senha*</label>
                     <br>
                     <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Crie uma senha..." required>
                   </div>
@@ -43,17 +43,15 @@
                   </div>
 
                   <div class="cadastroForm generoCadastro-3">
-                    <label for="genero">Gênero*</label>
+                    <label for="genero">Gênero</label>
                     <br>
-                    <select class="generoSelect-5" name="genero" id="genero">
-                      <option selected disabled>Selecione</option>
-                    </select>
+                    <input type="text" class="genero-5" placeholder="  Digite seu gênero...">
                   </div>
 
                   <div class="cadastroForm cpfCadastro-3">
                     <label class="cpfLabel-5" for="numeroCPF">CPF*</label>
                     <br>
-                    <input type="number" id="numeroCPF" name="numeroCPF" required placeholder="000.000.000-00">
+                    <input type="text" id="numeroCPF" name="numeroCPF" required="required" pattern="[0-9]{11}" placeholder="000.000.000-00">
                   </div>
 
                   <div class="cadastroForm celularCadastro-3">
@@ -82,11 +80,11 @@
                   <div class="cadastroForm cepCadastro-3">
                     <label for="cepCadastro">CEP*</label>
                     <br>
-                    <input type="number" id="cepCadastro" name="cepCadastro" placeholder="Digite seu CEP aqui..." required>
+                    <input type="number" id="cepCadastro" name="cepCadastro" placeholder="Digite seu CEP aqui..." pattern="[0-9]{8}" required>
                   </div>
 
                   <div class="cadastroForm ruaCadastro-3">
-                    <label for="ruaCadastro">Rua*</label>
+                    <label for="ruaCadastro">Rua</label>
                     <br>
                     <input type="text" id="ruaCadastro" name="ruaCadastro" placeholder="Digite o nome de sua Rua aqui...">
                   </div>
@@ -94,7 +92,7 @@
                   <div class="cadastroForm numeroCasaCadastro-3">
                     <label for="numeroCasaCadastro">Numero*</label>
                     <br>
-                    <input type="number" id="numeroCasaCadastro" name="numeroCasaCadastro" placeholder="0000" required>
+                    <input type="number" id="numeroCasaCadastro" name="numeroCasaCadastro"placeholder="00000" required>
                   </div>
 
                   <div class="cadastroForm complementoCadastro-3">
@@ -127,7 +125,7 @@
                     <input type="text" id="estadoCadastro" name="estadoCadastro" placeholder="Estado">
                   </div>
 
-                  <button class="finalizarBtn-3">Finalizar Registro</button>
+                  <button type="submite" class="finalizarBtn-3">Finalizar Registro</button>
 
                 </form>
 
