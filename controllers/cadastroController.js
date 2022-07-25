@@ -17,8 +17,10 @@ const cadastroController = {
             data_nascimento,
              } = req.body;
         console.log(email)
+
        try  {
-        await db.Usuario.create({
+
+        const newUser = await db.Usuario.create({
             nome ,
             email ,
             senha ,
@@ -28,8 +30,12 @@ const cadastroController = {
             cpf,
             data_nascimento
 
-        })} catch(error){console.log(error.message)}
+        })
+    
+        console.log(newUser)    } catch(error){console.log(error.message)}
     }
+
+
 
 };
 
