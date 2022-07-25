@@ -76,7 +76,7 @@ input {
   border: 0.2vw solid var(--color3);
 }
 
-#numeroCPF, #numeroCel, #numeroCasaCadastro {
+#numeroCPF, #numeroCel, #numeroCasaCadastro, #numeroTelefone, #cepCadastro {
   font-family: Arial, Helvetica, sans-serif;
 }
 

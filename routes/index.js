@@ -13,6 +13,7 @@ const produtoController = require('../controllers/produtoController');
 //página do cadastro
 const cadastroController = require('../controllers/cadastroController');
 router.get('/cadastro', cadastroController.cadastro);
+router.post('/cadastro', cadastroController.cadastroCompleto);
 
 //página do login
 const entrarController = require('../controllers/entrarController');

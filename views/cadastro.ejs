@@ -17,7 +17,7 @@
         <main>
             <div class="registro-1">
 
-                <form class="formCadastro-2" method="POST">
+                <form class="formCadastro-2" method="post">
 
                   <div class="h1-3">
                     <h1>Dados Cadastrais</h1>
@@ -33,43 +33,43 @@
                   <div class="cadastroForm senhaCadastro-3">
                     <label for="senhaCadastro">Senha*</label>
                     <br>
-                    <input type="password" id="senhaCadastro" name="senhaCadastro" placeholder="Crie uma senha..." required>
+                    <input type="password" id="senhaCadastro" name="senha" placeholder="Crie uma senha..." required>
                   </div>
 
                   <div class="cadastroForm nomeCadastro-3">
                     <label for="name">Nome Completo*</label>
                     <br>
-                    <input class="nome-5" type="text" id="name" name="name" placeholder="Digite seu nome completo aqui..." required>
+                    <input class="nome-5" type="text" id="name" name="nome" placeholder="Digite seu nome completo aqui..." required>
                   </div>
 
                   <div class="cadastroForm generoCadastro-3">
                     <label for="genero">Gênero</label>
                     <br>
-                    <input type="text" class="genero-5" placeholder="  Digite seu gênero...">
+                    <input type="text" class="genero-5" name="genero" placeholder="  Digite seu gênero...">
                   </div>
 
                   <div class="cadastroForm cpfCadastro-3">
                     <label class="cpfLabel-5" for="numeroCPF">CPF*</label>
                     <br>
-                    <input type="text" id="numeroCPF" name="numeroCPF" required="required" pattern="[0-9]{11}" placeholder="000.000.000-00">
+                    <input type="text" id="numeroCPF" name="cpf" required="required" pattern="[0-9]{11}" placeholder="000.000.000-00">
                   </div>
 
                   <div class="cadastroForm celularCadastro-3">
                     <label for="numeroCel">Celular*</label>
                     <br>
-                    <input type="number" id="numeroCel" name="numeroCel" required placeholder="(ddd) 0 0000-0000">
+                    <input type="number" id="numeroCel" name="celular" required placeholder="(ddd) 0 0000-0000">
                   </div>
 
                   <div class="cadastroForm telefoneCadastro-3">
-                    <label for="numeroTelefone">Telefone*(Não necessário)</label>
+                    <label for="numeroTelefone">Telefone(Não necessário)</label>
                     <br>
-                    <input type="number" id="numeroTelefone" name="numeroTelefone" placeholder="Digite seu telefone aqui...">
+                    <input type="number" id="numeroTelefone" name="telefone" placeholder="Digite seu telefone aqui...">
                   </div>
 
                   <div class="cadastroForm dataCadastro-3">
                     <label for="dateCadastro">Nascimento*</label>
                     <br>
-                    <input type="date" id="dateCadastro" name="dateCadastro" required>
+                    <input type="date" id="dateCadastro" name="data_nascimento" required>
                   </div>
                   
                   <div class="h1-3">
@@ -96,19 +96,19 @@
                   </div>
 
                   <div class="cadastroForm complementoCadastro-3">
-                    <label for="completamentoCadastro">Complemento*</label>
+                    <label for="completamentoCadastro">Complemento</label>
                     <br>
                     <input type="text" id="complementoCadastro" name="complementoCadastro" placeholder="Complemento">
                   </div>
 
                   <div class="cadastroForm referenciaCadastro-3">
-                    <label for="referenciaCadastro">Referência*</label>
+                    <label for="referenciaCadastro">Referência</label>
                     <br>
                     <input type="text" id="referenciaCadastro" name="referenciaCadastro" placeholder="Referência">
                   </div>
 
                   <div class="cadastroForm bairroCadastro-3">
-                    <label for="bairroCadastro">Bairro*</label>
+                    <label for="bairroCadastro">Bairro</label>
                     <br>
                     <input type="text" id="bairroCadastro" name="bairroCadastro" placeholder="Digite seu Bairro aqui...">
                   </div>
@@ -116,7 +116,7 @@
                   <div class="cadastroForm cidadeCadastro-3">
                     <label for="cidadeCadastro">Cidade*</label>
                     <br>
-                    <input type="text" id="cidadeCadastro" name="cidadeCadastro" placeholder="Cidade">
+                    <input type="text" id="cidadeCadastro" name="cidadeCadastro" required placeholder="Cidade">
                   </div>
 
                   <div class="cadastroForm estadoCadastro-3">
