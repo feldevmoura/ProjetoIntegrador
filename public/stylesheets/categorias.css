@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif ;
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+}
+
+.container1-1{
+  user-select: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 15vw;
+  background-color: var(--color0);
+}
+
+.categorias1-2{
+  margin-top: 8vw;
+  font-weight: 800;
+  font-size: 2.5vw;
+}
+
+.categorias2-2{
+  margin-top: 1vw;
+  transition: all 0.5s;
+}
+
+.categorias2-2 p{
+  font-size: 1.5vw;
+}
+
+.categorias2-2 a{
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.categorias2-2 div{
+  margin-bottom: 2vw;
+}
+
+.marca1:hover,.marca2:hover,.marca3:hover,.marca4:hover
+{
+  text-decoration: underline;
+}
+
+.container2-1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 85vw;
+  background-color: var(--color4);
+}
+
+.container3-2{
+  margin-top: 2vw;
+  height: 40vw;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container3-2 h1{
+  margin-bottom: 2vw;
+}
+
+.categorias-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color5);
+  width: auto;
+  height: 20vw;
+  border-radius: 4vw;
+}
+
+.categorias-3 img{
+  width: 6vw;
+}
+
+.categorias-3 div{
+  margin-left: 4vw;
+}
+
+.categorias-3 .image4-3{
+  margin-right: 4vw;
+  background-color: #ff6900;
+  border-radius: 2vw;
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image1-3 img{
+  width: 10vw;
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main {
+  height: auto;
+  display: flex;
+  background-color: var(--color4);
+}
+
+.registro-1 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  height: auto;
+  background-color: var(--color4);
+  width: 100%;
+}
+
+.selecioneEndereco-2 {
+  width: 17%;
+  height: 3vw;
+  /* border: 1px solid blue; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75vw;
+  margin-top: 1.7vw;
+}
+
+.container1-2 {
+  height: 100%;
+  background-color: var(--color0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meuPerfil-3,
+.meuCadastro-3,
+.meusPedidos-3 {
+  margin: 0.5vw;
+  font-size: 1.3vw;
+  white-space: nowrap;
+  user-select: none;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 1vw;
+  width: 8vw;
+  background-color: var(--color4);
+  transition: all 0.5s;
+}
+
+.meuPerfil-3 p,
+.meuCadastro-3 p,
+.meusPedidos-3 p {
+  cursor: pointer;
+}
+
+.meuPerfil-3 a,
+.meuCadastro-3 a,
+.meusPedidos-3 a {
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.meuPerfil-3:hover,
+.meuCadastro-3:hover,
+.meusPedidos-3:hover {
+  text-decoration: underline;
+}
+
+.meusPedidos-4 {
+  color: var(--color5);
+}
+
+.formCadastro-2 {
+  background-color: var(--color4);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formCadastro-2 .cadastroForm {
+  margin-bottom: 4vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  font-size: 1.3vw;
+  background-color: var(--color4);
+  width: 20vw;
+  height: 5vw;
+
+}
+
+.formCadastro-2 input,
+select {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color1);
+  outline: none;
+  width: 23vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  border: 0.2vw solid var(--color3);
+}
+
+.h1-3 {
+  font-size: 2vw;
+  user-select: none;
+  margin: 0.5vw;
+  margin-bottom: 2vw;
+  background-color: var(--color4);
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.h1-3 img {
+
+  width: 3vw;
+  margin-right: 1.5vw;
+}
+
+.h1-4 {
+  height: auto;
+}
+
+#nomeEndereco-3{
+  margin-bottom: 8vw;
+}
+
+.finalizarBtn-3 {
+  border: none;
+  margin-top: 90vw;
+  margin-right: 20vw;
+  position: 1;
+  position: absolute;
+  background-color: var(--color3);
+  color: var(--color4);
+  width: auto;
+  padding: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.finalizarBtn-3:hover {
+  transform: scale(1.1);
+  background-color: var(--color2);
+}
+
+.criarBtn-3 {
+  border: none;
+  margin-top: 90vw;
+  margin-left: 20vw;
+  position: 1;
+  position: absolute;
+  background-color: var(--color3);
+  color: var(--color4);
+  width: auto;
+  padding: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.criarBtn-3:hover {
+  transform: scale(1.1);
+  background-color: var(--color2);
+}

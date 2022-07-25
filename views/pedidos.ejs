@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="/images/Logo.png">
+  <link rel="stylesheet" href="/stylesheets/pedidos.css">
+  <title>Meus pedidos</title>
+</head>
+<body>
+  <%- include('./partials/header') %>
+
+  <main>
+
+    <div class="container1-2">
+
+      <div class="meuPerfil-3">
+        <a class="linkMeuPerfil-4" href="/perfil">
+          <p>Meu perfil</p>
+        </a>
+      </div>
+
+      <div class="meuCadastro-3">
+        <a class="linkMeuCadastro-4" href="/perfil/meuCadastro"><p>Meu cadastro</p></a>
+      </div>
+
+      <div class="meusPedidos-3">
+        <a class="meusPedidos-4"><b>Meus pedidos</b></a>
+      </div>
+
+    </div>
+
+    <div class="container2-2">
+      <div class="topPedidos-3">
+        <div class="fotoPerfil-4">
+          <img src="/images/usuario.png" alt="">
+        </div>
+        <p><a class="perfil-5" href="/perfil">Minha conta</a> > meus pedidos</p>
+      </div>
+      <div class="pedidosInfo-3">
+        <div class="pedidoDetalhes-4">
+          <div class="numeroPedido-5">
+            <p class="nomeInfo-6">Número Pedido</p>
+            <p>#0000000</p>
+          </div>
+          <div class="statusPedido-5">
+            <p class="nomeInfo-6">Status</p>
+            <p>Concluído</p>
+          </div>
+          <div class="dataPedido-5">
+            <p class="nomeInfo-6">Data</p>
+            <p>00/00/0000</p>
+          </div>
+          <div class="detalhesPedido-5">
+            <button class="botaoDetalhes-6">Detalhes do pedido</button>
+          </div>
+        </div>
+        <div class="maisInfos-4">
+          <div class="produtoImagem-5">
+            <small class="textoImagem-6">Produto</small>
+            <img src="/images/phones/samsung/Ultra/Preto/FrontBack.png" alt="">
+          </div>
+          <div class="produtoDescricao-5">
+            <small class="textoDescricao-6">Descrição</small>
+            <small class="produtoDescricao-6">Smartphone Samsung Galaxy S22 Ultra 256GB Vinho 5G - 12GB RAM 6,8 Câm. Quádrupla + Selfie 40MP</small>
+          </div>
+
+          <div class="produtoQuantidade-5">
+            <small class="produtoQuantidade-6">Quantidade</small>
+            <small class="quantidade-6">1</small>
+          </div>
+
+          <div class="produtoTotal-5">
+            <small class="produtoTotal-6">Total</small>
+            <small class="produtoTotal-6">R$ 8.550,00</small>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+    
+  </main>
+  <script src="/javascripts/pedidos.js"></script>
+  <%- include('./partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif ;
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+.container{
+  height: 100vh;
+  background-color: var(--color4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cinza{
+  width: 80vw;
+  height: auto;
+  background-color: rgb(223, 219, 219);
+  border: 0.3vw solid rgb(63, 62, 62);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5vw;
+      
+}
+
+.login{
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  height: auto ;
+  width: 40vw ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.teste{
+  height: auto;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.entrar p{
+  margin-bottom: 2vh;
+  font-size: 4vw;
+  color: var(--color3);
+  user-select: none;
+}
+
+.foto {
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  width: 8vw;
+  height: 8vw;
+  background-color: var(--color3);
+  border-radius: 9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto img{
+  height: 6vw;
+}
+
+.cad p{
+	font-size: 1.5vw;
+	color: var(--color5);
+	user-select: none;
+}
+
+.cad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.email,
+.senha
+{
+  margin-top: 1vh;
+  border-radius: 1vh;
+  height: 3vw;
+  width: 18vw;
+  border: 0.3vw solid var(--color3);
+  font-size: 1.8vw;
+}
+
+.botao{
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  border: 0.2vw solid var(--color3); 
+  color: rgb(0, 0, 0);
+  padding: 6px 12px;
+  border-radius: 4vh;
+  background-color: var(--color1);
+  cursor: pointer;
+} 
+
+.botao p{
+  font-size: 1.2vw;
+}
+
+.cadastroLink{
+  color: var(--color5);
+  text-decoration: none;
+	transition: all 0.4s;
+}
+
+.cadastroLink:hover{
+	border: 0.1vw solid var(--color3);
+	background-color: var(--color1);
+	color: var(--color4);
+	border-radius: 0.5vw;
+}

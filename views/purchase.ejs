@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/stylesheets/purchase.css">
+  <link rel="icon" href="/images/Logo.png">
+  <title>Compra finalizada!</title>
+</head>
+<body>
+  
+  <%- include('./partials/header') %>
+
+  <main>
+    <div class="compraMensagem-1">
+      <h1>Compra finalizada com sucesso!</h1>
+    </div>
+
+    <div class="agradecimentosContainer-1">
+      <div class="logoMarca-2">
+        <img src="/images/Logo.png" alt="Logo Uaiphone">
+      </div>
+
+      <div class="agradecimentosEBotes-2">
+        <div class="mensagem1-3">
+          <h1>Obrigado!</h1>
+        </div>
+
+        <div class="mensagem2-3">
+          <p>É sempre um prazer </p>
+          <p>poder oferecer o melhor</p>
+        </div>
+
+        <div class="botoesInicioPerfil-3">
+          <a href="/"><button class="btnInicio-4">Inicio</button></a>
+          <a href="/perfil"><button class="btnConta-4">Minha conta</button></a>
+        </div>
+
+        <div class="voltarHome-5">
+          <a href="/categorias" class="voltarHome-6">
+            <p class="voltarHome-7">Continuar comprando</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <%- include('./partials/footer') %>
+
+</body>
+</html>

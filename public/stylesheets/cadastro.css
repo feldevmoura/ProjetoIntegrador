@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300;400;600;800&family=Raleway:wght@100;300;400;600;800&family=Ropa+Sans&display=swap');
+
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin: 0;
+  padding: 0;
+  font-family: Raleway, Arial, sans-serif ;
+}
+
+:root {
+  --color0: rgb(223, 219, 219);
+  --color1: gray;
+  --color2: #1e7efc;
+  --color3: #0f71f1;
+  --color4: #FFFFFF;
+  --color5: #000000;
+}
+
+main{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color4);
+}
+
+.registro-1{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  height: auto;
+  background-color: var(--color3);
+  width: 85vw;
+}
+
+.formCadastro-2{
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+  margin-top: 0.5vw;
+  background-color: var(--color0);
+  width: auto;
+  height: auto;
+  margin-bottom: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.formCadastro-2 .cadastroForm{
+  margin-bottom: 4vw ;
+  margin-right: 10vw ;
+  margin-left: 10vw;
+  font-size: 1.3vw;
+  background-color: var(--color0);
+  width: 20vw;
+  height: 5vw;
+
+}
+
+.formCadastro-2 
+input {
+  outline: none;
+  width: 20vw;
+  height: 2.5vw;
+  font-size: 1.3vw;
+  border: 0.2vw solid var(--color3);
+}
+
+#numeroCPF, #numeroCel, #numeroCasaCadastro, #numeroTelefone, #cepCadastro {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1-3{
+  font-size: 2vw;
+  user-select: none;
+  margin: 0.5vw;
+  margin-bottom: 2vw;
+  background-color: var(--color0);
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.h1-3 img{
+  width: 3vw;
+}
+
+.h1-4{
+  height: auto;
+}
+
+.finalizarBtn-3{
+  border: none;
+  margin-bottom: 2vw;
+  background-color: var(--color3);
+  color: var(--color4);
+  width: auto;
+  padding: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+  border-radius: 0.3vw;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.finalizarBtn-3:hover{
+  transform: scale(1.1);
+  background-color: var(--color2);
+}
+
+
+
+
+
