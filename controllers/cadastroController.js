@@ -7,16 +7,8 @@ const cadastroController = {
         return res.render('cadastroFinalizado')
     },
     cadastroCompleto: async (req, res) => {
-        let { nome,
-            email,
-            senha,
-            genero,
-            celular,
-            telefone,
-            cpf,
-            data_nascimento,
-             } = req.body;
-        console.log(email)
+        let {cep, rua, numero, complemento, referencia, bairro, cidade, estado} = req.body;
+        let {nome,email,senha,genero,celular,telefone,cpf,data_nascimento} = req.body;
 
        try  {
 
