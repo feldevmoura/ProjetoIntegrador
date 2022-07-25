@@ -7,24 +7,33 @@ const cadastroController = {
         return res.render('cadastroFinalizado')
     },
     cadastroCompleto: async (req, res) => {
-        let {cep, rua, numero, complemento, referencia, bairro, cidade, estado} = req.body;
-        let {nome,email,senha,genero,celular,telefone,cpf,data_nascimento} = req.body;
+        let { cep, rua, numero, complemento, referencia, bairro, cidade, estado } = req.body;
+        try {
+            var novoEndereco = await db.Endereco.create({
+                cep, rua, numero, complemento, referencia, bairro, cidade, estado
+            })
 
-       try  {
+            console.log(novoEndereco);
+        } catch (error) { console.log(error) }
 
-        const newUser = await db.Usuario.create({
-            nome ,
-            email ,
-            senha ,
-            genero,
-            celular,
-            telefone,
-            cpf,
-            data_nascimento
+        let { nome, email, senha, genero, celular, telefone, cpf, data_nascimento } = req.body;
 
-        })
-    
-        console.log(newUser)    } catch(error){console.log(error.message)}
+        try {
+
+            const newUser = await db.Usuario.create({
+                nome,
+                email,
+                senha,
+                genero,
+                celular,
+                telefone,
+                cpf,
+                data_nascimento,
+                endereco_id: novoEndereco.id
+            })
+
+            console.log(newUser)
+        } catch (error) { console.log(error.message) }
     }
 
 
