@@ -34,7 +34,8 @@ module.exports = (sequelize, DataType) => {
     },
     cpf: {
       type: DataType.STRING(20),
-      allowNull: false
+      allowNull: false,
+      unique: true
     },
     data_nascimento: {
       type: DataType.DATEONLY,

@@ -6,6 +6,11 @@ module.exports = (sequelize, DataType) => {
       autoIncrement: true,
       allowNull: false
     },
+    nome_tabela: {
+      type: DataType.STRING(20),
+      defaultValue: true,
+      allowNull: false
+    },
     cep: {
       type: DataType.INTEGER,
       allowNull: false
