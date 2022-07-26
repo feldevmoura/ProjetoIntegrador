@@ -1,11 +1,25 @@
 const db = require('../models/index');
 
 const loginController = {
-    login: (req,res) => {
-        const autenticada = true;
-        if(true){
-            res.redirect('/home')
-        }
+    login: async (req, res) => {
+        const { email, senha } = req.body;
+        try {
+
+            const findUser = await db.Usuario.update({
+
+                where: {
+                    email,
+                    senha
+                }
+            })
+
+
+            if(findUser != null){
+                res.redirect('/')
+            }
+
+            console.log(findUser)
+        } catch (error) { console.log(error.message) }
     }
 }
 

@@ -1,7 +1,5 @@
 const db = require('../models/index');
 
-const db = require('../models/index');
-
 const cadastroController = {
     cadastro: (req, res) => {
         res.render('cadastro')
