@@ -14,7 +14,7 @@ const loginController = {
             })
 
 
-            if(findUser != null){
+            if (findUser != null) {
                 res.redirect('/')
             }
 
