@@ -1,3 +1,5 @@
+const db = require('../models/index');
+
 const motorolaController = {
   motorola: (req,res) => {
    res.render('motorola')

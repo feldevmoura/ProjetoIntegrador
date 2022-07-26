@@ -1,3 +1,5 @@
+const db = require('../models/index');
+
 const xiaomiController = {
   xiaomi: (req, res) => {
     res.render('xiaomi')

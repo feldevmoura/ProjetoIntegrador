@@ -1,3 +1,5 @@
+const db = require('../models/index');
+
 const appleController = {
   apple: (req, res) => {
     res.render('apple')

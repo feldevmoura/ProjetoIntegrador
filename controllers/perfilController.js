@@ -1,3 +1,5 @@
+const db = require('../models/index');
+
 const perfilController = {
   perfil: (req, res) => {
     res.render('perfil')
