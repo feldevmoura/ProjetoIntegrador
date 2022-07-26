@@ -20,6 +20,7 @@ module.exports = (sequelize, DataType) => {
     }
   }, {
     tableName: 'carrinho_produto',
+    timestamps: false
   })
 
   return CarrinhoProduto;
