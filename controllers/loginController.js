@@ -5,7 +5,7 @@ const loginController = {
         const { email, senha } = req.body;
         try {
 
-            const findUser = await db.Usuario.update({
+            const findUser = await db.Usuario.findOne({
 
                 where: {
                     email,
