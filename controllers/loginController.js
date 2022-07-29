@@ -16,7 +16,7 @@ const loginController = {
 
             if (findUser != null) {
                 res.redirect('/')
-            }
+            } else{ res.redirect('/entrar?passwordError=true')}
 
             console.log(findUser)
         } catch (error) { console.log(error.message) }

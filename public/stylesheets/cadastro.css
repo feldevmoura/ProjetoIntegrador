@@ -102,9 +102,15 @@ input {
   height: auto;
 }
 
+.nomeTabela-3 {
+  position: absolute;
+  margin-top: 73vw ;
+}
+
 .finalizarBtn-3{
   border: none;
   margin-bottom: 2vw;
+  margin-top: 5vw;
   background-color: var(--color3);
   color: var(--color4);
   width: auto;

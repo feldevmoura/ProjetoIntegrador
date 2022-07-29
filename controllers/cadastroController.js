@@ -7,20 +7,22 @@ const cadastroController = {
         return res.render('cadastroFinalizado')
     },
     cadastroCompleto: async (req, res) => {
-        let { cep, rua, numero, complemento, referencia, bairro, cidade, estado } = req.body;
+        // Recebo as informações da view
+        let { nome_tabela,cep, rua, numero, complemento, referencia, bairro, cidade, estado } = req.body;
+        // Registro ela no banco com uma variável global
         try {
             var novoEndereco = await db.Endereco.create({
-                cep, rua, numero, complemento, referencia, bairro, cidade, estado
+                nome_tabela,cep, rua, numero, complemento, referencia, bairro, cidade, estado
             })
 
             console.log(novoEndereco);
         } catch (error) { console.log(error) }
 
+        //Recebo as informações da view
         let { nome, email, senha, genero, celular, telefone, cpf, data_nascimento } = req.body;
-
         try {
 
-            const newUser = await db.Usuario.create({
+            var newUser = await db.Usuario.create({
                 nome,
                 email,
                 senha,
@@ -34,6 +36,8 @@ const cadastroController = {
 
             console.log(newUser)
         } catch (error) { console.log(error.message) }
+
+
     }
 
 

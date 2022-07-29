@@ -7,10 +7,10 @@
   font-style: normal;
 }
 
-*{
-	margin: 0;
+* {
+  margin: 0;
   padding: 0;
-  font-family: Raleway, Arial, sans-serif ;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 :root {
@@ -22,15 +22,16 @@
   --color5: #000000;
 }
 
-.container{
-  height: 100vh;
+.container {
+  height: auto;
+  padding: 2vw;
   background-color: var(--color4);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cinza{
+.cinza {
   width: 80vw;
   height: auto;
   background-color: rgb(223, 219, 219);
@@ -39,14 +40,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5vw;
-      
+
 }
 
-.login{
+.login {
   margin-top: 4vw;
   margin-bottom: 4vw;
-  height: auto ;
-  width: 40vw ;
+  height: auto;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +55,7 @@
 
 }
 
-.teste{
+.teste {
   height: auto;
   width: 30vw;
   display: flex;
@@ -63,7 +64,7 @@
   flex-direction: column;
 }
 
-.entrar p{
+.entrar p {
   margin-bottom: 2vh;
   font-size: 4vw;
   color: var(--color3);
@@ -83,17 +84,17 @@
   flex-direction: column;
 }
 
-.foto img{
+.foto img {
   height: 6vw;
 }
 
-.cad p{
-	font-size: 1.5vw;
-	color: var(--color5);
-	user-select: none;
+.cad p {
+  font-size: 1.5vw;
+  color: var(--color5);
+  user-select: none;
 }
 
-.cad{
+.cad {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +102,7 @@
 }
 
 .email,
-.senha
-{
+.senha {
   margin-top: 1vh;
   border-radius: 1vh;
   height: 3vw;
@@ -111,30 +111,41 @@
   font-size: 1.8vw;
 }
 
-.botao{
+.errorLogin {
+  font-size: 1vw;
+  border: 0.1vw solid red;
+  padding: 0.1vw;
+}
+
+.errorLogin p {
+  color: red;
+  white-space: nowrap;
+}
+
+.botao {
   margin-top: 1vh;
   margin-bottom: 2vh;
-  border: 0.2vw solid var(--color3); 
+  border: 0.2vw solid var(--color3);
   color: rgb(0, 0, 0);
   padding: 6px 12px;
   border-radius: 4vh;
   background-color: var(--color1);
   cursor: pointer;
-} 
+}
 
-.botao p{
+.botao p {
   font-size: 1.2vw;
 }
 
-.cadastroLink{
+.cadastroLink {
   color: var(--color5);
   text-decoration: none;
-	transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.cadastroLink:hover{
-	border: 0.1vw solid var(--color3);
-	background-color: var(--color1);
-	color: var(--color4);
-	border-radius: 0.5vw;
+.cadastroLink:hover {
+  border: 0.1vw solid var(--color3);
+  background-color: var(--color1);
+  color: var(--color4);
+  border-radius: 0.5vw;
 }
