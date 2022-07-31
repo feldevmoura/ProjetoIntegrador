@@ -26,6 +26,7 @@ router.post('/login', loginController.login);
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
 router.get('/carrinho', carrinhoController.carrinho);
+router.post('/adicionar', carrinhoController.adicionarCarrinho);
 
 //página pedidos
 const pedidosController = require('../controllers/pedidosController');

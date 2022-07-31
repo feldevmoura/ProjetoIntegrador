@@ -213,6 +213,7 @@ main {
   border-radius: 0.2vw;
   transition: all 0.4s;
   cursor: pointer;
+  font-size: 1.3vw;
 }
 
 .acessorios-5:hover {
