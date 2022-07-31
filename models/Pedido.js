@@ -21,16 +21,10 @@ module.exports = (sequelize, DataType) => {
     produto_id: {
       type: DataType.INTEGER,
       allowNull: false
-    },
-    produto_info_id: {
-      type: DataType.INTEGER,
-      allowNull: false,
-      
     }
   }, {
     tableName: 'pedido',
     timestamps: true
-
   })
 
   return Pedido;

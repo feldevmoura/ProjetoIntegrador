@@ -7,9 +7,15 @@ module.exports = (sequelize, DataType) => {
       autoIncrement: true,
       allowNull: false
     },
+    descricao: {
+      type: DataType.STRING(200)
+    },
     nome: {
       type: DataType.STRING(100),
       alloNull: false
+    },
+    cor: {
+      type: DataType.STRING(20)
     },
     preco: {
       type: DataType.DECIMAL(6,2),

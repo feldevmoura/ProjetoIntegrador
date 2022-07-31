@@ -8,9 +8,21 @@ module.exports = (sequelize, DataType) => {
     },
     usuario_id: {
       type: DataType.INTEGER,
-      allowNull: false
+      allowNull: false,
+    },
+    produto_id: {
+      type: DataType.INTEGER,
+    },
+    produto_quantidade: {
+      type: DataType.INTEGER
+    },
+    acessorio_produto_id: {
+      type: DataType.INTEGER
+    },
+    acesorio_quantidade: {
+      type: DataType.INTEGER
     }
-    
+
   }, {
     tableName: 'carrinho',
     timestamps: false
