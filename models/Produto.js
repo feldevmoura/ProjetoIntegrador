@@ -1,5 +1,6 @@
 
 module.exports = (sequelize, DataType) => {
+
   const Produto = sequelize.define('Produto', {
     id: {
       type: DataType.INTEGER,
@@ -20,11 +21,20 @@ module.exports = (sequelize, DataType) => {
     preco: {
       type: DataType.DECIMAL(6,2),
       allowNull: false
+    },
+    url: {
+      type: DataType.STRING(150)
     }
   }, {
     tableName: 'produto',
     timestamps: false
   })
 
+  // Produto.associate = (models) => {
+  //   Produto.belongsTo(models.Carrinho, {
+  //     foreignKey: 'produto_id',
+  //     timestamps: false
+  //   })
+  // }
   return Produto;
 }

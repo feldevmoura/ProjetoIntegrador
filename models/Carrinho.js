@@ -19,7 +19,7 @@ module.exports = (sequelize, DataType) => {
     acessorio_produto_id: {
       type: DataType.INTEGER
     },
-    acesorio_quantidade: {
+    acessorio_quantidade: {
       type: DataType.INTEGER
     }
 
@@ -27,6 +27,15 @@ module.exports = (sequelize, DataType) => {
     tableName: 'carrinho',
     timestamps: false
   })
+
+  
+  Carrinho.associate = (models) => {
+    Carrinho.belongsTo(models.Produto, {
+      as: 'carrinho',
+      foreignKey: 'produto_id',
+      timestamps: false
+    })
+  }
 
   return Carrinho;
 }

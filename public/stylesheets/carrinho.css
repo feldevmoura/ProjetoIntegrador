@@ -32,6 +32,16 @@ main {
   flex-direction: column;
 }
 
+.blur-1 {
+  filter: opacity(60%);
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  background-color: var(--color5);
+  z-index: 19;
+  display: none;
+}
+
 .caixa-1 {
   background-color: var(--color4);
   display: flex;
@@ -107,7 +117,7 @@ main {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
 .produto1-4::-webkit-scrollbar {
@@ -173,7 +183,7 @@ main {
 }
 
 .acessoriosAdd-5 {
-  margin-left: 5vw;
+
   display: none;
   flex-direction: column;
   overflow-y: scroll;
@@ -236,6 +246,10 @@ main {
   width: 15vw;
 }
 
+.descricao-7 h5 {
+  font-size: 1.4vw;
+}
+
 .descricao-8{
   font-size: 1.1vw;
 }
@@ -244,7 +258,85 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.quantidade-8 {
+  display: flex;
+  flex-direction: row;
+  width: 4vw;
+  justify-content: space-between
+}
+
+.diminuirAcessorio-9 {
+  border: 0;
+  background-color: var(--color3);
+  width: 1.2vw;
+  height: 1.2vw;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.diminuirAcessorio-9:hover {
+  background-color: var(--color2);
+}
+
+.quantidade-9 {
+  font-family: Arial;
+  font-weight: 400;
+}
+
+.aumentarAcessorio-9 {
+  border: 0;
+  background-color: var(--color3);
+  width: 1.2vw;
+  height: 1.2vw;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.aumentarAcessorio-9:hover {
+  background-color: var(--color2)
+}
+
+.precoAcessorio-8 {
+  font-weight: 400;
+  margin-bottom: 1vw;
+}
+
+.subtotal-7 {
+  margin-left: 0.5vw;
+  display: flex;
   flex-direction: column;
+  font-family: Arial;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subtotal-8 {
+  font-family: Arial;
+  margin-top: 1vw;
+}
+
+.remover-9 {
+  background-color: var(--color4);
+  border: 0.1vw solid var(--color3);
+  color: red;
+  width: 4.5vw;
+  height: 2.5vw;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.remover-9:hover {
+  background-color: var(--color0);
 }
 
 .produto1InfoAndConfig-5 {
@@ -292,6 +384,11 @@ main {
   font-family: Arial;
 }
 
+.cor-7{
+  margin-top: 1.4vw;
+  font-size: 1.28vw;
+}
+
 .produto1Preco-6 {
   display: flex;
   justify-content: center;
@@ -318,7 +415,7 @@ main {
   height: 8vw;
   margin-right: 1.5vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -331,10 +428,53 @@ main {
   border-radius: 0.3vw;
   display: flex;
   transition: all 0.4s;
+  user-select: none;
 }
 
 .produto1QuantidadeChange-6 input::after {
   background-color: black;
+}
+
+.diminuir-7 {
+  border: 0;
+  background-color: var(--color3);
+  width: 2vw;
+  font-size: 1.7vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.diminuir-7:hover {
+  background-color: var(--color2);
+}
+
+.diminuir-7:active {
+  transform: scale(1.3);
+}
+
+.quantidade-7 {
+  user-select: none;
+  font-size: 1.28vw;
+  font-weight: 600;
+}
+
+.aumentar-7 {
+  border: 0;
+  background-color: var(--color3);
+  width: 2vw;
+  font-size: 1.7vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.aumentar-7:hover {
+  background-color: var(--color2);
+}
+
+.aumentar-7:active {
+  transform: scale(1.3);
 }
 
 .produto1Subtotal-6 {
@@ -377,6 +517,52 @@ main {
 
 .produto1Delete-6:hover {
   background-color: var(--color0);
+}
+
+.confirmeDeletar-5{
+  border: 0.1vw solid var(--color3);
+  background-color: var(--color3);
+  color: var(--color4);
+  width: 30vw;
+  height: 10vw;
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 5vw;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4vw;
+  border-radius: 0.2vw;
+  padding: 1vw;
+}
+
+.confirmar-6{
+  margin-top: 2vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cancelar-7 {
+  border: 0.1vw solid var(--color3);
+  background-color: var(--color4);
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
+
+.confirmar-7 {
+  border: 0.1vw solid var(--color3);
+  background-color: var(--color4);
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 0.5vw;
+  cursor: pointer;
+  border-radius: 0.5vw;
 }
 
 .finalizar-3 {

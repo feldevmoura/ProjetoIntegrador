@@ -1,3 +1,4 @@
+
 const express = require('express');
 const router = express.Router();
 
@@ -26,7 +27,15 @@ router.post('/login', loginController.login);
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
 router.get('/carrinho', carrinhoController.carrinho);
-router.post('/adicionar', carrinhoController.adicionarCarrinho);
+router.post('/adicionar', carrinhoController.criarCarrinho);
+router.get('/aumentarCarrinho', carrinhoController.adicionarCarrinho);
+router.get('/diminuirCarrinho', carrinhoController.diminuirCarrinho);
+router.get('/deletarCarrinho', carrinhoController.deletarCarrinho);
+router.get('/adicionarAcessorioCarrinho', carrinhoController.adicionarAcessorioController);
+router.get('/menosAcessorioCarrinho', carrinhoController.diminuirAcessorioCarrinho);
+router.get('/maisAcessorioCarrinho', carrinhoController.aumentarAcessorioCarrinho);
+router.get("/deletarAcessorioCarrinho", carrinhoController.deletarAcessorioCarrinho);
+
 
 //página pedidos
 const pedidosController = require('../controllers/pedidosController');
