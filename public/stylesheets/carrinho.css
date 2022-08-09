@@ -107,7 +107,6 @@ main {
 }
 
 .produto1-4 {
-  border: 0.1vw solid var(--color3);
   margin: 0.5vw;
   margin-right: 1.3vw;
   max-width: 51vw;
@@ -209,7 +208,6 @@ main {
   align-items: start;
   justify-content: center;
   flex-direction: row;
-  border: 0.1vw solid var(--color3);
   margin-bottom: 0.3vw;
 }
 
@@ -234,7 +232,6 @@ main {
 
 .acessorioImage-7 {
   padding: 0.5vw;
-  border: 0.1vw solid var(--color3);
   width: 5vw;
 }
 
@@ -352,7 +349,6 @@ main {
 }
 
 .produto1Image-6 {
-  border: 0.1vw solid var(--color3);
   margin-top: 0.5vw;
   margin-bottom: 0.5vw;
   background-color: var(--color4);
