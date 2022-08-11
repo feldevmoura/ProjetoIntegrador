@@ -26,7 +26,7 @@ const cadastroController = {
             })
             console.log(newUser)
         } catch (error) { console.log(error.message) }
-        res.send('perfil')
+        res.render('perfil')
     }
 
 };
