@@ -585,11 +585,12 @@ main{
 	margin-left: 1.3vh ;
 	background-color: var(--color0);
 	width: 90vw;
-	height: 30vw;
+	height: auto;
 	display: none;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	padding: 2vw;
 }
 
 .acessoriosNone{
@@ -611,6 +612,7 @@ main{
 	margin-right: 4vw;
 	border: 0.1vw solid var(--color3);
 	transition: all 0.4s;
+	margin-bottom: 2vw;
 }
 
 .acessorio1-3:hover,
