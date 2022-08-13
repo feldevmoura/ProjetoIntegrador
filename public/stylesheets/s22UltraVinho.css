@@ -242,6 +242,8 @@ main{
 	font-size: 2vw;
 	font-weight: 900;
 	color: var(--color5);
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .linha-5{
@@ -300,7 +302,7 @@ main{
 }
 
 .preto-7:hover{
-	transform: scale(1.3);
+	transform: scale(1.5);
 }
 
 .branco-7{
@@ -314,21 +316,17 @@ main{
 }
 
 .branco-7:hover{
-	transform: scale(1.3);
+	transform: scale(1.5);
 }
 
 .vinho-7{
 	background-color: palevioletred ;
-	width: 2vw;
-	height: 2vw;
+	width: 3vw;
+	height: 3vw;
 	margin-right: 1vw;
 	border-radius: 100%;
 	cursor: pointer;
 	transition: all 0.4s;
-}
-
-.vinho-7:hover{
-	transform: scale(1.3);
 }
 
 .azul-7{
@@ -341,7 +339,7 @@ main{
 }
 
 .azul-7:hover{
-	transform: scale(1.3);
+	transform: scale(1.5);
 }
 
 .linha-3{
@@ -356,23 +354,25 @@ main{
 	background-color: var(--color0);
 	width: 26.5vw;
 	margin-top: 0;
-	height: 32vw;
+	height: auto;
 	margin-right: 1vh;
 	display: flex;
 	flex-wrap: wrap;
-  	justify-content: center;
+  justify-content: center;
 	align-items: center;
+	padding: 1vw;
 }
 
 .preco-4{
 	margin-top: 1vh;
 	background-color: var(--color0);
 	width: 25vw;
-	height: 8vw;
+	height: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin: 1vw;
 }
 
 .preco-5{
@@ -500,10 +500,10 @@ main{
 .comprar-4{
 	background-color: var(--color0);
 	width: 25vw;
-	height: 11vw;
+	height: auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	flex-direction: column;
 }
 
@@ -517,6 +517,14 @@ main{
 	width: 24vw;
 	height: 3vw;
 	font-size: 1.4vw;
+}
+
+.botoes-5{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	padding: 1vw;
 }
 
 .comprar-5{
@@ -541,6 +549,23 @@ main{
 }
 
 .comprarBtn-6:hover{
+	background-color: var(--color2);
+	transform: scale(1.1);
+}
+
+.adicionarCarrinho-6{
+	background-color: var(--color3);
+	border: none;
+	width: auto;
+	color: var(--color4);
+	font-size: 1.5vw;
+	cursor: pointer;
+	border-radius: 0.3vw;
+	transition: all 0.4s;
+	padding: 0.5vw;
+}
+
+.adicionarCarrinho-6:hover{
 	background-color: var(--color2);
 	transform: scale(1.1);
 }

@@ -30,7 +30,8 @@ router.post('/login', loginController.login);
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
 router.get('/carrinho', carrinhoController.carrinho);
-router.post('/adicionar', carrinhoController.criarCarrinho);
+router.post('/comprar', carrinhoController.criarCarrinho);
+router.post('/adicionar', carrinhoController.adicionarCarrinho);
 router.get('/aumentarCarrinho', carrinhoController.adicionarCarrinho);
 router.get('/diminuirCarrinho', carrinhoController.diminuirCarrinho);
 router.get('/deletarCarrinho', carrinhoController.deletarCarrinho);

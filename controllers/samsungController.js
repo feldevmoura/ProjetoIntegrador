@@ -6,6 +6,11 @@ const samsungController = {
     return res.render('samsung')
   },
   s22UltraVinho: async (req, res) => {
+    const produto = await db.Produto.findOne({
+      where: {
+        id: 1
+      }
+    })
     try {
       const acessorios = await db.Produto.findAll({
         where: {
@@ -15,6 +20,13 @@ const samsungController = {
         }
       })
 
+      const carrinho = await db.Carrinho.findAll({
+        where: {
+          usuario_id: 1
+        }
+      })
+      console.log(produto)
+
       const produtos = await db.Produto.findAll({
         where: {
           id: {
@@ -22,7 +34,7 @@ const samsungController = {
           }
         }
       })
-      return res.render('s22UltraVinho', { acessorios, produtos })
+      return res.render('s22UltraVinho', {produto ,acessorios, produtos, carrinho })
     } catch (error) { console.log('error', error.message) }
     
   },

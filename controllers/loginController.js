@@ -4,7 +4,6 @@ const loginController = {
     login: async (req, res) => {
         const { email, senha } = req.body;
         try {
-
             const findUser = await db.Usuario.findOne({
 
                 where: {
@@ -12,7 +11,6 @@ const loginController = {
                     senha
                 }
             })
-
 
             if (findUser != null) {
                 res.redirect('/')

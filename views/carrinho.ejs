@@ -26,11 +26,11 @@
 
 					<div class="produtos-2">
 
-						<% produtos.forEach((produto)=> { %>
-							<% if(produto.id==carrinho.produto_id) { %>
+						
 								<div class="produtoInfo-3">
 
-
+									<% produtos.forEach((produto)=> { %>
+										<% if(produto.id==carrinho.produto_id) { %>
 									<div class="produto1-4">
 										<div class="produto1Info-5">
 											<div class="produto1PrecoTxt-6">Preço</div>
@@ -75,7 +75,6 @@
 												<% carrinhoQuantidade = carrinho.produto_quantidade%>
 												<% parseFloat(carrinhoQuantidade) %>
 												<% let subtotal = preco*carrinhoQuantidade; %>
-												<% console.log(subtotal, preco, carrinhoQuantidade) %>
 												<p class="precoSubtotal-7">
 													R$ <%= subtotal.toFixed(2).replace('.',',') %>
 												</p>
@@ -112,7 +111,6 @@
 												 <% const carrinhoAcessorioQuantidade = carrinho.acessorio_quantidade%>
 												 <% parseFloat(carrinhoAcessorioQuantidade) %>
 												 <% var subtotalA = precoA*carrinhoAcessorioQuantidade; %>
-												 <% console.log(subtotalA) %>
 													<p>Subtotal</p>
 													<p class="subtotal-8">R$ <%= subtotalA.toFixed(2).replace('.',',') %></p>
 													<div>
@@ -142,10 +140,11 @@
 											</div>
 										</div>
 									</div>
-
-								</div>
 									<% } %>
 								<% }) %>
+								
+								</div>
+									
 
 										<div class="finalizar-3">
 

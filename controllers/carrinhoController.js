@@ -33,36 +33,16 @@ const carrinhoController = {
   criarCarrinho: async (req, res) => {
 
     try {
-      const carrinho = db.Carrinho.findOne({
-        where: {
-          id: 1
-        }
+      const {criandoCarrinho} = req.body;
+      console.log('value',criandoCarrinho)
+      const carrinho = db.Carrinho.create({
+        usuario_id: 1,
+        produto_id: criandoCarrinho,
+        produto_quantidade: 1
       })
       
-      if(carrinho.produto_quantidade === null){
-        var { criandoCarrinho } = req.body;
-        const criarCarrinho = await db.Carrinho.update({
-          usuario_id: 1,
-          produto_id: criandoCarrinho,
-          produto_quantidade: 1
-        }, { where: { id: 1 } })
-      }else{
-        const carrinho2 = await db.Carrinho.findOne({
-          where: {
-            id: 1
-          }
-        })
-        const carrinhoQuantidade = carrinho2.produto_quantidade;
-  
-        const quantidadeFinal = carrinhoQuantidade + 1
-        // console.log(carrinhoFinal)
-        var { criandoCarrinho } = req.body;
-        const criarCarrinho = await db.Carrinho.update({
-          usuario_id: 1,
-          produto_id: criandoCarrinho,
-          produto_quantidade: quantidadeFinal
-        }, { where: { id: 1 } })
-      }
+      
+      
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },

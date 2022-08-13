@@ -23,7 +23,7 @@
             <div class="produto-4">
 
               <div class="produtoImagem-5">
-                <img src="/images/phones/samsung/Ultra/Vinho/FrontBack.png" class="produtoImagem-6" src=""
+                <img src="<%=produto.url%>" class="produtoImagem-6" src="<%=produto.nome%>"
                   alt="S20 Ultra Front, Banck and Pen">
               </div>
 
@@ -62,7 +62,8 @@
             <div class="produtoApresentacao-4">
 
               <div class="descricaoProduto-5">
-                <p>Smartphone Samsung Galaxy S22 Ultra 256GB Vinho 5G - 12GB RAM 6,8 Câm. Quádrupla + Selfie 40MP</p>
+                <p><%= produto.descricao%></p>
+                <p> <p>COR: <%= produto.cor%></p>  </p>
               </div>
 
               <div class="linha-5"></div>
@@ -133,10 +134,17 @@
                 <p> <b>estoque</b> </p>
               </div>
              
-              <form method="post" class="comprar-5" action="/adicionar">
-                <input type="text" value="1" name="criandoCarrinho" style="display: none;">
+              <form method="post" action="/comprar">
+                <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
                 <button class="comprarBtn-6">Comprar</button>
               </form>
+              <div class="botoes-5">
+                <form method="post" style="display:none" class="comprar-5" action="/adicionar">
+                  <input type="text" value="1" name="criandoCarrinho" style="display: none;">
+                  <button class="adicionarCarrinho-6">Adicionar ao Carrinho</button>
+                </form>
+                <button class="adicionarCarrinho-6">Adicionar ao Carrinho</button>
+              </div>
 
               <div class="entregue-5">
                 <p>Este produto é vendio e entregue pela<br>Phone-9</p>
