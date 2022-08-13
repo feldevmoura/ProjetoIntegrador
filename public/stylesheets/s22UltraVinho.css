@@ -629,7 +629,8 @@ main{
 	height: 19vw;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 
@@ -639,6 +640,9 @@ main{
 	margin-bottom: 2vh;
 	transition: all 0.4s;
 	cursor: pointer;
+	display: flex;
+	align-self: center;
+	margin-top: 1vw;
 }
 
 .acessorio1Foto-4 img:hover{
@@ -646,17 +650,31 @@ main{
 }
 
 .acessorio1Descricao-5{
-	margin-top: 1vh;
 	background-color: var(--color4);
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	width: 100%;
-	height: 6vw;
 	user-select: none;
 	font-size: 1.2vw;
+}
 
+.corPreco-6 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+}
+
+.acessorio1Descricao-6{
+	background-color: var(--color4);
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	user-select: none;
+	font-size: 1.2vw;
 }
 
 .acessorio1Carrinho-4{
