@@ -1,4 +1,5 @@
 const db = require('../models/index');
+const { body, validationResult } = require('express-validator');
 
 const cadastroController = {
     cadastro: (req, res) => {
@@ -9,6 +10,11 @@ const cadastroController = {
         // Recebo as informações da view
         let { nome_tabela, cep, rua, numero, complemento, referencia, bairro, cidade, estado } = req.body;
         // Registro ela no banco com uma variável global
+        const errors = validationResult(req);
+        console.log('errors',errors)
+        if (!errors.isEmpty()) {
+            return res.redirect('/cadastro')
+          }
         try {
             var novoEndereco = await db.Endereco.create({
                 nome_tabela, cep, rua, numero, complemento, referencia, bairro, cidade, estado
@@ -19,6 +25,7 @@ const cadastroController = {
 
         //Recebo as informações da view
         let { nome, email, senha, genero, celular, telefone, cpf, data_nascimento } = req.body;
+
         try {
             var newUser = await db.Usuario.create({
                 nome, email, senha, genero, celular,

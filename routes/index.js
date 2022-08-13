@@ -1,6 +1,8 @@
 
 const express = require('express');
 const router = express.Router();
+const { body, validationResult } = require('express-validator');
+
 
 //home
 const homeController = require('../controllers/homeController');
@@ -13,8 +15,9 @@ const produtoController = require('../controllers/produtoController');
 
 //página do cadastro
 const cadastroController = require('../controllers/cadastroController');
+const validator = require('../middlewares/validator')
 router.get('/cadastro', cadastroController.cadastro);
-router.post('/cadastro', cadastroController.cadastroCompleto);
+router.post('/cadastro', body('email').isEmail(), body('password').isLength({ min: 5 }),body('password').isLength({ max: 25 }), cadastroController.cadastroCompleto);
 
 //página do login
 const entrarController = require('../controllers/entrarController');
