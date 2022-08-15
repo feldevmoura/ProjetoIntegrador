@@ -15,8 +15,7 @@ module.exports = (sequelize, DataType) => {
       allowNull: false
     },
     data_pedido: {
-      type: DataType.DATE,
-      allowNull: false,
+      type: DataType.DATE
     },
     produto_id: {
       type: DataType.INTEGER,
@@ -30,7 +29,7 @@ module.exports = (sequelize, DataType) => {
     }
   }, {
     tableName: 'pedido',
-    timestamps: true
+    timestamps: false
   })
 
   return Pedido;

@@ -227,39 +227,7 @@ const carrinhoController = {
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },
-  concluirCarrinho: async (req, res) => {
-    try {
-
-      try {
-
-        const carrinho = await db.Carrinho.findOne({
-          where: {
-            usuario_id: req.session.user.id
-          }
-        })
-
-        const adicionarPedido = await db.Pedido.create({
-          numeroPedido: Math.floor(Math.random() * 1000000000),
-          usuario_id: req.session.user.id,
-          produto_quantidade: carrinho.produto_quantidade,
-          produto_id: carrinho.produto_id,
-          acessorio_produto_id: carrinho.acessorio_produto_id,
-          acessorio_quantidade: carrinho.acessorio_quantidade
-        })
-
-
-        const apagartudo = await db.Carrinho.update({
-          produto_id: null,
-          produto_quantidade: null,
-          acessorio_produto_id: null,
-          acessorio_quantidade: null
-        }, { where: { id: req.session.user.id } })
-
-        res.redirect('/comprafinalizada')
-      } catch (error) { console.log(error) }
-
-    } catch (error) { console.log('error', error.message) }
-  }
+  
 
 };
 
