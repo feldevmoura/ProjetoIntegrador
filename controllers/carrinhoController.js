@@ -120,7 +120,6 @@ const carrinhoController = {
   },
   adicionarAcessorioController: async (req, res) => {
     try {
-      if(req.session.user.id != null) {
       const { idDoAcessorio } = req.body;
 
       const carrinho = await db.Carrinho.findOne({
@@ -129,7 +128,7 @@ const carrinhoController = {
         }
       })
 
-      if (carrinho.acessorio_produto_id === null) {
+      if (req.session.user.id != null) {
         const carrinhoQuantidade = carrinho.acessorio_quantidade;
 
         const quantidadeFinal = carrinhoQuantidade + 1
@@ -142,24 +141,11 @@ const carrinhoController = {
           },
           { where: { id: req.session.user.id } }
         )
+        res.redirect('/s22UltraVinho')
       } else {
-        const carrinhoQuantidade = carrinho.acessorio_quantidade;
-
-        const quantidadeFinal = carrinhoQuantidade + 1
-
-        // console.log(carrinhoFinal)
-
-        const atualizar = await db.Carrinho.update(
-          { acessorio_quantidade: quantidadeFinal },
-          { where: { usuario_id: req.session.user.id } })
-      }
         res.redirect('/entrar')
       }
-
-
-
-
-      res.redirect('/s22UltraVinho')
+      
     } catch (error) { console.log(error) }
   },
   // deletarCarrinho: async (req, res) => {
