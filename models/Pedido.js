@@ -10,7 +10,7 @@ module.exports = (sequelize, DataType) => {
       type: DataType.INTEGER,
       allowNull: false
     },
-    quantidade: {
+    produto_quantidade: {
       type: DataType.INTEGER,
       allowNull: false
     },
@@ -21,6 +21,12 @@ module.exports = (sequelize, DataType) => {
     produto_id: {
       type: DataType.INTEGER,
       allowNull: false
+    },
+    acessorio_produto_id: {
+      type: DataType.INTEGER
+    },
+    acessorio_quantidade: {
+      type: DataType.INTEGER
     }
   }, {
     tableName: 'pedido',

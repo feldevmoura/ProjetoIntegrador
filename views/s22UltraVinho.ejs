@@ -134,17 +134,30 @@
                 <p> <b>estoque</b> </p>
               </div>
              
-              <form method="post" action="/comprar">
-                <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
-                <button class="comprarBtn-6">Comprar</button>
-              </form>
               <div class="botoes-5">
-                <form method="post" style="display:none" class="comprar-5" action="/adicionar">
-                  <input type="text" value="1" name="criandoCarrinho" style="display: none;">
+                <form method="post" action="/comprar">
+                  <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
+                  <button class="comprarBtn-6">Comprar</button>
+                </form>
+
+                
+                <form method="post" style="display:block" class="comprar-5" action="/adicionar">
+                  <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
                   <button class="adicionarCarrinho-6">Adicionar ao Carrinho</button>
                 </form>
-                <button class="adicionarCarrinho-6">Adicionar ao Carrinho</button>
+                
               </div>
+              
+              <div class="blurConfirmar-5"></div>
+
+              <div class="confirmarAdicionar-5">
+                <h1>Escolha o carrinho em que deseja adicionar o produto:</h1>
+                <div class="escolherCarrinho-6">
+                  <img src="/images/carrinho.png" alt="">
+                </div>
+                <p class="quantidadeCarrinho-6">1</p>
+              </div>
+              
 
               <div class="entregue-5">
                 <p>Este produto é vendio e entregue pela<br>Phone-9</p>
@@ -182,7 +195,11 @@
             </div>
 
             <div class="acessorio1Carrinho-4">
+              <form action="/adicionarAcessorioCarrinho" method="post">
+                <input type="number" name="idDoAcessorio" value="<%=acessorio.id%>" style="display:none">
               <button class="acessorio1ParagrafoAdicionar-5">Adiconar ao Carrinho</button>
+              
+              </form>
             </div>
 
           </div>

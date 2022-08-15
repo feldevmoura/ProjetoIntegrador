@@ -2,7 +2,8 @@
 const express = require('express');
 const router = express.Router();
 const { body, validationResult } = require('express-validator');
-
+const auth = require('../middlewares/auth');
+const autenticar = require('../middlewares/autenticar')
 
 //home
 const homeController = require('../controllers/homeController');
@@ -25,29 +26,29 @@ router.get('/entrar', entrarController.entrar);
 
 //redirect para logar
 const loginController = require('../controllers/loginController');
-router.post('/login', loginController.login);
+router.post('/login', autenticar, loginController.login);
 
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
-router.get('/carrinho', carrinhoController.carrinho);
-router.post('/comprar', carrinhoController.criarCarrinho);
-router.post('/adicionar', carrinhoController.adicionarCarrinho);
-router.get('/aumentarCarrinho', carrinhoController.adicionarCarrinho);
-router.get('/diminuirCarrinho', carrinhoController.diminuirCarrinho);
-router.get('/deletarCarrinho', carrinhoController.deletarCarrinho);
-router.get('/adicionarAcessorioCarrinho', carrinhoController.adicionarAcessorioController);
-router.get('/menosAcessorioCarrinho', carrinhoController.diminuirAcessorioCarrinho);
-router.get('/maisAcessorioCarrinho', carrinhoController.aumentarAcessorioCarrinho);
-router.get("/deletarAcessorioCarrinho", carrinhoController.deletarAcessorioCarrinho);
+router.get('/carrinho', auth, carrinhoController.carrinho);
+router.post('/comprar', auth, carrinhoController.adicionarCarrinho);
+router.post('/adicionar', auth, carrinhoController.adicionarCarrinho);
+router.get('/aumentarCarrinho', auth, carrinhoController.adicionarCarrinho);
+router.get('/diminuirCarrinho', auth, carrinhoController.diminuirCarrinho);
+router.get('/deletarCarrinho', auth, carrinhoController.deletarCarrinho);
+router.post('/adicionarAcessorioCarrinho', auth, carrinhoController.adicionarAcessorioController);
+router.get('/menosAcessorioCarrinho', auth, carrinhoController.diminuirAcessorioCarrinho);
+router.get('/maisAcessorioCarrinho', auth, carrinhoController.aumentarAcessorioCarrinho);
+router.get("/deletarAcessorioCarrinho", auth, carrinhoController.deletarAcessorioCarrinho);
 
 
 //página pedidos
 const pedidosController = require('../controllers/pedidosController');
-router.get('/perfil/pedidos', pedidosController.pedidos);
+router.get('/perfil/pedidos', auth, pedidosController.pedidos);
 
 //página compra finalizada
 const endPurchaseController = require('../controllers/endPurchaseController');
-router.get('/comprafinalizada', endPurchaseController.purchase);
+router.get('/comprafinalizada', auth,  endPurchaseController.purchase);
 
 //página de categorias
 const categoriasController = require('../controllers/categoriasController');
@@ -86,8 +87,10 @@ router.get('/xiaomiRedmiNote11Cinza', xiaomiController.xiaomiRedmiNote11Cinza);
 
 //págin perfil
 const perfilController = require('../controllers/perfilController');
-router.get('/perfil', perfilController.perfil);
+router.get('/perfil', auth, perfilController.perfil);
 const meuCadastroController = require('../controllers/meuCadastroController');
 router.get('/perfil/meuCadastro', meuCadastroController.meuCadastro);
+
+router.get('/comprafinalizada', auth, carrinhoController.concluirCarrinho)
 
 module.exports = router;

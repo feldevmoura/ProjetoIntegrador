@@ -10,12 +10,12 @@ const cadastroController = {
         // Recebo as informações da view
         let { nome_tabela, cep, rua, numero, complemento, referencia, bairro, cidade, estado } = req.body;
         // Registro ela no banco com uma variável global
-        const errors = validationResult(req);
-        console.log('errors',errors)
-        if (!errors.isEmpty()) {
-            return res.redirect('/cadastro')
-          }
-        try {
+        // const errors = validationResult(req);
+        // console.log('errors',errors)
+        // if (!errors.isEmpty()) {
+        //     return res.redirect('/cadastro')
+        //   } 
+        try { 
             var novoEndereco = await db.Endereco.create({
                 nome_tabela, cep, rua, numero, complemento, referencia, bairro, cidade, estado
             })
@@ -32,8 +32,12 @@ const cadastroController = {
                 telefone, cpf, data_nascimento, endereco_id: novoEndereco.id
             })
             console.log(newUser)
+
+            var carrinho =  await db.Carrinho.create({
+                usuario_id: newUser.id
+            })
         } catch (error) { console.log(error.message) }
-        res.render('perfil')
+        res.render('home')
     }
 
 };

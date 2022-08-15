@@ -8,6 +8,7 @@ const session = require('express-session');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const teste = require('./routes/teste');
 
 const app = express();
 
@@ -28,8 +29,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 
 
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/user', usersRouter);
+app.use('/teste', teste);
 app.use((req, res) => {
   return res.status(404).render('error')
 });

@@ -2,6 +2,8 @@ window.addEventListener('load', () => {
   const botao = document.querySelector('.acessorios-2');
   const divAcessorios = document.querySelector('.acessoriosGrade-2');
   let adicionarAcessorio = document.querySelector('.acessorio1ParagrafoAdicionar-5');
+  let adicionarProduto = document.querySelector('.adicionarCarrinho-6');
+
 
   botao.addEventListener('click', () => {
     
@@ -17,9 +19,11 @@ window.addEventListener('load', () => {
     errorLogin.style.display = 'flex'
   }
 
-  adicionarAcessorio.addEventListener('click', () => {
-    window.location.href = "/adicionarAcessorioCarrinho"
-  })
+  // adicionarAcessorio.addEventListener('click', () => {
+  //   window.location.href = "/adicionarAcessorioCarrinho"
+  // })
 
-  
+  adicionarProduto.addEventListener('click', () => {
+    
+  })
 });

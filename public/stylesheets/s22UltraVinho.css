@@ -76,7 +76,7 @@ main{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	z-index: 6;
+	z-index: 4;
 	border: 0.1vw solid var(--color3)
 }
 
@@ -361,6 +361,7 @@ main{
   justify-content: center;
 	align-items: center;
 	padding: 1vw;
+	position: relative;
 }
 
 .preco-4{
@@ -505,6 +506,7 @@ main{
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
+	position: relative;
 }
 
 .alertaCompra-5{
@@ -524,15 +526,15 @@ main{
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: column;
-	padding: 1vw;
+	height: 6vw
 }
 
 .comprar-5{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
 	background-color: var(--color0);
-	width: 24vw;
 	height: 3vw;
 }
 
@@ -568,6 +570,50 @@ main{
 .adicionarCarrinho-6:hover{
 	background-color: var(--color2);
 	transform: scale(1.1);
+}
+
+.blurConfirmar-5 {
+	background-color: #5d56566f ;
+	width: 100vw;
+	height: 145vw;
+	margin-right: 71vw;
+	position: absolute;
+	z-index: 5;
+	display: none;
+}
+
+.confirmarAdicionar-5 {
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	margin-right: 50vw;
+	display: none;
+	align-items: flex-start;
+	justify-content: top;
+	background-color: var(--color3);
+	z-index: 6;
+	flex-wrap: wrap;
+	padding: 1vw;
+	border-radius: 0.3vw
+}
+
+.confirmarAdicionar-5 h1 {
+	font-size: 1.5vw;
+}
+
+.escolherCarrinho-6 {
+	position: relative;
+	cursor: pointer;
+}
+
+.escolherCarrinho-6 img {
+	width: 4vw;
+}
+
+.quantidadeCarrinho-6 {
+	position: absolute;
+	font-size: 10vw;
+	align-self: center;
 }
 
 .entregue-5{
@@ -726,6 +772,7 @@ main{
 	border: none;
 	cursor: pointer;
 	transition: all 0.4s;
+	padding: 0.7vw;
 }
 
 .acessorio1ParagrafoAdicionar-5:hover{
