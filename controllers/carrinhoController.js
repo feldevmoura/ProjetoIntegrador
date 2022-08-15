@@ -72,25 +72,25 @@ const carrinhoController = {
   },
   adicionarCarrinho: async (req, res) => {
     try {
-      // const { adicionando } = req.body;
-      // console.log(adicionando);
+      if (req.session.user.id != null) {
+        const carrinho2 = await db.Carrinho.findOne({
+          where: {
+            usuario_id: req.session.user.id
+          }
+        })
+        const carrinhoQuantidade = carrinho2.produto_quantidade;
 
-      const carrinho2 = await db.Carrinho.findOne({
-        where: {
-          usuario_id: req.session.user.id
-        }
-      })
-      const carrinhoQuantidade = carrinho2.produto_quantidade;
+        const quantidadeFinal = carrinhoQuantidade + 1
+        // console.log(carrinhoFinal)
 
-      const quantidadeFinal = carrinhoQuantidade + 1
-      // console.log(carrinhoFinal)
-
-      const atualizar = await db.Carrinho.update(
-        { produto_quantidade: quantidadeFinal },
-        { where: { id: 1 } }
-      )
-
-      res.redirect('/carrinho')
+        const atualizar = await db.Carrinho.update(
+          { produto_quantidade: quantidadeFinal },
+          { where: { id: 1 } }
+        )
+        res.redirect('/carrinho')
+      }
+        res.redirect('/entrar')
+      
     } catch (error) { console.log(error) }
   },
   diminuirCarrinho: async (req, res) => {
