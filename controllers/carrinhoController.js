@@ -84,7 +84,7 @@ const carrinhoController = {
         // console.log(carrinhoFinal)
 
         const atualizar = await db.Carrinho.update(
-          { produto_quantidade: quantidadeFinal },
+          { produto_id: 1, produto_quantidade: quantidadeFinal },
           { where: { id: 1 } }
         )
         res.redirect('/carrinho')
