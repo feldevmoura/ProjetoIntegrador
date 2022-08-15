@@ -120,6 +120,7 @@ const carrinhoController = {
   },
   adicionarAcessorioController: async (req, res) => {
     try {
+      if(req.session.user.id != null) {
       const { idDoAcessorio } = req.body;
 
       const carrinho = await db.Carrinho.findOne({
@@ -151,7 +152,8 @@ const carrinhoController = {
         const atualizar = await db.Carrinho.update(
           { acessorio_quantidade: quantidadeFinal },
           { where: { usuario_id: req.session.user.id } })
-
+      }
+        res.redirect('/entrar')
       }
 
 
