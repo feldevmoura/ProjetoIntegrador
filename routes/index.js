@@ -18,7 +18,7 @@ const produtoController = require('../controllers/produtoController');
 const cadastroController = require('../controllers/cadastroController');
 const validator = require('../middlewares/validator')
 router.get('/cadastro', cadastroController.cadastro);
-router.post('/cadastro', body('email').isEmail(), body('senha').isLength({ min: 5 }),body('password').isLength({ max: 25 },{ min: 6}), cadastroController.cadastroCompleto);
+router.post('/cadastro', validator, cadastroController.cadastroCompleto);
 
 //página do login
 const entrarController = require('../controllers/entrarController');
@@ -48,7 +48,7 @@ router.get('/perfil/pedidos', auth, pedidosController.pedidos);
 
 //página compra finalizada
 const endPurchaseController = require('../controllers/endPurchaseController');
-router.get('/comprafinalizada', auth,  endPurchaseController.purchase);
+router.get('/comprafinalizada', auth, endPurchaseController.purchase);
 
 //página de categorias
 const categoriasController = require('../controllers/categoriasController');
