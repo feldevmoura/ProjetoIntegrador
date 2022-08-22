@@ -111,15 +111,10 @@
   font-size: 1.8vw;
 }
 
-.errorLogin {
-  font-size: 1vw;
-  border: 0.1vw solid red;
-  padding: 0.1vw;
-}
-
-.errorLogin p {
+.list-of-errors {
+  list-style-type: none;
   color: red;
-  white-space: nowrap;
+  font-size: 1vw;
 }
 
 .botao {
