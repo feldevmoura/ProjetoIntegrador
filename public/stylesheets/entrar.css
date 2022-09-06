@@ -33,7 +33,7 @@
 
 .cinza {
   width: 80vw;
-  height: auto;
+  height: 100vh;
   background-color: rgb(223, 219, 219);
   border: 0.3vw solid rgb(63, 62, 62);
   display: flex;
