@@ -32,7 +32,7 @@ router.get('/logout', loginController.logOut)
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
 router.get('/carrinho', auth, carrinhoController.carrinho);
-router.post('/comprar', auth, carrinhoController.adicionarCarrinho);
+router.post('/comprar', auth, carrinhoController.comprar);
 router.post('/adicionar', auth, carrinhoController.adicionarCarrinho);
 router.get('/aumentarCarrinho', auth, carrinhoController.adicionarCarrinho);
 router.get('/diminuirCarrinho', auth, carrinhoController.diminuirCarrinho);

@@ -23,8 +23,8 @@
 }
 
 .container {
-  height: auto;
-  padding: 2vw;
+  height: 100vh;
+  padding: 1vw;
   background-color: var(--color4);
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
 
 .cinza {
   width: 80vw;
-  height: 100vh;
+  height: auto;
   background-color: rgb(223, 219, 219);
   border: 0.3vw solid rgb(63, 62, 62);
   display: flex;

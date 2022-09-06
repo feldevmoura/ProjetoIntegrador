@@ -217,6 +217,14 @@ const carrinhoController = {
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },
+  comprar: async (req, res) => {
+    try {
+      let carrinho = await db.Carrinho.create({
+        usuario_id: newUser.id
+      })
+
+    } catch (error) { console.log(error) }
+  }
   
 
 };
