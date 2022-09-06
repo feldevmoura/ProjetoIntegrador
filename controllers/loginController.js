@@ -22,6 +22,9 @@ const loginController = {
 			if (findUser != null) {
 				req.session.user = findUser;
 				res.redirect('/')
+			} else{
+				let userNotFounded = 'Email ou senha estão incorretos!'
+				res.redirect('/entrar')
 			}
 
 
