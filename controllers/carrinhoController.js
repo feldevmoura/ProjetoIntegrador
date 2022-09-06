@@ -148,16 +148,6 @@ const carrinhoController = {
       
     } catch (error) { console.log(error) }
   },
-  // deletarCarrinho: async (req, res) => {
-  //   try {
-  //     const deletandoCarrinho = db.Carrinho.destroy({
-  //       where: {
-  //         id: 1
-  //       }
-  //     })
-  //     res.redirect('/')
-  //   } catch (error) { console.log(error) }
-  // }
   deletarCarrinho: async (req, res) => {
     try {
       const apagartudo = db.Carrinho.update({
