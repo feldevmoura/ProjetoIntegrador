@@ -15,6 +15,7 @@ const loginController = {
 
 			let errors = validationResult(req)
 			if (!errors.isEmpty()) {
+				let {email} = req.body;
 				console.log(errors.mapped())
 				return res.render('entrar', { errors: errors.mapped(), old: req.body });
 			}
