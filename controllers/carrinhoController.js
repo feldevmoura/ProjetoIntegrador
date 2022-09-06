@@ -21,13 +21,19 @@ const carrinhoController = {
         }
       })
 
+      const AcessorioCarrinho = await db.Acessorio.findAll({
+        where: {
+          usuarioId: req.session.user.id
+        }
+      })
+
       const carrinho = await db.Carrinho.findOne({
         where: {
           usuario_id: req.session.user.id
         }
       })
-      console.log('carrinho', carrinho)
-      return res.render('carrinho', { produtos, carrinho, acessorios })
+      console.log('carrinho', AcessorioCarrinho)
+      return res.render('carrinho', { produtos, carrinho, acessorios, AcessorioCarrinho })
     } catch (error) { console.log('error', error.message) }
   },
   criarCarrinho: async (req, res) => {
@@ -89,8 +95,8 @@ const carrinhoController = {
         )
         res.redirect('/carrinho')
       }
-        res.redirect('/entrar')
-      
+      res.redirect('/entrar')
+
     } catch (error) { console.log(error) }
   },
   diminuirCarrinho: async (req, res) => {
@@ -145,31 +151,21 @@ const carrinhoController = {
       } else {
         res.redirect('/entrar')
       }
-      
+
     } catch (error) { console.log(error) }
   },
   deletarCarrinho: async (req, res) => {
     try {
       const apagartudo = db.Carrinho.update({
         produto_id: null,
-        produto_quantidade: null,
-        acessorio_produto_id: null,
-        acessorio_quantidade: null
+        produto_quantidade: null
       }, { where: { usuario_id: req.session.user.id } })
-      res.redirect('/carrinho')
-    } catch (error) { console.log(error) }
-  },
-  deletarAcessorioCarrinho: async (req, res) => {
-    try {
-      const apagartudo = db.Carrinho.update({
-        acessorio_produto_id: null,
-        acessorio_quantidade: null
-      }, {
-        where: { id: 1 }
-      })
+
+      const apagartudoAcessorio = await db.Acessorio.destroy({
+          where: { usuarioId: req.session.user.id}
+        })
 
       res.redirect('/carrinho')
-
     } catch (error) { console.log(error) }
   },
   diminuirAcessorioCarrinho: async (req, res) => {
@@ -224,7 +220,17 @@ const carrinhoController = {
       })
 
     } catch (error) { console.log(error) }
-  }
+  },
+  deletarOAcessorio: async (req, res) => {
+    try {
+      let { idDoAcessorio } = req.body;
+
+      let acessoriosCarrinho = await db.Acessorio.destroy({
+        where: { id: idDoAcessorio }
+      })
+      res.redirect('/carrinho')
+    } catch (error) { console.log() }
+  },
   
 
 };

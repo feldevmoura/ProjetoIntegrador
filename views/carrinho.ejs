@@ -26,11 +26,11 @@
 
 					<div class="produtos-2">
 
-						
-								<div class="produtoInfo-3">
 
-									<% produtos.forEach((produto)=> { %>
-										<% if(produto.id==carrinho.produto_id) { %>
+						<div class="produtoInfo-3">
+
+							<% produtos.forEach((produto)=> { %>
+								<% if(produto.id==carrinho.produto_id) { %>
 									<div class="produto1-4">
 										<div class="produto1Info-5">
 											<div class="produto1PrecoTxt-6">Preço</div>
@@ -50,15 +50,17 @@
 
 												<div class="cor-7">
 													<p>
-														Cor: <b><%= produto.cor %></b> 
+														Cor: <b>
+															<%= produto.cor %>
+														</b>
 													</p>
 												</div>
 											</div>
 											<div class="produto1Preco-6">
 
 												<p class="preco-7">
-													<%   %>
-													R$ <%= produto.preco.replace('.',','); %>
+													<% %>
+														R$ <%= produto.preco.replace('.',','); %>
 												</p>
 
 											</div>
@@ -70,58 +72,68 @@
 												<button class="aumentar-7">+</button>
 											</div>
 											<div class="produto1Subtotal-6">
-												<% const preco = produto.preco%>
-												<% parseFloat(preco) %>
-												<% carrinhoQuantidade = carrinho.produto_quantidade%>
-												<% parseFloat(carrinhoQuantidade) %>
-												<% let subtotal = preco*carrinhoQuantidade; %>
-												<p class="precoSubtotal-7">
-													R$ <%= subtotal.toFixed(2).replace('.',',') %>
-												</p>
-													
+												<% const preco=produto.preco%>
+													<% parseFloat(preco) %>
+														<% carrinhoQuantidade=carrinho.produto_quantidade%>
+															<% parseFloat(carrinhoQuantidade) %>
+																<% let subtotal=preco*carrinhoQuantidade; %>
+																	<p class="precoSubtotal-7">
+																		R$ <%= subtotal.toFixed(2).replace('.',',') %>
+																	</p>
+
 											</div>
 										</div>
 										<p class="acessorios-5">Acessorios</p>
 										<div class="acessoriosAdd-5 acessoriosAddNone-5">
-											<% acessorios.forEach((acessorio) => { %>
-												<% if(acessorio.id==carrinho.acessorio_produto_id) { %>
-											<div class="acessorio-6">
-												<img class="acessorioImage-7" src="<%= acessorio.url %>"
-													alt="Galaxy Buds Pro">
-												<div class="descricao-7">
-													<h5>Descrição</h5>
-													<p class="descricao-8"> <%= acessorio.descricao %> </p>
-												</div>
-												<div class="quantidade-7">
-													<h5>Quantidade</h5>
-													<div class="quantidade-8">
-														<button class="diminuirAcessorio-9">-</button>
-														<p class="quantidade-9"> <%= carrinho.acessorio_quantidade %> </p>
-														<button class="aumentarAcessorio-9">+</button>
-													</div>
+											<% acessorios.forEach((acessorio)=> { %>
+												<% AcessorioCarrinho.forEach((testeAqui)=> { %>
+													<% if(acessorio.id==testeAqui.acessorioId) { %>
+														<form class="acessorio-6" method="post" action="/deletarAcessorioCarrinho">
+															<input type="number" name="idDoAcessorio" value="<%=testeAqui.id %>" style="display: none">
+															<img class="acessorioImage-7" src="<%= acessorio.url %>" alt="Galaxy Buds Pro">
+															<div class="descricao-7">
+																<h5>Descrição</h5>
+																<p class="descricao-8">
+																	<%= acessorio.descricao %>
+																</p>
+															</div>
+															<div class="quantidade-7">
+																<h5>Quantidade</h5>
+																<div class="quantidade-8">
+																	<p class="diminuirAcessorio-9">-</p>
+																	<p class="quantidade-9">
+																		<%= testeAqui.quantidadeAcessorio %>
+																	</p>
+																	<p class="aumentarAcessorio-9">+</p>
+																</div>
 
-													<div class="precoAcessorio-8">
-														<h5>Preço</h5>
-														<p> <%= acessorio.preco.replace('.',',') %> </p>
-													</div>
-												</div>
-												<div class="subtotal-7">
-												 <% const precoA = acessorio.preco %>
-												 <% parseFloat(precoA) %>
-												 <% const carrinhoAcessorioQuantidade = carrinho.acessorio_quantidade%>
-												 <% parseFloat(carrinhoAcessorioQuantidade) %>
-												 <% var subtotalA = precoA*carrinhoAcessorioQuantidade; %>
-													<p>Subtotal</p>
-													<p class="subtotal-8">R$ <%= subtotalA.toFixed(2).replace('.',',') %></p>
-													<div>
-														<button class="remover-9">Remover</button>
-													</div>
-												</div>
-												
-											</div>
-												<% } %>
-											<% }) %>
-											
+																<div class="precoAcessorio-8">
+																	<h5>Preço</h5>
+																	<p>
+																		<%= acessorio.preco.replace('.',',') %>
+																	</p>
+																</div>
+															</div>
+															<div class="subtotal-7" action="/deletarAcessorioCarrinho" method="post">
+																
+																<% const precoA=acessorio.preco %>
+																	<% parseFloat(precoA) %>
+																		<% const carrinhoAcessorioQuantidade=testeAqui.quantidadeAcessorio%>
+																			<% parseFloat(carrinhoAcessorioQuantidade) %>
+																				<% var subtotalA=precoA*carrinhoAcessorioQuantidade; %>
+																					<p>Subtotal</p>
+																					<p class="subtotal-8">R$ <%= subtotalA.toFixed(2).replace('.',',') %>
+																					</p>
+																					<div>
+																						<button class="remover-9">Remover</button>
+																					</div>
+															</div>
+
+														</form>
+														<% } %>
+															<% }) %>
+																<% }) %>
+
 
 										</div>
 
@@ -130,10 +142,10 @@
 												Delete
 											</button>
 										</div>
-										
+
 										<div class="confirmeDeletar-5">
 											<h3>Tem certeza que deseja excluir todos os itens do seu carrinho?</h3>
-											
+
 											<div class="confirmar-6">
 												<button class="confirmar-7">Confirmar</button>
 												<button class="cancelar-7">Cancelar</button>
@@ -141,78 +153,76 @@
 										</div>
 									</div>
 									<% } %>
-								<% }) %>
-								
+										<% }) %>
+
+						</div>
+
+
+						<div class="finalizar-3">
+
+							<div class="calculeFrete-4">
+								<div class="resumo-5" style="font-size: 2vw;  width: auto; background-color: white; font-weight: 600;">
+									<p>Resumo</p>
 								</div>
-									
+								<form class="form-5">
 
-										<div class="finalizar-3">
+									<label for="CEP" class="formLabel-6">Calcule seu frete</label>
+									<input class="cepInput-7" id="CEP" type="tel" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{2}"
+										placeholder="00000-00" />
 
-											<div class="calculeFrete-4">
-												<div class="resumo-5"
-													style="font-size: 2vw;  width: auto; background-color: white; font-weight: 600;">
-													<p>Resumo</p>
-												</div>
-												<form class="form-5">
+								</form>
+								<button class="calcular-5">Calcular</button>
 
-													<label for="CEP" class="formLabel-6">Calcule seu frete</label>
-													<input class="cepInput-7" id="CEP" type="tel" name="CEP" id="CEP" pattern="[0-9]{5}-[0-9]{2}"
-														placeholder="00000-00" />
+							</div>
 
-												</form>
-												<button class="calcular-5">Calcular</button>
+							<div class="cupomDesconto-4">
+								<form class="formCupom-5" id="enviar">
 
-											</div>
+									<label for="Cupom" class="formCupomLabel-6">Adicione um cupom de desconto</label>
+									<input class="cepCupomInput-7" id="CEP" type="tel" name="CEP" id="Cupom"
+										placeholder="Digite o cupom..." />
 
-											<div class="cupomDesconto-4">
-												<form class="formCupom-5" id="enviar">
+								</form>
+								<button class="adicionar-5">Adicionar</button>
 
-													<label for="Cupom" class="formCupomLabel-6">Adicione um cupom de desconto</label>
-													<input class="cepCupomInput-7" id="CEP" type="tel" name="CEP" id="Cupom"
-														placeholder="Digite o cupom..." />
+							</div>
 
-												</form>
-												<button class="adicionar-5">Adicionar</button>
+							<div class="infosAndConcluir-4">
+								<div class="subtotal-5">
+									<p>Subtotal</p>
+									<b>
+										<p class="produtoDesc-7" style="font-weight: 400">R$0.000,00</p>
+									</b>
+								</div>
 
-											</div>
+								<div class="precoFrete-5">
+									<p>Frete</p>
+									<b>
+										<p class="produtoDesc-7" style="font-weight: 400">R$000,00</p>
+									</b>
+								</div>
 
-											<div class="infosAndConcluir-4">
-												<div class="subtotal-5">
-													<p>Subtotal</p>
-													<b>
-														<p class="produtoDesc-7" style="font-weight: 400">R$0.000,00</p>
-													</b>
-												</div>
+								<div class="total-5">
+									<p>Total</p>
+									<b>
+										<p class="produtoDesc-7" style="font-weight: 400">R$0.000,00</p>
+									</b>
+								</div>
 
-												<div class="precoFrete-5">
-													<p>Frete</p>
-													<b>
-														<p class="produtoDesc-7" style="font-weight: 400">R$000,00</p>
-													</b>
-												</div>
+								<div class="comprar-5">
+									<a style="text-decoration:none; color: var(--color4);" target="_blank" href="/comprafinalizada">
+										<p style="font-weight: bold;">Finalizar pedido</p>
+									</a>
+								</div>
 
-												<div class="total-5">
-													<p>Total</p>
-													<b>
-														<p class="produtoDesc-7" style="font-weight: 400">R$0.000,00</p>
-													</b>
-												</div>
-
-												<div class="comprar-5">
-													<a style="text-decoration:none; color: var(--color4);" target="_blank"
-														href="/comprafinalizada">
-														<p style="font-weight: bold;">Finalizar pedido</p>
-													</a>
-												</div>
-
-											</div>
-										</div>
+							</div>
+						</div>
 
 					</div>
 				</div>
 			</main>
 
 			<%- include('./partials/footer') %>
-				<script defer type="text/javascript"  src="/javascripts/carrinho.js"></script>
+				<script defer type="text/javascript" src="/javascripts/carrinho.js"></script>
 	</div>
 </body>

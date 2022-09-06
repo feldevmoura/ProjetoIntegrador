@@ -1,10 +1,16 @@
 module.exports = (sequelize, DataType) => {
-  const AcessorioCarrinho = sequelize.define('AcessorioCarrinho', {
+  const Acessorio = sequelize.define('Acessorio', {
+    id: {
+      type: DataType.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+      allowNull: true
+    },
     carrinhoId: {
       type: DataType.INTEGER,
       allowNull: true
     },
-    usuario_id: {
+    usuarioId: {
       type: DataType.INTEGER,
       allowNull: true,
     },
@@ -15,9 +21,9 @@ module.exports = (sequelize, DataType) => {
       type: DataType.INTEGER
     }
   }, {
-    tableName: 'acesoriocarrinho',
+    tableName: 'acessorios',
     timestamps: false
   })
 
-  return AcessorioCarrinho;
+  return Acessorio;
 }

@@ -273,6 +273,9 @@ main {
   font-size: 1vw;
   border-radius: 0.2vw;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.5s;
 }
 
@@ -293,6 +296,9 @@ main {
   font-size: 1vw;
   border-radius: 0.2vw;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.5s;
 }
 

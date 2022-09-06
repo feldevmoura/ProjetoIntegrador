@@ -1,7 +1,6 @@
 window.addEventListener('load', () => {
   let acessorioBotao = document.querySelector('.acessorios-5');
   let acessorios = document.querySelector('.acessoriosAdd-5');
-  let acessorioRemover = document.querySelector('.remover-9');
   
 
   let botaoDiminuir = document.querySelector('.diminuir-7');
@@ -54,10 +53,4 @@ window.addEventListener('load', () => {
 
   })
 
-  
-
-
-  acessorioRemover.addEventListener('click', () => {
-    window.location.href = "/deletarAcessorioCarrinho"
-  })
 })

@@ -40,7 +40,7 @@ router.get('/deletarCarrinho', auth, carrinhoController.deletarCarrinho);
 router.post('/adicionarAcessorioCarrinho', auth, carrinhoController.adicionarAcessorioController);
 router.get('/menosAcessorioCarrinho', auth, carrinhoController.diminuirAcessorioCarrinho);
 router.get('/maisAcessorioCarrinho', auth, carrinhoController.aumentarAcessorioCarrinho);
-router.get("/deletarAcessorioCarrinho", auth, carrinhoController.deletarAcessorioCarrinho);
+router.post('/deletarAcessorioCarrinho', auth, carrinhoController.deletarOAcessorio)
 
 
 //página pedidos
