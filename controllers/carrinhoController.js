@@ -32,7 +32,7 @@ const carrinhoController = {
           usuario_id: req.session.user.id
         }
       })
-      console.log('carrinho', AcessorioCarrinho)
+      console.log('carrinho')
       return res.render('carrinho', { produtos, carrinho, acessorios, AcessorioCarrinho })
     } catch (error) { console.log('error', error.message) }
   },
@@ -128,9 +128,9 @@ const carrinhoController = {
     try {
       const { idDoAcessorio } = req.body;
 
-      const carrinho = await db.Carrinho.findOne({
+      const carrinho = await db.Acessorio.findOne({
         where: {
-          usuario_id: req.session.user.id
+          usuarioId: req.session.user.id
         }
       })
 
@@ -170,46 +170,27 @@ const carrinhoController = {
   },
   diminuirAcessorioCarrinho: async (req, res) => {
     try {
-      const carrinho = await db.Carrinho.findOne({
-        where: {
-          usuario_id: req.session.user.id
-        }
-      })
-      const carrinhoAcessorioQuantidade = carrinho.acessorio_quantidade;
-      const quantidadeFinal = carrinhoAcessorioQuantidade - 1
-      console.log(quantidadeFinal)
-      if (quantidadeFinal >= 1) {
-
-        const atualizar = await db.Carrinho.update(
-          { acessorio_quantidade: quantidadeFinal },
-          { where: { usuario_id: req.session.user.id } }
-        )
-
-      } else { }
-
-      // console.log(carrinhoFinal)
-
-
 
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },
   aumentarAcessorioCarrinho: async (req, res) => {
     try {
-      const carrinho = await db.Carrinho.findOne({
+      let {idDoAcessorio} = req.body;
+      const carrinho = await db.Acessorio.findOne({
         where: {
-          usuario_id: req.session.user.id
+          id: idDoAcessorio
         }
       })
-
-      const carrinhoAcessorioQuantidade = carrinho.acessorio_quantidade;
-      const quantidadeFinal = carrinhoAcessorioQuantidade + 1
-
-      const atualizar = await db.Carrinho.update(
-        { acessorio_quantidade: quantidadeFinal },
-        { where: { usuario_id: req.session.user.id } }
-      )
-
+        let quantidadePega = carrinho.quantidadeAcessorio + 1;
+      
+      if(carrinho.quantidadeAcessorio <= 100){
+        const atualizar = await db.Acessorio.update({
+          quantidadeAcessorio: quantidadePega
+        },
+          { where: { id: idDoAcessorio } }
+        )
+      }
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },

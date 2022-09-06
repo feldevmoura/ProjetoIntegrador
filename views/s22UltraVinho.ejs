@@ -62,8 +62,13 @@
             <div class="produtoApresentacao-4">
 
               <div class="descricaoProduto-5">
-                <p><%= produto.descricao%></p>
-                <p> <p>COR: <%= produto.cor%></p>  </p>
+                <p>
+                  <%= produto.descricao%>
+                </p>
+                <p>
+                <p>COR: <%= produto.cor%>
+                </p>
+                </p>
               </div>
 
               <div class="linha-5"></div>
@@ -78,11 +83,17 @@
 
                   <div class="preto-7"></div>
 
-                  <a href="/s22UltraBranco"><div class="branco-7"></div></a>
+                  <a href="/s22UltraBranco">
+                    <div class="branco-7"></div>
+                  </a>
 
-                  <a href="/s22UltraVinho"><div class="vinho-7"></div></a>
+                  <a href="/s22UltraVinho">
+                    <div class="vinho-7"></div>
+                  </a>
 
-                  <a href="/s22UltraAzul"><div class="azul-7"></div></a>
+                  <a href="/s22UltraAzul">
+                    <div class="azul-7"></div>
+                  </a>
 
                 </div>
 
@@ -133,21 +144,21 @@
                 <p>Corra! Temos menos de 10 no nosso</p>
                 <p> <b>estoque</b> </p>
               </div>
-             
+
               <div class="botoes-5">
                 <form method="post" action="/comprar">
                   <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
                   <button class="comprarBtn-6">Comprar</button>
                 </form>
 
-                
+
                 <form method="post" style="display:block" class="comprar-5" action="/adicionar">
                   <input type="text" value="<%=produto.id%>" name="criandoCarrinho" style="display: none;">
                   <button class="adicionarCarrinho-6">Adicionar ao Carrinho</button>
                 </form>
-                
+
               </div>
-              
+
               <div class="blurConfirmar-5"></div>
 
               <div class="confirmarAdicionar-5">
@@ -157,7 +168,7 @@
                 </div>
                 <p class="quantidadeCarrinho-6">1</p>
               </div>
-              
+
 
               <div class="entregue-5">
                 <p>Este produto é vendio e entregue pela<br>Phone-9</p>
@@ -171,43 +182,47 @@
         <div class="acessorios-2">
           <p>Acessorios</p>
         </div>
-        
+
         <div class="acessoriosGrade-2">
-          <% acessorios.forEach((acessorio) => {%>
-            <% if(acessorio.nome != 'Capa de Silicone Iphone 13 Mini') { %>
-          <div class="acessorio1-3" id="<%= acessorio.id %>">
+          <% acessorios.forEach((acessorio)=> {%>
+            <% if(acessorio.nome !='Capa de Silicone Iphone 13 Mini' ) { %>
+              <div class="acessorio1-3" id="<%= acessorio.id %>">
 
-            <div class="acessorio1Foto-4">
+                <div class="acessorio1Foto-4">
 
-              <div class="acessorio1Descricao-5">
-                <%= acessorio.descricao %>
-                <div class="corPreco-6">
-                  <%  %>
-                  <p class="acessorio1Descricao-6" > COR: <b> <%= acessorio.cor %>  </b> </p>
-                  <p class="acessorio1Descricao-6"> Preço:R$ <b> <%= acessorio.preco.replace('.',',') %></b></p>
-                  
+                  <div class="acessorio1Descricao-5">
+                    <%= acessorio.descricao %>
+                      <div class="corPreco-6">
+                        <% %>
+                          <p class="acessorio1Descricao-6"> COR: <b>
+                              <%= acessorio.cor %>
+                            </b> </p>
+                          <p class="acessorio1Descricao-6"> Preço:R$ <b>
+                              <%= acessorio.preco.replace('.',',') %>
+                            </b></p>
+
+                      </div>
+                      <!-- Suporte de Mesa para Celular Ajustável Articulado Tablet Smartphone (Preto) R$21,00 -->
+                  </div>
+
+                  <img src="<%= acessorio.url %>" alt="<%= acessorio.nome%>">
+
                 </div>
-                <!-- Suporte de Mesa para Celular Ajustável Articulado Tablet Smartphone (Preto) R$21,00 -->
+
+                <div class="acessorio1Carrinho-4">
+                  <form action="/adicionarAcessorioCarrinho" method="post">
+                    <input type="number" name="idDoAcessorio" value="<%=acessorio.id%>" style="display:none">
+                    <button class="acessorio1ParagrafoAdicionar-5">Adiconar ao Carrinho</button>
+
+                  </form>
+                </div>
+
               </div>
-
-              <img src="<%= acessorio.url %>" alt="<%= acessorio.nome%>">
-
-            </div>
-
-            <div class="acessorio1Carrinho-4">
-              <form action="/adicionarAcessorioCarrinho" method="post">
-                <input type="number" name="idDoAcessorio" value="<%=acessorio.id%>" style="display:none">
-              <button class="acessorio1ParagrafoAdicionar-5">Adiconar ao Carrinho</button>
-              
-              </form>
-            </div>
-
-          </div>
-        <% } %>
-          <% }) %>
+              <% } %>
+                <% }) %>
 
 
-           
+
 
         </div>
       </div>

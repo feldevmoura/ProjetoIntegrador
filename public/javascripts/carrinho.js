@@ -8,8 +8,6 @@ window.addEventListener('load', () => {
   let botaoDeletar  = document.querySelector('.produto1Delete-6');
   let cancelarDeletar = document.querySelector('.cancelar-7');
   let confirmarDeletar = document.querySelector('.confirmar-7');
-  let diminuirCarrinho = document.querySelector('.diminuirAcessorio-9');
-  let aumentarCarrinho = document.querySelector('.aumentarAcessorio-9');
 
   acessorioBotao.addEventListener('click', () => {
     acessorios.classList.toggle('acessoriosAddNone-5');
@@ -42,15 +40,6 @@ window.addEventListener('load', () => {
   
   confirmarDeletar.addEventListener('click', () => {
     window.location.href = "/deletarCarrinho"
-  })
-  
-  diminuirCarrinho.addEventListener('click', () => {
-    window.location.href = "/menosAcessorioCarrinho"
-  })
-
-  aumentarCarrinho.addEventListener('click', () => {
-    window.location.href = "/maisAcessorioCarrinho"
-
   })
 
 })

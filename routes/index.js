@@ -38,9 +38,9 @@ router.get('/aumentarCarrinho', auth, carrinhoController.adicionarCarrinho);
 router.get('/diminuirCarrinho', auth, carrinhoController.diminuirCarrinho);
 router.get('/deletarCarrinho', auth, carrinhoController.deletarCarrinho);
 router.post('/adicionarAcessorioCarrinho', auth, carrinhoController.adicionarAcessorioController);
-router.get('/menosAcessorioCarrinho', auth, carrinhoController.diminuirAcessorioCarrinho);
-router.get('/maisAcessorioCarrinho', auth, carrinhoController.aumentarAcessorioCarrinho);
-router.post('/deletarAcessorioCarrinho', auth, carrinhoController.deletarOAcessorio)
+router.post('/menosAcessorioCarrinho', auth, carrinhoController.diminuirAcessorioCarrinho);
+router.post('/maisAcessorioCarrinho', auth, carrinhoController.aumentarAcessorioCarrinho);
+router.post('/deletarAcessorioCarrinho', auth, carrinhoController.deletarOAcessorio);
 
 
 //página pedidos

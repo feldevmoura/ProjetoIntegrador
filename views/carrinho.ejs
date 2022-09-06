@@ -88,7 +88,7 @@
 											<% acessorios.forEach((acessorio)=> { %>
 												<% AcessorioCarrinho.forEach((testeAqui)=> { %>
 													<% if(acessorio.id==testeAqui.acessorioId) { %>
-														<form class="acessorio-6" method="post" action="/deletarAcessorioCarrinho">
+														<div class="acessorio-6">
 															<input type="number" name="idDoAcessorio" value="<%=testeAqui.id %>" style="display: none">
 															<img class="acessorioImage-7" src="<%= acessorio.url %>" alt="Galaxy Buds Pro">
 															<div class="descricao-7">
@@ -100,11 +100,17 @@
 															<div class="quantidade-7">
 																<h5>Quantidade</h5>
 																<div class="quantidade-8">
-																	<p class="diminuirAcessorio-9">-</p>
+																	<form action="/menosAcessorioCarrinho" method="post">
+																		<input type="number" name="idDoAcessorio" id="" value="<%=testeAqui.id %>" style="display: none">
+																		<button class="diminuirAcessorio-9">-</button>
+																	</form>
 																	<p class="quantidade-9">
 																		<%= testeAqui.quantidadeAcessorio %>
 																	</p>
-																	<p class="aumentarAcessorio-9">+</p>
+																	<form action="/maisAcessorioCarrinho" method="post">
+																		<input type="number" name="idDoAcessorio" id="" value="<%=testeAqui.id %>" style="display: none">
+																		<button class="aumentarAcessorio-9">+</button>
+																	</form>
 																</div>
 
 																<div class="precoAcessorio-8">
@@ -124,12 +130,12 @@
 																					<p>Subtotal</p>
 																					<p class="subtotal-8">R$ <%= subtotalA.toFixed(2).replace('.',',') %>
 																					</p>
-																					<div>
+																					<form method="post" action="/deletarAcessorioCarrinho">
 																						<button class="remover-9">Remover</button>
-																					</div>
+																					</form>
 															</div>
 
-														</form>
+														</div>
 														<% } %>
 															<% }) %>
 																<% }) %>
