@@ -85,7 +85,7 @@ const carrinhoController = {
 
         const atualizar = await db.Carrinho.update(
           { produto_id: 1, produto_quantidade: quantidadeFinal },
-          { where: { id: 1 } }
+          { where: { usuario_id: req.session.user.id } }
         )
         res.redirect('/carrinho')
       }
@@ -106,7 +106,7 @@ const carrinhoController = {
 
         const atualizar = await db.Carrinho.update(
           { produto_quantidade: quantidadeFinal },
-          { where: { id: req.session.user.id } }
+          { where: { usuario_id: req.session.user.id } }
         )
 
       } else { }
@@ -165,7 +165,7 @@ const carrinhoController = {
         produto_quantidade: null,
         acessorio_produto_id: null,
         acessorio_quantidade: null
-      }, { where: { id: req.session.user.id } })
+      }, { where: { usuario_id: req.session.user.id } })
       res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },

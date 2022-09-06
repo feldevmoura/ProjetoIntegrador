@@ -40,9 +40,8 @@ const cadastroController = {
 					usuario_id: newUser.id
 				})
 			} catch (error) { console.log(error.message) }
-
-			req.session.user = newUser;
-			res.render('home')
+			
+			res.render('entrar')
 		}
 	}
 
