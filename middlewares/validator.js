@@ -1,17 +1,26 @@
-const { body } = require('express-validator');
+const path = require('path');
+const multer = require('multer');
+const { check } = require('express-validator');
 
+const validations = [
 
+  check('nome')
+    .notEmpty().withMessage('Tem de escrever um nome').bail()
+    .trim(),
 
+  check('email')
+    .notEmpty().withMessage('Tem de escrever um email').bail()
+    .trim().bail()
+    .normalizeEmail().bail()
+    .isEmail().withMessage('Digite um formato de email correto'),
 
+  check('senha')
+    .notEmpty().withMessage('Tem de escrever uma senha').bail()
+    .isLength({ min: 6 }).withMessage('A senha precisa ter 6 caracteres').bail()
+    .trim(),
+  
+  
 
-const validator = (req, res, next) => {
-  console.log('validator')
-  body('email').isEmail().withMessage('Digite um email válido'),
-  body('senha').isLength({ max: 25 }, { min: 6 }).withMessage('Sua senha preisa ter no mínimo 6 caracteres e nos máximo 25')
+];
 
-}
-
-module.exports = validator;
-
-
-
+module.exports = validations;

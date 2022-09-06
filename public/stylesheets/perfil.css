@@ -41,7 +41,8 @@ main{
 
 .meuPerfil-3,
 .meuCadastro-3,
-.meusPedidos-3 {
+.meusPedidos-3,
+.logOut-3 {
   font-size: 1.3vw;
   white-space: nowrap;
   user-select: none;
@@ -58,20 +59,23 @@ main{
 
 .meuPerfil-3 p,
 .meuCadastro-3 p,
-.meusPedidos-3 p {
+.meusPedidos-3 p,
+.logOut-3 p {
   cursor: pointer;
 }
 
 .meuPerfil-3 a,
 .meuCadastro-3 a,
-.meusPedidos-3 a {
+.meusPedidos-3 a,
+.logOut-3 a {
   text-decoration: none;
   color: var(--color5);
 }
 
 .meuPerfil-3:hover,
 .meuCadastro-3:hover,
-.meusPedidos-3:hover
+.meusPedidos-3:hover,
+.logOut-3:hover
 {
   text-decoration: underline;
 }

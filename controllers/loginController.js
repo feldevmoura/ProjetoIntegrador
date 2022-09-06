@@ -32,7 +32,7 @@ const loginController = {
 		} catch (error) { console.log(error.message) }
 	},
 	logOut: async (req, res) => {
-		findUser = null;
+		req.session.destroy();
 		res.redirect('/')
 	}
 }

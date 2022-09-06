@@ -1,9 +1,14 @@
 const db = require('../models/index');
 
 const entrarController = {
-    entrar: (req,res) => {
-    return res.render('entrar')
-    }
+  entrar: (req, res) => {
+
+    if(typeof(req.session.user) != "undefined"){
+      res.redirect('/perfil');
+  }
+		return res.render('entrar');
+	}
+  
 }
 
 module.exports = entrarController;

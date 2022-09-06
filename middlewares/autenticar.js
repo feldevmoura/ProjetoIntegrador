@@ -1,11 +1,11 @@
-const { body } = require('express-validator');
+const { check } = require('express-validator');
 
 const autenticador = [
-  body("email")
+  check("email")
     .notEmpty().withMessage('Digite Um Email').bail()
     .isEmail().withMessage("Digite um email válido"),
 
-  body("senha").notEmpty().withMessage('Digite Uma Senha'),
+  check("senha").notEmpty().withMessage('Digite Uma Senha'),
 ];
 
 module.exports = autenticador;
