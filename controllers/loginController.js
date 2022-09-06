@@ -28,13 +28,12 @@ const loginController = {
 			}
 
 
-
-
-
-
-
 			console.log(findUser)
 		} catch (error) { console.log(error.message) }
+	},
+	logOut: async (req, res) => {
+		findUser = null;
+		res.redirect('/')
 	}
 }
 

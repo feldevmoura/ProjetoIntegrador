@@ -27,6 +27,7 @@ router.get('/entrar', entrarController.entrar);
 //redirect para logar
 const loginController = require('../controllers/loginController');
 router.post('/login', autenticar, loginController.login);
+router.get('/logout', loginController.logOut)
 
 //página carrinho
 const carrinhoController = require('../controllers/carrinhoController');
