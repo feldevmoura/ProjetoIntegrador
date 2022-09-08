@@ -82,6 +82,14 @@ acessorio_produto_id INT,
 acessorio_quantidade INT
 );
 
+CREATE TABLE acessorios (
+id INT PRIMARY KEY,
+carrinhoId INT ,
+usuarioId INT ,
+acessorioId INT,
+quantidadeAcessorio INT
+);
+
 INSERT INTO `phone-9`.`carrinho` (`id`,`usuario_id`, `produto_id`, `produto_quantidade`, `acessorio_produto_id`, `acessorio_quantidade`) 
 VALUES (1,1, 1, 1, 19, 1);
 

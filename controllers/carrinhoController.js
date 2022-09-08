@@ -171,27 +171,59 @@ const carrinhoController = {
   diminuirAcessorioCarrinho: async (req, res) => {
     try {
 
-      res.redirect('/carrinho')
+      let {idDoAcessorio} = req.body;
+      let acessorioQuantidade = await db.Acessorio.findOne({
+        where: {
+          id: idDoAcessorio
+        }
+      })
+      
+      console.log('AQUIOOOOOOOOOOOOOOOOOOOOOOOOOOOO',acessorioQuantidade.quantidadeAcessorio)
+      if(acessorioQuantidade.quantidadeAcessorio > 1){
+        const carrinho = await db.Acessorio.findOne({
+          where: {
+            id: idDoAcessorio
+          }
+        })
+          let quantidadePega = carrinho.quantidadeAcessorio - 1;
+          const atualizar = await db.Acessorio.update({
+            quantidadeAcessorio: quantidadePega
+          },
+            { where: { id: idDoAcessorio } }
+          )
+        
+        res.redirect('/carrinho')
+        }
+        res.redirect('/carrinho')
+
     } catch (error) { console.log(error) }
   },
   aumentarAcessorioCarrinho: async (req, res) => {
     try {
       let {idDoAcessorio} = req.body;
-      const carrinho = await db.Acessorio.findOne({
+      let acessorioQuantidade = await db.Acessorio.findOne({
         where: {
           id: idDoAcessorio
         }
       })
-        let quantidadePega = carrinho.quantidadeAcessorio + 1;
       
-      if(carrinho.quantidadeAcessorio <= 100){
-        const atualizar = await db.Acessorio.update({
-          quantidadeAcessorio: quantidadePega
-        },
-          { where: { id: idDoAcessorio } }
-        )
-      }
-      res.redirect('/carrinho')
+      console.log('AQUIOOOOOOOOOOOOOOOOOOOOOOOOOOOO',acessorioQuantidade.quantidadeAcessorio)
+      if(acessorioQuantidade.quantidadeAcessorio < 100){
+        const carrinho = await db.Acessorio.findOne({
+          where: {
+            id: idDoAcessorio
+          }
+        })
+          let quantidadePega = carrinho.quantidadeAcessorio + 1;
+          const atualizar = await db.Acessorio.update({
+            quantidadeAcessorio: quantidadePega
+          },
+            { where: { id: idDoAcessorio } }
+          )
+        
+        res.redirect('/carrinho')
+        }
+        res.redirect('/carrinho')
     } catch (error) { console.log(error) }
   },
   comprar: async (req, res) => {
