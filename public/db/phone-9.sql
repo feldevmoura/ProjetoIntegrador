@@ -83,7 +83,7 @@ acessorio_quantidade INT
 );
 
 CREATE TABLE acessorios (
-id INT PRIMARY KEY,
+id INT PRIMARY KEY AUTO_INCREMENT,
 carrinhoId INT ,
 usuarioId INT ,
 acessorioId INT,

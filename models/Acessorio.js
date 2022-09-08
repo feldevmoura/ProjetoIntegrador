@@ -3,8 +3,7 @@ module.exports = (sequelize, DataType) => {
     id: {
       type: DataType.INTEGER,
       primaryKey: true,
-      autoIncrement: true,
-      allowNull: true
+      autoIncrement: true
     },
     carrinhoId: {
       type: DataType.INTEGER,
