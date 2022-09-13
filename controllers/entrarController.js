@@ -6,7 +6,10 @@ const entrarController = {
     if(typeof(req.session.user) != "undefined"){
       res.redirect('/perfil');
   }
-		return res.render('entrar');
+    let teste = 'emailErrado'
+		return res.render('entrar', {
+      oldData: req.body
+    });
 	}
   
 }
